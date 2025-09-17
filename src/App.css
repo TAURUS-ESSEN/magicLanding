@@ -4,4 +4,14 @@
   padding: 2rem;
   text-align: center;
 }
- 
+
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}

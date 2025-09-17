@@ -1,0 +1,66 @@
+/*  MODAL WINDOW STYLES */
+.modalOverlay, .modalCookiesOverlay{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.478);
+}
+
+.modalCookiesOverlay {
+  align-items: end;
+  margin-bottom: 5rem;
+}
+
+.modalOverlay {
+  animation: overlayIn .62s ease forwards; /* плавно проявляем фон */
+}
+
+.modalContent {
+  opacity: 0;
+  transform: translateY(6px) scale(.985);
+  animation: contentIn .24s ease .06s forwards; /* лёгкая задержка для контента */
+}
+
+/* 2) Кадры анимации */
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes contentIn {
+  from { opacity: 0; transform: translateY(6px) scale(.985); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modalContent, .modalCookiesContent {
+  border-radius: 10px;
+  padding-block: var(--space-2);
+  padding-inline: 0.5rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.modalCookiesContent {
+  max-width: 800px;
+}
+
+.modalHeader h3{
+  margin: 0.3rem;
+}
+
+
+.coockiesButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.coockiesButtons button {
+  border-radius: 4px;
+  padding: 8px;
+  justify-content: space-around;
+}

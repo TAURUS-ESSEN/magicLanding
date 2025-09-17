@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "headline": "IT Career Hub is the only education center whose curriculum includes a specialized German course.",
+    "pitch": "With a German state certificate and professional German, you can easily find a job in an international company."
+  },
+  "about": {
+    "title": "About us",
+    "text": "We support you on your way to an IT career..."
+  },
+    "menu": {
+    "option1": "Program",
+    "option2": "Payments",
+    "option3": "About us"
+  }
+}
