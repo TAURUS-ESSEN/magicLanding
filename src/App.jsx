@@ -1,25 +1,30 @@
 import { useState, useEffect } from 'react';
-import { t, setLang } from "./languageToggler";
+import de from "./locales/de.json";
+import en from "./locales/en.json";
 import ModalHost from './components/Modal/ModalHost';
 import './App.css';
 import Header from './Header';
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
-  const [lang, setLangState] = useState("de");
+  const [lang, setLang] = useState("de");
 
   const openModal = (type) => setModal({isOpen: true, type: type});
   const closeModal = (type) => setModal({isOpen: false, type: type});
 
+  // обычный объект, да: { de: de, en: en }
+  const translations = { de, en };
+
   const switchLang = () => {
-    const newLang = lang === "de" ? "en" : "de";
-    setLang(newLang);        
-    setLangState(newLang);   
+    setLang(prev => (prev === "de" ? "en" : "de"));
   };
+
+  const t = (key) => translations[lang]?.[key] ?? key;
 
   useEffect(() => {
     if (localStorage.getItem('consent') === null) openModal('cookies');
   }, []);
+  
 
   return (
     <> 
