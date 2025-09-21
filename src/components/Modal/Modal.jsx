@@ -2,8 +2,9 @@ import styles from './modal.module.css';
 import { useEffect } from 'react';
 import {createPortal} from 'react-dom';
 
-export default function Modal({title, children, closeModal}) {
+export default function Modal({title, children, closeModal, mode}) {
     const rootModal = document.getElementById('root-modal');
+    console.log('mode', mode);
 
     useEffect(() => {
         const onKey = (e) => e.key === "Escape" && closeModal();
@@ -17,8 +18,8 @@ export default function Modal({title, children, closeModal}) {
 
     return createPortal(
         <>
-            <div className={styles.modalCookiesOverlay} onClick={(e)=> {e.currentTarget === e.target && closeModal()}}>
-                <div className={styles.modalCookiesContent}>
+            <div className={mode === 'cookies' ? styles.modalCookiesOverlay : styles.modalOverlay} onClick={(e)=> {e.currentTarget === e.target && closeModal()}}>
+                <div className={mode === 'cookies' ? styles.modalCookiesContent : styles.modalContent}>
                     <div className={styles.modalHeader}>
                         <h3 className={styles.modalTitle}>{title}</h3>
                         <hr />

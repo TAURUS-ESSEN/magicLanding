@@ -6,7 +6,7 @@ export default function CookiesBanner({closeModal}) {
 
     return (
         <>
-            <Modal title='Cookies & Datenschutz' closeModal={closeModal}>
+            <Modal title='Cookies & Datenschutz' closeModal={closeModal}  mode='cookies'>
                 <div>
                     Wir verwenden Cookies, um unsere Website zu verbessern. Sie können nur notwendige Cookies akzeptieren oder alle akzeptieren. Mehr in der Datenschutzerklärung
                     <div className={styles.coockiesButtons}>
