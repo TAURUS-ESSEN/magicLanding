@@ -3,6 +3,7 @@ import styles from "./modal.module.css"
 
 export default function CookiesBanner({closeModal}) {
 
+
     return (
         <>
             <Modal title='Cookies & Datenschutz' closeModal={closeModal}>
