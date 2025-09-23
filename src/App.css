@@ -14,3 +14,11 @@ header {
   display: flex;
   gap: 1rem;
 }
+
+.terminButton:disabled {
+  background-color: gray;
+}
+
+input::placeholder {
+  font-size: 0.8em;
+}

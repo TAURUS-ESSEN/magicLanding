@@ -3,6 +3,7 @@ import { t, setLang } from "./languageToggler";
 import ModalHost from './components/Modal/ModalHost';
 import './App.css';
 import Header from './Header';
+import Footer from './Footer'
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
@@ -32,6 +33,7 @@ function App() {
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>
+      <Footer />
     </>
   )
 }

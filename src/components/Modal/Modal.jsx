@@ -20,8 +20,11 @@ export default function Modal({title, children, closeModal, mode}) {
         <>
             <div className={mode === 'cookies' ? styles.modalCookiesOverlay : styles.modalOverlay} onClick={(e)=> {e.currentTarget === e.target && closeModal()}}>
                 <div className={mode === 'cookies' ? styles.modalCookiesContent : styles.modalContent}>
-                    <div className={styles.modalHeader}>
-                        <h3 className={styles.modalTitle}>{title}</h3>
+                    <div className=" ">
+                        <span className='flex justify-between text-cyan-500 p-2'>
+                            <h3 className={styles.modalTitle}>{title}</h3>
+                            <button onClick={closeModal} className="">&#10005;</button>
+                        </span>
                         <hr />
                     </div>
                     <span>{children}</span>
