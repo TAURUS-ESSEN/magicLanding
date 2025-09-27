@@ -1,2 +1,74 @@
-:root {
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Combo&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Rancho&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#root {
+  font-family: Oxanium;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-orange: #F89000;
+}
+
+@layer utilities {
+  .bg-dots { background-image: url("/carbon_fibre.webp"); }
+}
+
+
+@layer components {
+  .h1 {
+    @apply text-5xl font-medium;
+  }
+
+  .blackcard {
+    @apply flex flex-col m-auto bg-repeat text-white rounded-3xl bg-[length:16px_16px];
+  }
+
+  .btn {
+    @apply capitalize border rounded-lg p-2 w-48 
+  }
+}
+
+@layer base {
+  input {
+    @apply rounded-lg border p-2 bg-white mb-2 text-black;  /* или rounded-[1rem], если нужен кастомный размер */
+  }
+}
+
+body {
+  /* background-color: rgb(215, 215, 215); */
+  background-image: url("/gray_jean.png");
+  background-repeat: repeat;
+}
+
+.wrapper {
+  display: grid;
+  margin: 0;
+  padding: 0 2rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.test {
+  background-color: rgb(255, 0, 132);
+}
+
+header {
+  /* background-color: green; */
+  /* border: 1px solid lightgray; */
+}
+
+.menu {
+  /* background-color: aqua; */
+}
+
+.terminButton:disabled {
+  background-color: gray;
+}
+
+input::placeholder {
+  font-size: 0.8em;
 }

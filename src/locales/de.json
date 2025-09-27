@@ -1,15 +1,282 @@
 {
-  "hero": {
-    "headline": "Online-Weiterbildung in aktuellen Berufen mit Arbeitsplatzsicherheit",
-    "pitch": "Mit einem staatlichen Zertifikat aus Deutschland und berufsbezogenem Deutsch findest du schnell einen Job in einem internationalen Unternehmen.."
-  },
-  "about": {
-    "title": "About us",
-    "text": "We support you on your way to an IT career..."
-  },
   "menu": {
     "option1": "Programme",
     "option2": "Zahlungsarten",
-    "option3": "Über uns"
+    "option3": "Über uns",
+    "option4": "Kontakte"
+  },
+
+  "hero": {
+    "headline": "FutureSkills Hub:  \n Deine Tech-Karriere von morgen beginnt heute ",
+    "pitch": "Lerne die Technologien, die erst in den nächsten Jahren den Markt erobern"
+  },
+
+  "about": {
+    "title": "Über uns",
+    "text": "Wir unterstützen dich auf deinem Weg in die IT-Karriere..."
+  },
+
+  "reviews": {
+    "label": "Google Reviews",
+    "summary": "4,9 Sterne · 155 Bewertungen"
+  },
+
+  "ctaForm": {
+    "title": "Für eine kostenlose Karriereberatung anmelden!",
+    "titleRich": "Für eine <b>kostenlose</b> Karriereberatung anmelden!",
+    "fields": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Handynummer"
+    },
+    "consent.before": "Ich stimme den",
+    "consent.link": "Datenschutzrichtlinien",
+    "consent.after": "zu",
+    "consentLinkText": "Datenschutzrichtlinien",
+    "submit": "TERMIN VEREINBAREN"
+  },
+
+  "successStories": {
+    "title": "Erfolge der Teilnehmer",
+    "students": [
+      {
+        "name": "Lena Hoffmann, 22 Jahre",
+        "before": "Vorher: Studentin (Literatur)",
+        "after": "Heute: Fullstack Developer of Tomorrow",
+        "quote": "Vor der Ausbildung hätte ich nie gedacht, dass ich eigene Apps programmieren könnte. Jetzt arbeite ich in einem internationalen Team",
+        "button": "mehr Info >"
+      },
+      {
+        "name": "Aylin Demir, 34 Jahre",
+        "before": "Vorher: Haushälterin",
+        "after": "Heute: AI Collaboration Specialist",
+        "quote": "Ich hatte keine Vorkenntnisse in IT. Durch die Ausbildung habe ich gelernt, wie man mit KI arbeitet – und jetzt unterstütze ich Unternehmen bei innovativen Projekten",
+        "button": "mehr Info >"
+      },
+      {
+        "name": "Thomas Keller, 41 Jahre",
+        "before": "Vorher: Buchhalter",
+        "after": "Heute: Sustainability Tech Innovator",
+        "quote": "Ich dachte lange, mit über 40 sei es zu spät, etwas Neues zu lernen. Doch jetzt arbeite ich mit Daten und Zukunftstechnologien – und habe meine Karriere komplett neu gestartet",
+        "button": "mehr Info >"
+      }
+    ]
+  },
+
+  "certificates": {
+    "title": "FutureSkills Hub: Abschlüsse, die morgen Standard sind",
+    "text": "Unsere Programme bereiten dich auf Berufe vor, die erst in den kommenden Jahren den Arbeitsmarkt prägen werden. Die Inhalte werden ständig aktualisiert und von internationalen Expert:innen entwickelt. Mit einem Zertifikat von FutureSkills Hub zeigst du, dass du nicht nur heute, sondern auch morgen gefragt bist.",
+    "listTitle": "Dein Sprungbrett in die Berufe von morgen",
+    "jobs": [
+      "Fullstack Developer of Tomorrow",
+      "AI Collaboration Specialist",
+      "Neurointerface Designer",
+      "Sustainability Tech Innovator"
+    ],
+    "button": "TERMIN VEREINBAREN"
+  },
+
+  "practical": {
+    "title": "Schon während der Ausbildung praxisnah einsteigen",
+    "cardsTop": [
+      "Starte mit den Grundlagen der digitalen Welt",
+      "Schritt für Schritt zu deinen ersten Zukunftsprojekten",
+      "Lerne im Team, kreative Lösungen zu entwickeln"
+    ],
+    "subtitle": "Unterstützung und Feedback bei allen Schritten",
+    "cardsBottom": [
+      "Die Ausbildung endet mit der Vorbereitung auf echte Praxisaufgaben",
+      "Wir lernen gemeinsam, wie man moderne Tools nutzt"
+    ]
+  },
+
+  "learning": {
+    "title": "So lernst du bei FutureSkills Hub",
+    "points": [
+      "Live-Online-Sessions mit interaktiven Q&A",
+      "Praxisprojekte, die direkt in dein Portfolio wandern",
+      "Praktikum in innovativen Partnerunternehmen",
+      "Individuelles Coaching für deine Jobsuche",
+      "Community-Events & exklusive Challenges",
+      "Support durch Dozenten, Mentor:innen und deine Peers"
+    ]
+  },
+
+  "careerSupport": {
+    "title": "Von der Bewerbung bis zum ersten Job",
+    "q1": "Nach deinem ersten Arbeitsplatz suchen wir gemeinsam",
+    "q2": "Gemeinsam erstellen wir deinen Lebenslauf",
+    "q3": "Wir helfen dir bei deiner Bewerbungsmappe",
+    "q4": "Unterstützung und Feedback bei allen Schritten",
+    "q5": "Sicher ins Gespräch: wir trainieren mit dir",
+    "q6": "Begleitung bis zur Vertragsunterschrift",
+    "q7": "Passende Stellenangebote für deine Zukunft",
+    "q8": "Netzwerk zu Unternehmen und Partnern",
+    "button": "BERATUNG"
+  },
+
+  "entrySupport": {
+    "title": "Wir unterstützen dich bei deinem Einstieg in die Ausbildung der Zukunft",
+    "text": "Damit du in deinem Wunschberuf starten kannst, prüfen wir gemeinsam deine Voraussetzungen. Unser Ziel: dich optimal auf die Ausbildung und den Berufseinstieg vorzubereiten.",
+    "interestTitle": "Haben wir Dein Interesse geweckt?",
+    "interestText": "Finde heraus, welches FutureSkill perfekt zu dir passt.",
+    "button": "ZUM TEST",
+    "points": [
+      "Du bist neugierig auf die Technologien von morgen",
+      "Du willst dich beruflich neu orientieren",
+      "Du bringst Motivation und Lernbereitschaft mit",
+      "Du hast Lust auf praxisnahe Projekte",
+      "Du möchtest deine Karrierechancen weltweit verbessern",
+      "Du möchtest Teil einer internationalen Community werden",
+      "Du suchst nach einer Ausbildung, die wirklich zu dir passt"
+    ]
+  },
+
+  "futureJobs": {
+    "title": "Die Zukunftsberufe mit den besten Chancen",
+    "cards": [
+      {
+        "style": "orange",
+        "badge": "Monatlich neue Gruppe",
+        "title": "Fullstack Developer of Tomorrow",
+        "subtitle": "Vormittagskurs \\ Abendkurs",
+        "text": "Lerne moderne Programmiersprachen, baue komplexe Anwendungen und werde zum Architekten digitaler Lösungen",
+        "button": "MEHR ERFAHREN"
+      },
+      {
+        "style": "grey",
+        "badge": "Gruppe Aktuell Voll",
+        "title": "AI Collaboration Specialist",
+        "subtitle": "Vormittagskurs",
+        "text": "Entwickle Strategien für die Zusammenarbeit mit künstlicher Intelligenz und optimiere Prozesse im Team von morgen.",
+        "button": "MEHR ERFAHREN"
+      },
+      {
+        "style": "black",
+        "badge": "Nächster Kursbeginn in Kürze",
+        "title": "Sustainability Tech Innovator",
+        "subtitle": "Vormittagskurs \\ Abendkurs",
+        "text": "Gestalte nachhaltige Technologien, die Unternehmen helfen, Ressourcen zu schonen und klimafreundlich zu wachsen.",
+        "button": "MEHR ERFAHREN"
+      }
+    ]
+  },
+
+  "careerPath": {
+    "title": "DEIN KARRIEREWEG",
+    "steps": [
+      {
+        "label": "Du bist hier",
+        "icon": "marker",
+        "text": "Du träumst davon, dein Leben zu verändern. Du willst einen Beruf der Zukunft erlernen, flexibel arbeiten und mehr Zeit für dich und deine Familie haben."
+      },
+      {
+        "label": "In ...",
+        "icon": "location",
+        "text": "Deine Ausbildung bei FutureSkills Hub beginnt. Du stellst dich spannenden Herausforderungen und eignest dir erste Zukunftskompetenzen an."
+      },
+      {
+        "label": "Nach 6 Mon",
+        "icon": "rocket",
+        "text": "Du hast die Grundlagen gemeistert und steigst zum Junior-Spezialisten in deinem Fachgebiet auf. Dein Portfolio wächst mit Projekten, die wirklich zählen."
+      },
+      {
+        "label": "Nach 1 Jahr",
+        "icon": "briefcase",
+        "text": "FutureSkills Hub hat dir geholfen, deinen ersten Job mit Karrieremöglichkeiten zu finden. Du arbeitest ortsunabhängig und genießt neue Freiheiten."
+      },
+      {
+        "label": "Nach 3 Jahren",
+        "icon": "crown",
+        "text": "Du bist zum Senior Specialist aufgestiegen und leitest dein eigenes Projektteam. Dein Wissen in den Skills von morgen macht dich zu einer gefragten Fachkraft – mit Gehalt und Perspektiven, die deine Zukunft sichern."
+      }
+    ]
+  },
+
+  "financing": {
+    "title": "Flexible Finanzierung für deine Zukunft",
+    "cards": [
+      {
+        "style": "black",
+        "badge": "Ratenzahlung kann man bis zu 24 Monate bezahlen",
+        "title": "Mit PayPal",
+        "text": "Zahle bequem in Raten bis zu 24 Monaten – wir übernehmen die Zinsen. Flexibel & sorgenfrei",
+        "button": "OPTION WÄHLEN"
+      },
+      {
+        "style": "white",
+        "badge": "12-Monats-Rate",
+        "title": "FutureSkills Hub",
+        "text": "Planbare Raten über 12 Monate – ohne zusätzliche Kosten. Ein Jahr, klare Kosten",
+        "button": "OPTION WÄHLEN"
+      },
+      {
+        "style": "black",
+        "badge": "100% Bezahlung",
+        "title": "Best Deal",
+        "text": "Spare 15 % mit Einmalzahlung – die günstigste Option für dich. Investiere einmal, profitiere doppelt",
+        "button": "OPTION WÄHLEN"
+      },
+      {
+        "style": "white",
+        "badge": "Bildungsgutschein vom Jobcenter/ Arbeitsagentur",
+        "title": "Gefördert",
+        "text": "Mit dem Bildungsgutschein übernimmt der Staat 100 % deiner Kurskosten. Lernen ohne Risiko",
+        "button": "OPTION WÄHLEN"
+      }
+    ]
+  },
+
+  "finalCta": {
+    "headline": "Nur ein Schritt trennt dich von deiner Zukunftskarriere",
+    "subline": "Deine Karriere von morgen beginnt heute",
+    "formTitle": "Jetzt kostenloses Beratungsgespräch sichern",
+    "fields": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "Email",
+      "phone": "Handynummer"
+    },
+    "consent": "Ich stimme den Datenschutzrichtlinien zu",
+    "consentLinkText": "Datenschutzrichtlinien",
+    "submit": "TERMIN VEREINBAREN"
+  },
+
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Ich habe keine Vorkenntnisse – kann ich trotzdem starten?",
+    "a1": "Antwort kommt hier",
+    "q2": "Bin ich zu alt, um noch eine Ausbildung in Zukunftsberufen zu beginnen?",
+    "a2": "Antwort kommt hier",
+    "q3": "Welche Chancen habe ich nach der Ausbildung auf dem Arbeitsmarkt?",
+    "a3": "Antwort kommt hier",
+    "q4": "Wie praxisnah ist die Ausbildung? Arbeite ich an echten Projekten?",
+    "a4": "Antwort kommt hier",
+    "q5": "Wie viel Zeit muss ich pro Woche investieren?",
+    "a5": "Antwort kommt hier",
+    "q6": "Kann ich die Ausbildung auch neben dem Job machen?",
+    "a6": "Antwort kommt hier"
+  },
+
+  "questionsCta": {
+    "title": "Noch unsicher? Frag uns einfach!",
+    "text": "Buche dein kostenloses Beratungsgespräch und erhalte alle Infos aus erster Hand",
+    "button": "DEINE FRAGEN KLÄREN"
+  },
+
+  "footer": {
+    "contactsTitle": "unsere Kontakte:",
+    "phone": "+49 160 45 145 09",
+    "email": "reitarovea@gmail.com",
+    "menu": {
+      "programs": "Programme",
+      "payments": "Zahlungsarten",
+      "about": "Über uns",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "mission": "Unsere Mission"
+    },
+    "copyright": "© 2025 FutureSkills Hub – Deine Karriere von morgen beginnt heute"
   }
 }

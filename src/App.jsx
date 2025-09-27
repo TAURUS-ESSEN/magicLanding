@@ -3,6 +3,7 @@ import { t, setLang } from "./languageToggler";
 import ModalHost from './components/Modal/ModalHost';
 import './App.css';
 import Header from './Header';
+import Hero from './components/Hero';
 import Footer from './Footer'
 
 function App() {
@@ -27,9 +28,8 @@ function App() {
       <div className='wrapper'>
         <Header lang={lang} switchLang={switchLang}/>
         <main>
-          <h1>{t("hero.headline")}</h1>
-          <p>{t("hero.pitch")}</p>
-          <button onClick={() => openModal('registration')}>registration</button>
+          <Hero t={t}  openModal={openModal} />
+          <button onClick={() => openModal('registration')} className='border p-2 rounded-lg'>registration</button>
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>
