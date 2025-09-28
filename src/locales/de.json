@@ -23,17 +23,24 @@
 
   "ctaForm": {
     "title": "Für eine kostenlose Karriereberatung anmelden!",
-    "titleRich": "Für eine <b>kostenlose</b> Karriereberatung anmelden!",
+    "titleRich":  
+      {
+        "before": "Für eine", 
+        "kostenlose": "kostenlose",
+        "after": "Karriereberatung anmelden!"
+      },
     "fields": {
       "firstName": "Vorname",
       "lastName": "Nachname",
       "email": "E-Mail",
       "phone": "Handynummer"
     },
-    "consent.before": "Ich stimme den",
-    "consent.link": "Datenschutzrichtlinien",
-    "consent.after": "zu",
-    "consentLinkText": "Datenschutzrichtlinien",
+    "consent": {
+    "before": "Ich stimme den",
+    "link": "Datenschutzrichtlinien",
+    "after": "zu",
+    "consentLinkText": "Datenschutzrichtlinien"
+    },
     "submit": "TERMIN VEREINBAREN"
   },
 
@@ -41,6 +48,7 @@
     "title": "Erfolge der Teilnehmer",
     "students": [
       {
+        "img": "student1.webp",
         "name": "Lena Hoffmann, 22 Jahre",
         "before": "Vorher: Studentin (Literatur)",
         "after": "Heute: Fullstack Developer of Tomorrow",
@@ -48,6 +56,7 @@
         "button": "mehr Info >"
       },
       {
+        "img": "student2.webp",
         "name": "Aylin Demir, 34 Jahre",
         "before": "Vorher: Haushälterin",
         "after": "Heute: AI Collaboration Specialist",
@@ -55,10 +64,19 @@
         "button": "mehr Info >"
       },
       {
+        "img": "student3.webp",
         "name": "Thomas Keller, 41 Jahre",
         "before": "Vorher: Buchhalter",
         "after": "Heute: Sustainability Tech Innovator",
         "quote": "Ich dachte lange, mit über 40 sei es zu spät, etwas Neues zu lernen. Doch jetzt arbeite ich mit Daten und Zukunftstechnologien – und habe meine Karriere komplett neu gestartet",
+        "button": "mehr Info >"
+      },
+      {
+        "img": "student4.webp",
+        "name": "Yevhen Reitarov, 42 Jahre",
+        "before": "Vorher: selbständig",
+        "after": "Heute: Fullstack Developer of Tomorrow",
+        "quote": "Vor der Ausbildung hätte ich nie gedacht, dass ich eigene Apps programmieren könnte. Jetzt arbeite ich in einem internationalen Team",
         "button": "mehr Info >"
       }
     ]

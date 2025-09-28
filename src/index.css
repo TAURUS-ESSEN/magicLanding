@@ -12,6 +12,7 @@
 
 @theme {
   --color-orange: #F89000;
+  --shadow-soft: 0 0 5px #000;
 }
 
 @layer utilities {
@@ -25,7 +26,7 @@
   }
 
   .blackcard {
-    @apply flex flex-col m-auto bg-repeat text-white rounded-3xl bg-[length:16px_16px];
+    @apply flex flex-col m-auto bg-repeat text-white rounded-3xl bg-[length:12px_12px];
   }
 
   .btn {
@@ -50,6 +51,7 @@ body {
   margin: 0;
   padding: 0 2rem;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgb(179, 179, 179);
 }
 
 .test {

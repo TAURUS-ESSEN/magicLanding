@@ -4,6 +4,7 @@ import ModalHost from './components/Modal/ModalHost';
 import './App.css';
 import Header from './Header';
 import Hero from './components/Hero';
+import Slider from './components/Slider';
 import Footer from './Footer'
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
         <Header lang={lang} switchLang={switchLang}/>
         <main>
           <Hero t={t}  openModal={openModal} />
-          <button onClick={() => openModal('registration')} className='border p-2 rounded-lg'>registration</button>
+          <Slider t={t}/>
+          {/* <button onClick={() => openModal('registration')} className='border p-2 rounded-lg'>registration</button> */}
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>

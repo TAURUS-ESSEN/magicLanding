@@ -55,7 +55,10 @@ export default function Form({t}) {
 
     return (
         <div className="blackcard bg-dots px-14 py-10 gap-[20px]">
-                <div dangerouslySetInnerHTML={{ __html: t("ctaForm.titleRich") }} className="text-3xl" />
+                {/* <div dangerouslySetInnerHTML={{ __html: t("ctaForm.titleRich") }} className="text-3xl" /> */}
+                <span className="text-3xl"> 
+                    {t("ctaForm.titleRich.before")}{" "}<span className="text-orange">{t("ctaForm.titleRich.kostenlose")} </span>{" "} {t("ctaForm.titleRich.after")}
+                </span>
                     <form className="flex flex-col gap-2" onSubmit={(e)=>onSubmit(e)}>
                         <input type="text"
                             onChange={(e)=>setVorname(e.target.value)} 
@@ -86,8 +89,13 @@ export default function Form({t}) {
                                 name="datenSchutz" 
                                 checked={checkbox}
                                 required/> 
-                            Ich stimme den
-                            <Link to="privacy_policy" className="underline"> Datenschutzrichtlinien zu</Link>
+                        <span>
+                            {t("ctaForm.consent.before")}{" "}
+                            <Link to="privacy_policy" className="underline">
+                                {t("ctaForm.consent.link")}
+                            </Link>{" "}
+                            {t("ctaForm.consent.after")}
+                            </span>
                         </span>
                         {/* {(errorMessage || errorEmailMessage || errorDatenSchutz) && (
                         <div className="flex flex-col text-red-500 p-2 border rounded-lg bg-orange-200">
