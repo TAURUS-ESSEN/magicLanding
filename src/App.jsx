@@ -7,6 +7,8 @@ import Hero from './components/Hero';
 import Slider from './components/Slider';
 import Footer from './Footer'
 import Certificates from './components/Certificates';
+import Practical from './components/Practical';
+import Learning from './components/Learning';
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
@@ -33,6 +35,8 @@ function App() {
           <Hero t={t}  openModal={openModal} />
           <Slider t={t}/>
           <Certificates t={t} openModal={openModal}/>
+          <Practical t={t} />
+          <Learning t={t} />
           {/* <button onClick={() => openModal('registration')} className='border p-2 rounded-lg'>registration</button> */}
         </main>
       </div>

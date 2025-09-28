@@ -97,16 +97,16 @@
 
   "practical": {
     "title": "Schon während der Ausbildung praxisnah einsteigen",
-    "cardsTop": [
-      "Starte mit den Grundlagen der digitalen Welt",
-      "Schritt für Schritt zu deinen ersten Zukunftsprojekten",
-      "Lerne im Team, kreative Lösungen zu entwickeln"
-    ],
+    "cardsTop": {
+      "card1": "Starte mit den Grundlagen der digitalen Welt",
+      "card2": "Schritt für Schritt zu deinen ersten Zukunftsprojekten",
+      "card3": "Lerne im Team, kreative Lösungen zu entwickeln"
+  },
     "subtitle": "Unterstützung und Feedback bei allen Schritten",
-    "cardsBottom": [
-      "Die Ausbildung endet mit der Vorbereitung auf echte Praxisaufgaben",
-      "Wir lernen gemeinsam, wie man moderne Tools nutzt"
-    ]
+    "cardsBottom": {
+      "card1": "Die Ausbildung endet mit der Vorbereitung auf echte Praxisaufgaben",
+      "card2": "Wir lernen gemeinsam, wie man moderne Tools nutzt"
+    }
   },
 
   "learning": {

@@ -40,6 +40,18 @@
   .btn {
     @apply uppercase rounded-lg p-2 text-nowrap 
   }
+
+  .orangeBlock {
+    @apply flex flex-col items-center gap-5 justify-center text-black rounded-3xl p-8 bg-orange text-[22px] font-medium shadow-soft text-center
+  }
+
+  .blackBlock {
+    @apply flex  items-center gap-5 justify-center text-white rounded-3xl p-8 text-[22px] font-medium shadow-soft  
+  }
+
+  .h2 {
+    @apply text-[44px] font-medium mt-[50px]
+  }
 }
 
 @layer base {
