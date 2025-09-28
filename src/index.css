@@ -64,6 +64,13 @@
     @apply flex flex-col gap-5 rounded-3xl p-8 font-medium shadow-soft 
   }
 
+  .details {
+    @apply border-y text-xl
+  }
+
+  .summary {
+    @apply flex items-center px-8 py-2 text-xl justify-between cursor-pointer
+  }
 
   .h2 {
     @apply text-[44px] font-medium mt-[50px]

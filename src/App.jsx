@@ -14,6 +14,7 @@ import EntrySupport from './components/EntrySupport';
 import FutureJobs from './components/FutureJobs';
 import Financing from './components/Financing';
 import Final from './components/Final';
+import Faq from './components/Faq';
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
@@ -47,6 +48,7 @@ function App() {
           <FutureJobs t={t} />
           <Financing t={t} />
           <Final t={t} />
+          <Faq t={t} />
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>
