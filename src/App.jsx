@@ -6,6 +6,7 @@ import Header from './Header';
 import Hero from './components/Hero';
 import Slider from './components/Slider';
 import Footer from './Footer'
+import Certificates from './components/Certificates';
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
@@ -26,11 +27,12 @@ function App() {
 
   return (
     <> 
-      <div className='wrapper'>
+      <div className='wrapper px-8'>
         <Header lang={lang} switchLang={switchLang}/>
         <main>
           <Hero t={t}  openModal={openModal} />
           <Slider t={t}/>
+          <Certificates t={t} openModal={openModal}/>
           {/* <button onClick={() => openModal('registration')} className='border p-2 rounded-lg'>registration</button> */}
         </main>
       </div>
