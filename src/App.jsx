@@ -10,6 +10,8 @@ import Certificates from './components/Certificates';
 import Practical from './components/Practical';
 import Learning from './components/Learning';
 import CareerSupport from './components/CareerSupport';
+import EntrySupport from './components/EntrySupport';
+import FutureJobs from './components/FutureJobs';
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
@@ -39,6 +41,8 @@ function App() {
           <Practical t={t} />
           <Learning t={t} />
           <CareerSupport t={t} />
+          <EntrySupport t={t} />
+          <FutureJobs t={t} />
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>
