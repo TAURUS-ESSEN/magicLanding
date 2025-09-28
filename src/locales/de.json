@@ -155,12 +155,12 @@
     "title": "Die Zukunftsberufe mit den besten Chancen",
     "cards": [
       {
-        "style": "jobsBlock text-white bg-orange",
+        "style": "jobsBlock  bg-orange",
         "badge": "Monatlich neue Gruppe",
         "title": "Fullstack Developer of Tomorrow",
         "subtitle": "Vormittagskurs \\ Abendkurs",
         "text": "Lerne moderne Programmiersprachen, baue komplexe Anwendungen und werde zum Architekten digitaler Lösungen",
-        "buttonStyle": "btn2 bg-dots",
+        "buttonStyle": "btn2 text-white bg-dots",
         "button": "MEHR ERFAHREN"
       },
       {
@@ -169,7 +169,7 @@
         "title": "AI Collaboration Specialist",
         "subtitle": "Vormittagskurs",
         "text": "Entwickle Strategien für die Zusammenarbeit mit künstlicher Intelligenz und optimiere Prozesse im Team von morgen.",
-        "buttonStyle": "btn2 bg-white text-base",
+        "buttonStyle": "btn2 bg-white text-base ",
         "button": "MEHR ERFAHREN"
       },
       {
@@ -219,37 +219,35 @@
     "title": "Flexible Finanzierung für deine Zukunft",
     "cards": [
       {
-        "style": "black",
+        "style": "financierungBlock text-white bg-dots",
         "badge": "Ratenzahlung kann man bis zu 24 Monate bezahlen",
         "title": "Mit PayPal",
-        "text": "Zahle bequem in Raten bis zu 24 Monaten – wir übernehmen die Zinsen. Flexibel & sorgenfrei",
-        "button": "OPTION WÄHLEN"
+        "text": "Zahle bequem in Raten bis zu 24 Monaten – wir übernehmen die Zinsen. Flexibel & sorgenfrei"
       },
       {
-        "style": "white",
+        "style": "financierungBlock text-black bg-whitedots",
         "badge": "12-Monats-Rate",
         "title": "FutureSkills Hub",
-        "text": "Planbare Raten über 12 Monate – ohne zusätzliche Kosten. Ein Jahr, klare Kosten",
-        "button": "OPTION WÄHLEN"
+        "text": "Planbare Raten über 12 Monate – ohne zusätzliche Kosten. Ein Jahr, klare Kosten"
       },
       {
-        "style": "black",
+        "style": "financierungBlock text-white bg-dots",
         "badge": "100% Bezahlung",
         "title": "Best Deal",
-        "text": "Spare 15 % mit Einmalzahlung – die günstigste Option für dich. Investiere einmal, profitiere doppelt",
-        "button": "OPTION WÄHLEN"
+        "text": "Spare 15 % mit Einmalzahlung – die günstigste Option für dich. Investiere einmal, profitiere doppelt"
       },
       {
-        "style": "white",
+        "style": "financierungBlock text-black bg-whitedots",
         "badge": "Bildungsgutschein vom Jobcenter/ Arbeitsagentur",
         "title": "Gefördert",
-        "text": "Mit dem Bildungsgutschein übernimmt der Staat 100 % deiner Kurskosten. Lernen ohne Risiko",
-        "button": "OPTION WÄHLEN"
+        "text": "Mit dem Bildungsgutschein übernimmt der Staat 100 % deiner Kurskosten. Lernen ohne Risiko"
       }
-    ]
+    ],
+    "button": "OPTION WÄHLEN"
+
   },
 
-  "finalCta": {
+  "final": {
     "headline": "Nur ein Schritt trennt dich von deiner Zukunftskarriere",
     "subline": "Deine Karriere von morgen beginnt heute",
     "formTitle": "Jetzt kostenloses Beratungsgespräch sichern",

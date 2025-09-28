@@ -60,6 +60,11 @@
     @apply flex flex-col gap-5 rounded-3xl p-8 font-medium shadow-soft 
   }
 
+  .financierungBlock {
+    @apply flex flex-col gap-5 rounded-3xl p-8 font-medium shadow-soft 
+  }
+
+
   .h2 {
     @apply text-[44px] font-medium mt-[50px]
   }

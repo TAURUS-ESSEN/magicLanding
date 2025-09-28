@@ -14,7 +14,7 @@ export default function Certificates({t, openModal}) {
                 </div>
                 <div className="flex flex-col gap-5">
                     <div className="text-[20px]">{t("certificates.text")}</div>
-                    <div className="flex flex-col text-white text-[24px] bg-dots p-8">
+                    <div className="flex flex-col text-white text-[24px] bg-dots rounded-xl p-8">
                         {t("certificates.listTitle")}
                         <ul className="grid grid-cols-2">
                             {t("certificates.jobs").map((job, i) => (
@@ -23,7 +23,7 @@ export default function Certificates({t, openModal}) {
                         </ul>
                     </div> 
                     <div className="text-center">
-                        <button className="btn bg-orange w-60 p-4 w-70 font-medium" onClick={() => openModal('registration')} >{t("certificates.button")}</button>
+                        <button className="btn bg-orange w-60 p-4 w-70 font-medium shadow-soft" onClick={() => openModal('registration')} >{t("certificates.button")}</button>
                     </div>
                 </div>
             </div>
