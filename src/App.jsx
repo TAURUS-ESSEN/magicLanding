@@ -9,6 +9,7 @@ import Footer from './Footer'
 import Certificates from './components/Certificates';
 import Practical from './components/Practical';
 import Learning from './components/Learning';
+import CareerSupport from './components/CareerSupport';
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
@@ -37,7 +38,7 @@ function App() {
           <Certificates t={t} openModal={openModal}/>
           <Practical t={t} />
           <Learning t={t} />
-          {/* <button onClick={() => openModal('registration')} className='border p-2 rounded-lg'>registration</button> */}
+          <CareerSupport t={t} />
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>

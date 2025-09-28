@@ -49,6 +49,10 @@
     @apply flex  items-center gap-5 justify-center text-white rounded-3xl p-8 text-[22px] font-medium shadow-soft  
   }
 
+  .grayBlock {
+    @apply flex  items-center gap-5 justify-center text-black rounded-3xl p-8 text-[22px] font-medium shadow-soft  
+  }
+
   .h2 {
     @apply text-[44px] font-medium mt-[50px]
   }
