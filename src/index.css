@@ -20,7 +20,7 @@
   .bg-dots { 
     background-image: url("/carbon_fibre.webp");  
     background-size: 12px 12px; 
-    border-radius: 20px; 
+    /* border-radius: 20px;  */
     box-shadow: 0 0 5px rgb(78, 78, 78); 
   } 
   
@@ -38,9 +38,12 @@
   }
 
   .btn {
-    @apply uppercase rounded-lg p-2 text-nowrap 
+    @apply uppercase rounded-lg p-2 w-40 text-nowrap 
   }
 
+  .btn2 {
+    @apply flex justify-center items-center uppercase rounded-lg p-3 w-40 text-nowrap shadow-soft 
+  }
   .orangeBlock {
     @apply flex flex-col items-center gap-5 justify-center text-black rounded-3xl p-8 bg-orange text-[22px] font-medium shadow-soft text-center
   }
@@ -51,6 +54,10 @@
 
   .grayBlock {
     @apply flex  items-center gap-5 justify-center text-black rounded-3xl p-8 text-[22px] font-medium shadow-soft  
+  }
+
+  .jobsBlock {
+    @apply flex flex-col gap-5 rounded-3xl p-8 font-medium shadow-soft 
   }
 
   .h2 {

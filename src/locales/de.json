@@ -155,27 +155,30 @@
     "title": "Die Zukunftsberufe mit den besten Chancen",
     "cards": [
       {
-        "style": "orange",
+        "style": "jobsBlock text-white bg-orange",
         "badge": "Monatlich neue Gruppe",
         "title": "Fullstack Developer of Tomorrow",
         "subtitle": "Vormittagskurs \\ Abendkurs",
         "text": "Lerne moderne Programmiersprachen, baue komplexe Anwendungen und werde zum Architekten digitaler Lösungen",
+        "buttonStyle": "btn2 bg-dots",
         "button": "MEHR ERFAHREN"
       },
       {
-        "style": "grey",
+        "style": "flex-col grayBlock items-start bg-whitedots",
         "badge": "Gruppe Aktuell Voll",
         "title": "AI Collaboration Specialist",
         "subtitle": "Vormittagskurs",
         "text": "Entwickle Strategien für die Zusammenarbeit mit künstlicher Intelligenz und optimiere Prozesse im Team von morgen.",
+        "buttonStyle": "btn2 bg-white text-base",
         "button": "MEHR ERFAHREN"
       },
       {
-        "style": "black",
+         "style": "jobsBlock text-white bg-dots",
         "badge": "Nächster Kursbeginn in Kürze",
         "title": "Sustainability Tech Innovator",
         "subtitle": "Vormittagskurs \\ Abendkurs",
         "text": "Gestalte nachhaltige Technologien, die Unternehmen helfen, Ressourcen zu schonen und klimafreundlich zu wachsen.",
+        "buttonStyle": "btn2 bg-orange text-black",
         "button": "MEHR ERFAHREN"
       }
     ]
