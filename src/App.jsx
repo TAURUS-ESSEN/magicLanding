@@ -15,6 +15,7 @@ import FutureJobs from './components/FutureJobs';
 import Financing from './components/Financing';
 import Final from './components/Final';
 import Faq from './components/Faq';
+import QuestionsCta from './components/QuestionsCta';
 
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
@@ -49,10 +50,11 @@ function App() {
           <Financing t={t} />
           <Final t={t} />
           <Faq t={t} />
+          <QuestionsCta t={t} openModal={openModal}/>
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>
-      <Footer />
+      <Footer t={t} />
     </>
   )
 }

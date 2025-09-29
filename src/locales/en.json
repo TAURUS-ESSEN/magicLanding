@@ -1,15 +1,299 @@
 {
+  "menu": {
+    "option1": "Programs",
+    "option2": "Payment Methods",
+    "option3": "About Us",
+    "option4": "Contacts"
+  },
+
   "hero": {
-    "headline": "IT Career Hub is the only education center whose curriculum includes a specialized German course.",
-    "pitch": "With a German state certificate and professional German, you can easily find a job in an international company."
+    "headline": "FutureSkills Hub: \n Your Tech Career of Tomorrow Starts Today",
+    "pitch": "Learn the technologies that will conquer the market in the coming years"
   },
+
   "about": {
-    "title": "About us",
-    "text": "We support you on your way to an IT career..."
+    "title": "About Us",
+    "text": "We support you on your way into an IT career..."
   },
+
+  "reviews": {
+    "label": "Google Reviews",
+    "summary": "4.9 stars · 155 reviews"
+  },
+
+  "ctaForm": {
+    "title": "Sign Up for a Free Career Consultation!",
+    "titleRich": {
+      "before": "Sign up for a",
+      "kostenlose": "free",
+      "after": "career consultation!"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number"
+    },
+    "consent": {
+      "before": "I agree to the",
+      "link": "Privacy Policy",
+      "after": "",
+      "consentLinkText": "Privacy Policy"
+    },
+    "submit": "SCHEDULE AN APPOINTMENT"
+  },
+
+  "successStories": {
+    "title": "Participant Success Stories",
+    "students": [
+      {
+        "img": "student1.webp",
+        "name": "Lena Hoffmann, 22 years old",
+        "before": "Before: Student (Literature)",
+        "after": "Now: Fullstack Developer of Tomorrow",
+        "quote": "Before the training, I never thought I could build my own apps. Now I work in an international team.",
+        "button": "more info >"
+      },
+      {
+        "img": "student2.webp",
+        "name": "Aylin Demir, 34 years old",
+        "before": "Before: Housekeeper",
+        "after": "Now: AI Collaboration Specialist",
+        "quote": "I had no IT background. Through the training, I learned how to work with AI – and now I support companies in innovative projects.",
+        "button": "more info >"
+      },
+      {
+        "img": "student3.webp",
+        "name": "Thomas Keller, 41 years old",
+        "before": "Before: Accountant",
+        "after": "Now: Sustainability Tech Innovator",
+        "quote": "For a long time, I thought that after 40 it was too late to learn something new. But now I work with data and future technologies – and have completely restarted my career.",
+        "button": "more info >"
+      },
+      {
+        "img": "student4.webp",
+        "name": "Yevhen Reitarov, 42 years old",
+        "before": "Before: Self-employed",
+        "after": "Now: Fullstack Developer of Tomorrow",
+        "quote": "Before the training, I never thought I could build my own apps. Now I work in an international team.",
+        "button": "more info >"
+      }
+    ]
+  },
+
+  "certificates": {
+    "title": "FutureSkills Hub: Certifications That Set Tomorrow’s Standard",
+    "text": "Our programs prepare you for jobs that will shape the labor market in the coming years. The content is constantly updated and developed by international experts. With a certificate from FutureSkills Hub, you show that you are in demand not just today, but also tomorrow.",
+    "listTitle": "Your springboard into the jobs of tomorrow",
+    "jobs": [
+      "Fullstack Developer of Tomorrow",
+      "AI Collaboration Specialist",
+      "Neurointerface Designer",
+      "Sustainability Tech Innovator"
+    ],
+    "button": "Get Free Consultation"
+  },
+
+  "practical": {
+    "title": "Start Hands-On Learning During the Training",
+    "cardsTop": {
+      "card1": "Start with the basics of the digital world",
+      "card2": "Step by step to your first future projects",
+      "card3": "Learn to develop creative solutions in a team"
+    },
+    "subtitle": "Support and feedback at every step",
+    "cardsBottom": {
+      "card1": "The training ends with preparation for real-world tasks",
+      "card2": "We learn together how to use modern tools"
+    }
+  },
+
+  "learning": {
+    "title": "How You Learn at FutureSkills Hub",
+    "points": [
+      "Live online sessions with interactive Q&A",
+      "Practical projects that go straight into your portfolio",
+      "Internship at innovative partner companies",
+      "Individual coaching for your job search",
+      "Community events & exclusive challenges",
+      "Support from instructors, mentors, and your peers"
+    ]
+  },
+
+  "careerSupport": {
+    "title": "From Application to Your First Job",
+    "q1": "We search for your first job together",
+    "q2": "We create your resume together",
+    "q3": "We help you with your application documents",
+    "q4": "Support and feedback at every step",
+    "q5": "Confident in interviews: we train with you",
+    "q6": "Guidance up to signing your contract",
+    "q7": "Matching job offers for your future",
+    "q8": "Networking with companies and partners",
+    "button": "CONSULTATION"
+  },
+
+  "entrySupport": {
+    "title": "We Support Your Entry into the Training of the Future",
+    "text": "To help you start in your desired profession, we check your prerequisites together. Our goal: to prepare you optimally for training and entering your new career.",
+    "interestTitle": "Have We Sparked Your Interest?",
+    "interestText": "Find out which FutureSkill is perfect for you.",
+    "button": "TAKE THE TEST",
+    "points": [
+      "You are curious about the technologies of tomorrow",
+      "You want to change your career path",
+      "You bring motivation and a willingness to learn",
+      "You are excited about hands-on projects",
+      "You want to improve your career opportunities worldwide",
+      "You want to be part of an international community",
+      "You are looking for a training program that truly suits you"
+    ]
+  },
+
+  "futureJobs": {
+    "title": "Future Jobs with the Best Opportunities",
+    "cards": [
+      {
+        "style": "jobsBlock  bg-orange",
+        "badge": "New group every month",
+        "title": "Fullstack Developer of Tomorrow",
+        "subtitle": "Morning Course \\ Evening Course",
+        "text": "Learn modern programming languages, build complex applications, and become an architect of digital solutions.",
+        "buttonStyle": "btn2 text-white bg-dots",
+        "button": "LEARN MORE"
+      },
+      {
+        "style": "flex-col grayBlock items-start bg-whitedots",
+        "badge": "Group Currently Full",
+        "title": "AI Collaboration Specialist",
+        "subtitle": "Morning Course",
+        "text": "Develop strategies for working with artificial intelligence and optimize processes in the team of tomorrow.",
+        "buttonStyle": "btn2 bg-white text-base",
+        "button": "LEARN MORE"
+      },
+      {
+        "style": "jobsBlock text-white bg-dots",
+        "badge": "Next course starts soon",
+        "title": "Sustainability Tech Innovator",
+        "subtitle": "Morning Course \\ Evening Course",
+        "text": "Shape sustainable technologies that help companies save resources and grow in a climate-friendly way.",
+        "buttonStyle": "btn2 bg-orange text-black",
+        "button": "LEARN MORE"
+      }
+    ]
+  },
+
+  "careerPath": {
+    "title": "YOUR CAREER PATH",
+    "steps": [
+      {
+        "label": "You are here",
+        "icon": "marker",
+        "text": "You dream of changing your life. You want to learn a future-oriented profession, work flexibly, and have more time for yourself and your family."
+      },
+      {
+        "label": "In ...",
+        "icon": "location",
+        "text": "Your training at FutureSkills Hub begins. You face exciting challenges and acquire your first future skills."
+      },
+      {
+        "label": "After 6 months",
+        "icon": "rocket",
+        "text": "You have mastered the basics and move up to a junior specialist in your field. Your portfolio grows with projects that really matter."
+      },
+      {
+        "label": "After 1 year",
+        "icon": "briefcase",
+        "text": "FutureSkills Hub has helped you find your first job with career opportunities. You work remotely and enjoy new freedoms."
+      },
+      {
+        "label": "After 3 years",
+        "icon": "crown",
+        "text": "You have advanced to a senior specialist and lead your own project team. Your expertise in future skills makes you a sought-after professional – with salary and prospects that secure your future."
+      }
+    ]
+  },
+
+  "financing": {
+    "title": "Flexible Financing for Your Future",
+    "cards": [
+      {
+        "style": "financierungBlock text-white bg-dots",
+        "badge": "Installments up to 24 months",
+        "title": "With PayPal",
+        "text": "Pay conveniently in installments up to 24 months – we cover the interest. Flexible & worry-free."
+      },
+      {
+        "style": "financierungBlock text-black bg-whitedots",
+        "badge": "12-Month Plan",
+        "title": "FutureSkills Hub",
+        "text": "Manageable installments over 12 months – no extra costs. One year, clear costs."
+      },
+      {
+        "style": "financierungBlock text-white bg-dots",
+        "badge": "100% Payment",
+        "title": "Best Deal",
+        "text": "Save 15% with a one-time payment – the most cost-effective option for you. Invest once, benefit twice."
+      },
+      {
+        "style": "financierungBlock text-black bg-whitedots",
+        "badge": "Training Voucher from Jobcenter / Employment Agency",
+        "title": "Funded",
+        "text": "With the training voucher, the state covers 100% of your course fees. Learn without risk."
+      }
+    ],
+    "button": "CHOOSE OPTION"
+  },
+
+  "final": {
+    "headline": "Only One Step Away from Your Future Career",
+    "subline": "Your career of tomorrow starts today",
+    "formTitle": "Secure Your Free Consultation Now",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone Number"
+    },
+    "consent": "I agree to the Privacy Policy",
+    "consentLinkText": "Privacy Policy",
+    "submit": "SCHEDULE AN APPOINTMENT"
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "I have no prior knowledge – can I still start?",
+    "a1": "Answer goes here",
+    "q2": "Am I too old to start training in future professions?",
+    "a2": "Answer goes here",
+    "q3": "What are my job prospects after the training?",
+    "a3": "Answer goes here",
+    "q4": "How practical is the training? Will I work on real projects?",
+    "a4": "Answer goes here",
+    "q5": "How much time do I need to invest per week?",
+    "a5": "Answer goes here",
+    "q6": "Can I do the training alongside my job?",
+    "a6": "Answer goes here"
+  },
+
+  "questionsCta": {
+    "title": "Still Unsure? Just Ask Us!",
+    "text": "Book your free consultation and get all the information first-hand",
+    "button": "GET YOUR QUESTIONS ANSWERED"
+  },
+
+  "footer": {
+    "contactsTitle": "Our Contacts:",
+    "phone": "+49 160 45 145 09",
+    "email": "reitarovea@gmail.com",
     "menu": {
-    "option1": "Program",
-    "option2": "Payments",
-    "option3": "About us"
+      "programs": "Programs",
+      "payments": "Payment Methods",
+      "about": "About Us",
+      "imprint": "Imprint",
+      "privacy": "Privacy Policy",
+      "mission": "Our Mission"
+    },
+    "copyright": "© 2025 FutureSkills Hub – Your Career of Tomorrow Starts Today"
   }
 }
