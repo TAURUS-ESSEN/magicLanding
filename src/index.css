@@ -11,8 +11,13 @@
   line-height: 1.4;
 }
 
+html {
+  scroll-behavior: smooth; 
+}
+
 @theme {
   --color-orange: #F89000;
+  /* --orange-600: #DA7F01; */
   --shadow-soft: 0 0 5px #000;
 }
 
@@ -20,30 +25,47 @@
   .bg-dots { 
     background-image: url("/carbon_fibre.webp");  
     background-size: 12px 12px; 
-    /* border-radius: 20px;  */
     box-shadow: 0 0 5px rgb(78, 78, 78); 
   } 
   
   .bg-whitedots { background-image: url("/bgnoise_lg.png"); }
+
+  .btn2:hover {
+    @apply bg-orange-600;
+  }
 }
 
 
 @layer components {
   .h1 {
-    @apply text-5xl font-medium;
+    @apply text-3xl font-medium;
+  }
+
+  .h2 {
+    @apply text-3xl font-medium;
+  }
+
+  .h3 {
+    @apply text-xl font-medium;
   }
 
   .blackcard {
-    @apply flex flex-col m-auto bg-repeat text-white rounded-3xl  ;
+    @apply flex flex-col m-auto bg-repeat text-white rounded-3xl;
   }
 
   .btn {
-    @apply uppercase rounded-lg p-2 w-40 text-nowrap 
+    @apply uppercase rounded-lg p-2  text-nowrap 
   }
 
   .btn2 {
-    @apply flex justify-center items-center uppercase rounded-lg p-3 w-40 text-nowrap shadow-soft 
+    @apply flex justify-center items-center uppercase rounded-lg px-3 py-2  text-nowrap shadow-soft cursor-pointer;
   }
+
+  
+  .btn2:hover {
+    @apply bg-orange-600;
+  }
+
   .orangeBlock {
     @apply flex flex-col items-center gap-5 justify-center text-black rounded-3xl p-8 bg-orange text-[22px] font-medium shadow-soft text-center
   }
@@ -71,10 +93,10 @@
   .summary {
     @apply flex items-center px-8 py-2 text-xl justify-between cursor-pointer
   }
-
+/* 
   .h2 {
     @apply text-[44px] font-medium mt-[50px]
-  }
+  } */
 }
 
 @layer base {
@@ -105,14 +127,14 @@ header {
   /* border: 1px solid lightgray; */
 }
 
-.menu {
+nav a:hover {
   /* background-color: aqua; */
+  color: var(--color-orange);
+  transition: 0.3s ease;
 }
 
 .terminButton:disabled {
   background-color: gray;
 }
 
-input::placeholder {
-  font-size: 0.8em;
-}
+ 

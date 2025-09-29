@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faWhatsapp, faLinkedin, faYoutube } from '@for
 
 export default function Footer({t}) {
     return (
-        <div className="text-white bg-dots px-10 py-5 text-lg flex flex-col gap-4">
+        <div className="text-white bg-dots px-10 py-5 text-lg flex flex-col gap-4" id="contact">
             <div className="flex gap-10 border-b-1"> 
                 <div>
                     <span className="relative -top-4 col-span-2">
@@ -24,7 +24,7 @@ export default function Footer({t}) {
                     </div>
                     <div className="col-span-1 flex flex-col gap-2
                     ">
-                        <div>{t("footer.menu.imprint")}</div>
+                        <div><Link to="impressum">{t("footer.menu.imprint")}</Link></div>
                         <div><Link to="privacy_policy">{t("footer.menu.privacy")}</Link></div>
                         <div>{t("footer.menu.mission")}</div>
                     </div>

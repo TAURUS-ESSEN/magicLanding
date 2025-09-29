@@ -3,11 +3,10 @@ export default function Slider({t}) {
     const peoples = t("successStories.students")
     console.log(peoples);
     return (
-        <>
-
-            <div className="mt-[50px] flex justify-between text-[40px]">
+        <section className="mt-12">
+            <div className="flex justify-between">
                 <div>
-                    <h2>{t("successStories.title")}</h2>
+                    <h2 className="h2">{t("successStories.title")}</h2>
                 </div>
                 <div>
                     <button>left</button>
@@ -19,22 +18,22 @@ export default function Slider({t}) {
                 <div className="flex gap-5">
                     {peoples.map(student=> {
                         return (
-                            <div className="flex shrink-0 flex-col bg-dots bg-[length:12px_12px] text-white shadow-soft rounded-xl w-[360px]">
+                            <div className="flex shrink-0 flex-col bg-dots text-white shadow-soft rounded-xl w-[360px]">
                                 <div><img src={student.img} className="rounded-xl w-[360px] h-[307px] object-cover"/></div>
                                 <div className="p-4 display flex flex-col gap-3">
-                                    <div className="text-xl font-medium">{student.name}</div>
-                                    <div className="flex flex-col">
-                                        <div>{student.before}</div>
-                                        <div>{student.after}</div>
-                                    </div>
-                                    <div className="bg-white text-black p-4 h-25 rounded-xl text-sm">{student.quote}</div>
-                                    <button className="btn bg-orange w-30">mehr Info</button>
+                                    <h3 className="h3">{student.name}</h3>
+                                    <ul className="flex flex-col">
+                                        <li>{student.before}</li>
+                                        <li>{student.after}</li>
+                                    </ul>
+                                    <blockquote className="bg-white text-black p-4 h-25 rounded-xl text-sm">{student.quote}</blockquote>
+                                    <button className="btn2 bg-orange hover:bg-orange-500 w-30 text-base">{student.button}</button>
                                 </div>
                             </div>
                     )
                     })}
                 </div>
             </div>
-        </>
+        </section>
     )
 }

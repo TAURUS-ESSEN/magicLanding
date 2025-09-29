@@ -54,7 +54,7 @@ export default function Form({t}) {
     }, [vorname, nachname, email, checkbox])
 
     return (
-        <div className="blackcard bg-dots px-14 py-10 gap-[20px]">
+        <div className="blackcard bg-dots px-14 py-8 gap-[20px]">
                 {/* <div dangerouslySetInnerHTML={{ __html: t("ctaForm.titleRich") }} className="text-3xl" /> */}
                 <span className="text-3xl"> 
                     {t("ctaForm.titleRich.before")}{" "}<span className="text-orange">{t("ctaForm.titleRich.kostenlose")} </span>{" "} {t("ctaForm.titleRich.after")}
@@ -85,16 +85,16 @@ export default function Form({t}) {
                         <span>
                             <input type="checkbox" 
                                 onChange={(e)=>setCheckbox(e.target.checked)} 
-                                className="border p-2 rounded-lg" 
+                                className="border rounded-lg mr-1" 
                                 name="datenSchutz" 
                                 checked={checkbox}
                                 required/> 
-                        <span>
-                            {t("ctaForm.consent.before")}{" "}
-                            <Link to="privacy_policy" className="underline">
-                                {t("ctaForm.consent.link")}
-                            </Link>{" "}
-                            {t("ctaForm.consent.after")}
+                            <span className="">
+                                {t("ctaForm.consent.before")}{" "}
+                                <Link to="privacy_policy" className="underline">
+                                    {t("ctaForm.consent.link")}
+                                </Link>{" "}
+                                {t("ctaForm.consent.after")}
                             </span>
                         </span>
                         {/* {(errorMessage || errorEmailMessage || errorDatenSchutz) && (
@@ -105,7 +105,7 @@ export default function Form({t}) {
                         </div>
                         )} */}
                         <div className="flex justify-center items-center">
-                        <button type="submit" className="btn bg-orange " disabled={!canClick}>TERMIN VEREINBAREN</button>
+                        <button type="submit" className="btn2 bg-orange " disabled={!canClick}>{t("ctaForm.submit")}</button>
                         {status === "success" && (
                         <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                         )}

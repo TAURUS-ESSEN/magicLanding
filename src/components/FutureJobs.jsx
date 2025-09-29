@@ -1,7 +1,7 @@
 export default function FutureJobs({t}) {
     const cards = t("futureJobs.cards");
     return (
-        <div>
+        <div id="programs">
             <div><h2 className="h2">{t("futureJobs.title")} </h2></div>
             <div className="flex gap-5">
                     {cards.map((card,i) => (

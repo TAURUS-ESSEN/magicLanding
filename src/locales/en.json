@@ -37,7 +37,7 @@
     "consent": {
       "before": "I agree to the",
       "link": "Privacy Policy",
-      "after": "",
+      "after": " ",
       "consentLinkText": "Privacy Policy"
     },
     "submit": "SCHEDULE AN APPOINTMENT"

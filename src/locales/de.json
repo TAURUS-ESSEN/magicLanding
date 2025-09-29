@@ -36,9 +36,9 @@
       "phone": "Handynummer"
     },
     "consent": {
-    "before": "Ich stimme den",
+    "before": " ",
     "link": "Datenschutzrichtlinien",
-    "after": "zu",
+    "after": "akzeptieren",
     "consentLinkText": "Datenschutzrichtlinien"
     },
     "submit": "TERMIN VEREINBAREN"
