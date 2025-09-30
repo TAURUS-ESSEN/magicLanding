@@ -1,9 +1,9 @@
 export default function Practical({t}) {
     return (
-        <>
-            <h2 className="h2 mb-5">{t("practical.title")}</h2>
-            <div className="flex gap-5">
-                <div className="orangeBlock">
+        <section className="section">
+            <h2 className="h2 mb-4">{t("practical.title")}</h2>
+            <div className="flex gap-5 ">
+                <div className="orangeBlock flex-col">
                     <img src="go.webp" />
                     {t("practical.cardsTop.card1")}
                 </div>
@@ -11,13 +11,13 @@ export default function Practical({t}) {
                     <img src="sled.webp" />
                     {t("practical.cardsTop.card2")}
                 </div>
-                <div className="orangeBlock">
+                <div className="orangeBlock flex-col">
                     <img src="team.webp" />
                     {t("practical.cardsTop.card3")}
                 </div>
             </div>
-            <div className="my-5 text-xl">{t("practical.subtitle")}</div>
-            <div className="grid  grid-cols-2 gap-5">
+            <h3 className="my-5 h3">{t("practical.subtitle")}</h3>
+            <div className="grid grid-cols-2 gap-5">
                 <div className="grid-span-1 blackBlock bg-dots">
                     <img src="laggage.webp" />
                     {t("practical.cardsBottom.card1")}
@@ -27,6 +27,6 @@ export default function Practical({t}) {
                     {t("practical.cardsBottom.card2")}
                 </div>
             </div>
-        </>
+        </section>
     )
 }

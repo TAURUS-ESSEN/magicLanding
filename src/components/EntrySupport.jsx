@@ -1,9 +1,9 @@
 export default function EntrySupport({t}) {
     return (
-        <div className="flex flex-col gap-4 mt-10">
+        <section className="flex flex-col gap-4 section">
             <div className="h2">{t("entrySupport.title")}</div>
             <div className="text-xl">{t("entrySupport.text")}</div>
-            <div className="flex bg-dots blackBlock gap-10">
+            <div className="flex bg-dots blackBlock p-8 gap-10">
                 <div className="flex flex-col gap-8">
                     <div className="text-orange text-3xl">
                         {t("entrySupport.interestTitle")}
@@ -24,7 +24,7 @@ export default function EntrySupport({t}) {
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
         
     )
 }

@@ -26,11 +26,10 @@ function App() {
 
   return (
     <> 
-      <div className='wrapper px-8'>
+      <div className='wrapper px-8 '>
         <Header lang={lang} switchLang={switchLang}/>
         <main>
           <Outlet context={{ t, openModal }} />
-          {/* <a href="#header" className='sticky rounded-full border bg-orange p-2 w-10 h-10 flex justify-center align-center -top-0 -right-20'>TOP</a> */}
         </main>
       </div>
       <ModalHost closeModal={closeModal} modal={modal} t={t}/>

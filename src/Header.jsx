@@ -7,8 +7,6 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 export default function Header({lang, switchLang}) {
     
     return (
-        <>
-            {/* <header className="flex justify-between items-center h-[100px]"> */}
             <header className="grid grid-cols-6 h-[100px]" id="header">
                 <span className="relative top-2 col-span-1"><Link to="/"><img src='./images/logo.webp' /></Link></span>
                 <nav className="menu col-span-4 flex justify-evenly items-center font-medium whitespace-nowrap text-2xl gap-4">
@@ -19,18 +17,21 @@ export default function Header({lang, switchLang}) {
                 </nav>
                 
                 <span className="col-span-1 flex items-center "> 
-                    <button className="border-1 orange p-1 rounded-sm" onClick={switchLang}>
+                    <button className="toggler" onClick={switchLang}>
                         {lang === "de" ? "EN" : "DE"}
                     </button>
                     <span>
-                         <FontAwesomeIcon icon={faWhatsapp} size="2xl" style={{color: "#f89200",}}/>
+                        <a href="https://wa.me" target="_blank">
+                            <FontAwesomeIcon icon={faWhatsapp} size="2xl" style={{color: "#f89200",}}/>
+                        </a>
                     </span>
                     <span>
-                        <FontAwesomeIcon icon={faLocationDot} size="2xl" style={{color: "#f89200",}}/>
+                        <a href="https://share.google/kq74QHE7IJvYv9xQq" target="_blank">
+                            <FontAwesomeIcon icon={faLocationDot} size="2xl" style={{color: "#f89200",}}/>
+                        </a>
                     </span>
                 </span>
 
             </header>
-        </>
     )
 }

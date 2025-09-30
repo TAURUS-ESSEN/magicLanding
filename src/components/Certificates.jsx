@@ -5,7 +5,7 @@ export default function Certificates({t, openModal}) {
     return (
         <section className="mt-12">
             <h2 className='h2 mb-2'>{t("certificates.title")}</h2>
-            <div className="bg-whitedots flex p-4 -mx-8">
+            <div className="bg-whitedots flex p-4 -mx-8 ">
                 <div className="flex items-center p-4 gap-15">
                     <div className="w-full">
                         <img src="certificate-sm.webp" className="rounded-xl shadow-soft" />

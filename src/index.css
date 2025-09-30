@@ -33,10 +33,21 @@ html {
   .btn2:hover {
     @apply bg-orange-600;
   }
+
+  .bleed-x {
+    margin-left:  calc(var(--pad-x, 0px) * -1);
+    margin-right: calc(var(--pad-x, 0px) * -1);
+    box-sizing: border-box; /* чтобы бордер/паддинг не раздували ширину */
+  }
 }
 
 
 @layer components {
+
+  .section {
+    @apply my-12;
+  }
+
   .h1 {
     @apply text-3xl font-medium;
   }
@@ -49,6 +60,10 @@ html {
     @apply text-xl font-medium;
   }
 
+  .toggler { 
+    @apply bg-orange p-2 hover:bg-orange-600 cursor-pointer transition-colors duration-300 ease-in-out rounded-sm ;
+  }
+
   .blackcard {
     @apply flex flex-col m-auto bg-repeat text-white rounded-3xl;
   }
@@ -58,20 +73,19 @@ html {
   }
 
   .btn2 {
-    @apply flex justify-center items-center uppercase rounded-lg px-3 py-2  text-nowrap shadow-soft cursor-pointer;
-  }
-
-  
-  .btn2:hover {
-    @apply bg-orange-600;
+    @apply flex justify-center items-center uppercase rounded-lg px-3 py-3 text-nowrap shadow-soft cursor-pointer;
   }
 
   .orangeBlock {
-    @apply flex flex-col items-center gap-5 justify-center text-black rounded-3xl p-8 bg-orange text-[22px] font-medium shadow-soft text-center
+    @apply flex items-center justify-start gap-5 text-black rounded-3xl p-4 bg-orange text-xl font-medium shadow-soft text-center
   }
 
+  .orangeBlock, .blackBlock{
+    /* @apply hover:scale-105 transition-transform duration-300 */
+  }
+  
   .blackBlock {
-    @apply flex  items-center gap-5 justify-center text-white rounded-3xl p-8 text-[22px] font-medium shadow-soft  
+    @apply flex  items-center gap-5 justify-start text-white rounded-3xl p-4 text-xl font-medium shadow-soft  
   }
 
   .grayBlock {
@@ -93,10 +107,7 @@ html {
   .summary {
     @apply flex items-center px-8 py-2 text-xl justify-between cursor-pointer
   }
-/* 
-  .h2 {
-    @apply text-[44px] font-medium mt-[50px]
-  } */
+
 }
 
 @layer base {

@@ -58,7 +58,7 @@ export default function RegistrationForm({closeModal}) {
             <Modal title='Anmeldung' closeModal={closeModal}>
                 <div className="flex flex-col max-w-md p-3">
                     <div className="p-2">
-                        Melden Sie sich zu einer <span className="text-cyan-700">kostenlosen Karriereberatung</span> an! 
+                        Melden Sie sich zu einer <span className="text-orange font-medium">kostenlosen Karriereberatung</span> an! 
                         Unsere Experten beantworten Ihnen gerne alle Fragen
                     </div>
                     <form className="flex flex-col gap-2" onSubmit={(e)=>onSubmit(e)}>
@@ -104,7 +104,7 @@ export default function RegistrationForm({closeModal}) {
                             <span>{errorDatenSchutz}</span>
                         </div>
                         )}
-                        <button type="submit" className="border text-white p-1 w-48 rounded-lg bg-cyan-500 terminButton" disabled={!canClick}>TERMIN VEREINBAREN</button>
+                        <button type="submit" className="btn2 bg-orange w-50 font-medium" disabled={!canClick}>TERMIN VEREINBAREN</button>
                         {status === "success" && (
                         <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                         )}
