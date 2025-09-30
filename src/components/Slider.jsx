@@ -3,7 +3,7 @@ export default function Slider({t}) {
     const peoples = t("successStories.students")
     console.log(peoples);
     return (
-        <section className="mt-12">
+        <section className="section">
             <div className="flex justify-between">
                 <div>
                     <h2 className="h2">{t("successStories.title")}</h2>

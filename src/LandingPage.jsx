@@ -7,6 +7,7 @@ import Learning from './components/Learning';
 import CareerSupport from './components/CareerSupport';
 import EntrySupport from './components/EntrySupport';
 import FutureJobs from './components/FutureJobs';
+import Karriere from './components/Karriere';
 import Financing from './components/Financing';
 import Final from './components/Final';
 import Faq from './components/Faq';
@@ -24,6 +25,7 @@ export default function LandingPage() {
             <CareerSupport t={t} openModal={openModal}/>
             <EntrySupport t={t} />
             <FutureJobs t={t} />
+            <Karriere t={t}/>
             <Financing t={t} openModal={openModal}/>
             <Final t={t} />
             <Faq t={t} />
