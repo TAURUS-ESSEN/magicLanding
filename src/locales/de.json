@@ -189,17 +189,17 @@
     "steps": [
       {
         "label": "Du bist hier",
-        "icon": "marker",
+        "icon": "location",
         "text": "Du träumst davon, dein Leben zu verändern. Du willst einen Beruf der Zukunft erlernen, flexibel arbeiten und mehr Zeit für dich und deine Familie haben."
       },
       {
         "label": "In 1 Monat",
-        "icon": "location",
+        "icon": "rocket",
         "text": "Deine Ausbildung bei FutureSkills Hub beginnt. Du stellst dich spannenden Herausforderungen und eignest dir erste Zukunftskompetenzen an."
       },
       {
         "label": "Nach 6 Monaten",
-        "icon": "rocket",
+        "icon": "idee",
         "text": "Du hast die Grundlagen gemeistert und steigst zum Junior-Spezialisten in deinem Fachgebiet auf. Dein Portfolio wächst mit Projekten, die wirklich zählen."
       },
       {

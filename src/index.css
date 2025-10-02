@@ -19,13 +19,14 @@ html {
   --color-orange: #F89000;
   /* --orange-600: #DA7F01; */
   --shadow-soft: 0 0 5px #000;
+  --shadow-orange: 0 0 5px #F89000;
 }
 
 @layer utilities {
   .bg-dots { 
     background-image: url("/carbon_fibre.webp");  
-    background-size: 12px 12px; 
-    box-shadow: 0 0 5px rgb(78, 78, 78); 
+    background-size: 15px 15px; 
+    /* box-shadow: 0 0 5px rgb(78, 78, 78);  */
   } 
   
   .bg-whitedots { background-image: url("/bgnoise_lg.png"); }
