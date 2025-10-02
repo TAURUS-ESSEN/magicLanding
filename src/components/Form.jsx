@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom"
 
 export default function Form({t}) {
@@ -6,15 +6,35 @@ export default function Form({t}) {
     const [nachname, setNachname] = useState('');
     const [email, setEmail] = useState('');
     const [checkbox, setCheckbox] = useState(false);
-    const [canClick, setCanClick] = useState(false) ; 
-    const [errorMessage, setErrorMessage] = useState('');
-    const [errorEmailMessage, setErrorEmailMessage] = useState('');
-    const [errorDatenSchutz, setErrorDatenSchutz] = useState('');
     const [status, setStatus] = useState(null); 
 
-    
+    const [valid, setValid] = useState({ vOk: false, nOk: false, eOk: false });
+    const [touched, setTouched] = useState({ vInput: false, nInput: false, eInput: false });
+
+
+    const nameRegex = /[a-z]{2,}/i;
+    const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    let error = "border-3 border-orange"
+
+    function checkVorname(value) {
+        setValid(prev => ({...prev, vOk: nameRegex.test(value.trim())}))
+        setTouched(prev => ({ ...prev, vInput: true }));
+    }
+
+    function checkNachname(value) {
+        setValid(prev => ({...prev, nOk: nameRegex.test(value.trim())}))
+        setTouched(prev => ({ ...prev, nInput: true }));
+    }
+
+    function checkEmail(value) {
+        setValid(prev => ({...prev, eOk: emailRx.test(value.trim())}))
+        setTouched(prev => ({ ...prev, eInput: true }));
+    }
+
     async function onSubmit(e) {
         e.preventDefault();
+        if (valid.some(value => value === false)) return
+
 
         const formData = new FormData(e.target);
         formData.append("access_key", "beb38d09-ba72-4201-be49-6dc03fc83a58"); // твой ключ с Web3Forms
@@ -37,23 +57,6 @@ export default function Form({t}) {
         }
     }
     
-
-    useEffect(()=>{
-        const nameRegex = /[a-z]{2,}/i;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        const vOk = nameRegex.test(vorname.trim());
-        const nOk = nameRegex.test(nachname.trim());
-        const eOk = emailRegex.test(email.trim());
-
-        // setErrorMessage(vOk && nOk ? '' : 'Vorname und Nachname - min 2 symbols');
-        setErrorMessage(vOk && nOk ? '' : 'border-orange');
-        setErrorEmailMessage(eOk ? '' : 'Email nicht korrekt');
-        setErrorDatenSchutz(checkbox ? '' : 'Bitte Datenschutz zustimmen')
-
-        setCanClick(vOk && nOk && eOk && checkbox? true : false);
-    }, [vorname, nachname, email, checkbox])
-
     return (
         <div className="blackcard bg-dots px-14 py-8 gap-[20px]">
                 {/* <div dangerouslySetInnerHTML={{ __html: t("ctaForm.titleRich") }} className="text-3xl" /> */}
@@ -66,13 +69,17 @@ export default function Form({t}) {
                             name="vorname" 
                             placeholder="Vorname, min 2 symbols" 
                             value={vorname} 
-                            className={`${errorMessage}`}
-                            required/>
+                            onBlur={(e) => checkVorname(e.target.value)}
+                            className={touched.vInput && !valid.vOk ? error : ""}
+                            required/> 
+                            
                         <input type="text"  
                             onChange={(e)=>setNachname(e.target.value)} 
                             name="nachname" 
                             placeholder="Nachname, min 2 symbols" 
                             value={nachname} 
+                            onBlur={(e) => checkNachname(e.target.value)}
+                            className={touched.nInput && !valid.nOk ? error : ""}
                             required
                         
                         />
@@ -81,6 +88,8 @@ export default function Form({t}) {
                             name="email" 
                             placeholder="E-mail" 
                             value={email} 
+                            onBlur={(e) => checkEmail(e.target.value)}
+                            className={touched.eInput && !valid.eOk ? error : ""}
                             required/>
 
                         <input type="text" name="tel" placeholder="Telefonnummer"/>
@@ -107,7 +116,7 @@ export default function Form({t}) {
                         </div>
                         )} */}
                         <div className="flex justify-center items-center">
-                        <button type="submit" className="btn2 bg-orange " disabled={!canClick}>{t("ctaForm.submit")}</button>
+                        <button type="submit" className="btn2 bg-orange " >{t("ctaForm.submit")}</button>
                         {status === "success" && (
                         <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                         )}

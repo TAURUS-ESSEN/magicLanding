@@ -11,6 +11,10 @@
   line-height: 1.4;
 }
 
+button {
+  font-family: Oxanium;
+}
+
 html {
   scroll-behavior: smooth; 
 }
@@ -61,8 +65,17 @@ html {
     @apply text-xl font-medium;
   }
 
-  .toggler { 
-    @apply bg-orange p-2 hover:bg-orange-600 cursor-pointer transition-colors duration-300 ease-in-out rounded-sm ;
+  .headerLogo {
+    @apply relative top-2 col-span-1;
+  }
+
+  .headerIconsBlock {
+    @apply col-span-1 flex items-center gap-2
+  }
+
+  .headerIcon {
+    @apply flex justify-center items-center text-white rounded-sm bg-orange cursor-pointer h-[44px] w-[44px] p-1
+      hover:bg-black hover:scale-105 transition duration-400 ease-in-out ;
   }
 
   .blackcard {
@@ -115,6 +128,15 @@ html {
   input {
     @apply rounded-lg border p-2 bg-white mb-2 text-black;  /* или rounded-[1rem], если нужен кастомный размер */
   }
+
+  header {
+    @apply grid grid-cols-6 h-[100px];
+  }
+
+  nav {
+    @apply col-span-4 flex justify-evenly items-center font-medium whitespace-nowrap text-2xl gap-4 
+  }
+
 }
 
 body {
