@@ -4,8 +4,8 @@ export default function Financing({t, openModal}) {
             <h2 className="h2 mt-8 ">{t("financing.title")}</h2>
             <div className="grid grid-cols-4 gap-5">
                 {t("financing.cards").map(card => (
-                    <div className={`${card.style} grid-span-1 justify-between`}>
-                        <div>{card.badge}</div>
+                    <div className={`${card.style} p-8 grid-span-1  `}>
+                        <div className="h-12">{card.badge}</div>
                         <div className="text-orange text-2xl">{card.title}</div>
                         <div className="text-base">{card.text}</div>
                     </div>

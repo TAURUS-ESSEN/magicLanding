@@ -93,7 +93,15 @@ details[open] .open-icon {
 
   .headerIcon {
     @apply flex justify-center items-center text-white rounded-sm bg-orange cursor-pointer h-[44px] w-[44px] p-1
-      hover:bg-black hover:scale-105 transition duration-400 ease-in-out ;
+      hover:bg-black hover:scale-105 transition duration-400 ease-in-out shadow-leicht;
+  }
+
+  .sliderToggler {
+    @apply bg-orange px-4 py-2 rounded-xl my-0 text-xl font-bold cursor-pointer  hover:bg-orange-600 transition duration-300 ease-in-out
+  }
+
+  .sliderToggler:disabled {
+    @apply bg-gray-300 text-gray-500 cursor-default;
   }
 
   .blackcard {

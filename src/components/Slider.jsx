@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLeftLong } from '@fortawesome/free-solid-svg-icons'
+import { faRightLong } from '@fortawesome/free-solid-svg-icons'
 
 export default function Slider({t}) {
     const [index, setIndex] = useState(0);
@@ -30,8 +33,12 @@ export default function Slider({t}) {
                     <h2 className="h2">{t("successStories.title")}</h2>
                 </div>
                 <div className='flex gap-2'>
-                    <button onClick={() => setIndex(prev => prev + 1)} disabled={disableLeft} className='bg-orange p-4 my-2 disabled:text-white'>left</button>
-                    <button onClick={() => setIndex(prev => prev - 1)} disabled={disableRight} className='bg-orange p-4 my-2 disabled:text-white'>right</button>
+                    <button onClick={() => setIndex(prev => prev + 1)} disabled={disableLeft} className='sliderToggler'>
+                        <FontAwesomeIcon icon={faLeftLong} size="sm"/>
+                    </button>
+                    <button onClick={() => setIndex(prev => prev - 1)} disabled={disableRight} className='sliderToggler'>
+                        <FontAwesomeIcon icon={faRightLong} size="sm"  />
+                    </button>
                 </div>
             </div>
             <div className="mt-[10px] w-[1140px] overflow-hidden p-2 ">
