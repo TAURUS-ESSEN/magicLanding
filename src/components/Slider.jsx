@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLeftLong } from '@fortawesome/free-solid-svg-icons'
-import { faRightLong } from '@fortawesome/free-solid-svg-icons'
+import { faLeftLong, faRightLong } from '@fortawesome/free-solid-svg-icons'
 
 export default function Slider({t}) {
     const [index, setIndex] = useState(0);
+    const [flippedIndex, setFlippedIndex] = useState(null);
     const peoples = t("successStories.students") ?? [];
-    const [isDesktop, setIsDesktop] = useState(window.matchMedia('(min-width: 768px)').matches);
 
-    
+    const [isDesktop, setIsDesktop] = useState(
+        typeof window !== 'undefined' && window.matchMedia('(min-width: 768px)').matches
+    );
+
     useEffect(() => {
         const mq = window.matchMedia('(min-width: 768px)');
         const handler = (e) => { setIsDesktop(e.matches); setIndex(0); };
@@ -17,52 +19,91 @@ export default function Slider({t}) {
     }, []);
 
     const CARD_WIDTH = isDesktop ? 360 : 280;
-    const GAP = 20; 
+    const GAP = 20;
     const STEP = CARD_WIDTH + GAP;
     const VISIBLE = isDesktop ? 3 : 1;
 
-    let disableLeft = true;
-    let disableRight = false;
-    disableLeft =  index >= (peoples.length - VISIBLE) ;
-    disableRight = index === 0;
+    const disableLeft  = index >= (peoples.length - VISIBLE);
+    const disableRight = index === 0;
 
     return (
         <section className="section">
-            <div className="flex justify-between">
-                <div>
-                    <h2 className="h2">{t("successStories.title")}</h2>
-                </div>
-                <div className='flex gap-2'>
-                    <button onClick={() => setIndex(prev => prev + 1)} disabled={disableLeft} className='sliderToggler'>
-                        <FontAwesomeIcon icon={faLeftLong} size="sm"/>
-                    </button>
-                    <button onClick={() => setIndex(prev => prev - 1)} disabled={disableRight} className='sliderToggler'>
-                        <FontAwesomeIcon icon={faRightLong} size="sm"  />
-                    </button>
-                </div>
+        <div className="flex justify-between">
+            <h2 className="h2">{t("successStories.title")}</h2>
+            <div className="flex gap-2">
+            <button
+                onClick={() => setIndex(prev => Math.min(prev + 1, peoples.length - VISIBLE))}
+                disabled={disableLeft}
+                className='sliderToggler'
+                aria-label="Next"
+            >
+                <FontAwesomeIcon icon={faLeftLong} size="sm"/>
+            </button>
+            <button
+                onClick={() => setIndex(prev => Math.max(prev - 1, 0))}
+                disabled={disableRight}
+                className='sliderToggler'
+                aria-label="Previous"
+            >
+                <FontAwesomeIcon icon={faRightLong} size="sm"/>
+            </button>
             </div>
-            <div className="mt-[10px] w-[1140px] overflow-hidden p-2 ">
-        
-                <div className="flex gap-5 transition-transform duration-300 ease-out" style={{transform: `translateX(-${index * STEP}px)`,
-          }}>
-                    {peoples.map((student, i)=> {
-                        return (
-                            <div key={i} className="flex shrink-0 flex-col bg-dots text-white shadow-soft rounded-xl w-[360px]">
-                                <div><img src={student.img} className="rounded-xl w-[360px] h-[307px] object-cover"/></div>
-                                <div className="p-4 display flex flex-col gap-3">
-                                    <h3 className="h3">{student.name}</h3>
-                                    <ul className="flex flex-col">
-                                        <li>{student.before}</li>
-                                        <li>{student.after}</li>
-                                    </ul>
-                                    <blockquote className="bg-white text-black p-4 h-25 rounded-xl text-sm">{student.quote}</blockquote>
-                                    <button className="btn bg-orange hover:bg-orange-500 w-30 text-base">{student.button}</button>
-                                </div>
-                            </div>
-                    )
-                    })}
+        </div>
+
+        <div className="mt-[10px] w-[1140px] overflow-hidden p-2">
+            <div
+            className="flex gap-5 transition-transform duration-300 ease-out"
+            style={{ transform: `translateX(-${index * STEP}px)` }}
+            >
+            {peoples.map((student, i) => {
+                const isFlipped = flippedIndex === i;
+
+                return (
+                <div
+                    key={i}
+                    className="relative shrink-0 [perspective:1000px] cursor-pointer"
+                    style={{ width: CARD_WIDTH, height: 500 }}
+                >
+                    {/* inner */}
+                    <div
+                    className={`absolute inset-0 rounded-xl shadow-soft transition-transform duration-700 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+                    >
+                    {/* FRONT */}
+                    <div className="absolute inset-0 bg-dots text-white rounded-xl overflow-hidden [backface-visibility:hidden]">
+                        <img src={student.img} alt={student.name} className="w-full h-[307px] object-cover object-[50%_20%]"/>
+                        <div className="p-4 flex flex-col gap-5">
+                            <h3 className="h3">{student.name}</h3>
+                            <ul className="flex flex-col text-sm leading-relaxed">
+                                <li>{student.before}</li>
+                                <li>{student.after}</li>
+                            </ul>
+                            <button onClick={() => setFlippedIndex(isFlipped ? null : i)} className="btn bg-orange hover:bg-orange-500 w-30 text-base">
+                                {student.button} 
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* BACK */}
+                    <div className="absolute inset-0 rounded-xl bg-black text-white p-4 flex flex-col gap-4 justify-between [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                        <div className="flex flex-col gap-3">
+                        <h3 className="h3">{student.name}</h3>
+                        <blockquote className="bg-white text-black p-4 rounded-xl text-base leading-relaxed ">
+                            {student.quote}
+                        </blockquote>
+                        </div>
+
+                        <div className="flex items-center justify-between">
+                        <button onClick={() => setFlippedIndex(isFlipped ? null : i)} className="btn bg-white text-black text-base">
+                            {student.cta ?? "Zurück"}
+                        </button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+                )
+            })}
             </div>
+        </div>
         </section>
-    )
-}
+    );
+    }

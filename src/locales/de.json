@@ -58,7 +58,8 @@
         "name": "Lena Hoffmann, 22 Jahre",
         "before": "Vorher: Studentin (Literatur)",
         "after": "Heute: Fullstack Developer of Tomorrow",
-        "quote": "Vor der Ausbildung hätte ich nie gedacht, dass ich eigene Apps programmieren könnte. Jetzt arbeite ich in einem internationalen Team",
+        "quote": "\"Ich hatte keine Vorkenntnisse in IT. Durch die Ausbildung habe ich gelernt, klare Prompts zu schreiben, Workflows mit KI zu automatisieren und Teamsprache in präzise Aufgaben zu übersetzen. Heute helfe ich Unternehmen, Prozesse zu kartieren und KI-gestützte Zusammenarbeit sicher und messbar einzuführen – und habe dabei meine eigene Stimme in Meetings gefunden.\""
+,
         "button": "mehr Info >"
       },
       {
@@ -66,7 +67,7 @@
         "name": "Aylin Demir, 34 Jahre",
         "before": "Vorher: Haushälterin",
         "after": "Heute: AI Collaboration Specialist",
-        "quote": "Ich hatte keine Vorkenntnisse in IT. Durch die Ausbildung habe ich gelernt, wie man mit KI arbeitet – und jetzt unterstütze ich Unternehmen bei innovativen Projekten",
+        "quote": "\" Ich hatte keine Vorkenntnisse in IT. Durch die Ausbildung habe ich gelernt, wie man mit KI arbeitet – von der einfachen Texterstellung bis hin zur Prozessautomatisierung. Besonders spannend war für mich, zu sehen, wie man mit den richtigen Prompts Ergebnisse steuern kann. Heute unterstütze ich Unternehmen bei innovativen Projekten, bringe Teams zusammen und zeige, wie KI den Arbeitsalltag erleichtert, Zeit spart und neue Ideen möglich macht.\"",
         "button": "mehr Info >"
       },
       {
@@ -74,7 +75,9 @@
         "name": "Thomas Keller, 41 Jahre",
         "before": "Vorher: Buchhalter",
         "after": "Heute: Sustainability Tech Innovator",
-        "quote": "Ich dachte lange, mit über 40 sei es zu spät, etwas Neues zu lernen. Doch jetzt arbeite ich mit Daten und Zukunftstechnologien – und habe meine Karriere komplett neu gestartet",
+        "quote": "\"Ich dachte lange, mit über 40 sei es zu spät, etwas Neues zu lernen. Doch durch die Ausbildung habe ich entdeckt, wie spannend Datenanalyse und Zukunftstechnologien sind. Heute entwickle ich Lösungen, die Unternehmen nachhaltiger machen, baue Dashboards und analysiere Zusammenhänge. Meine Erfahrung aus der Buchhaltung nutze ich jetzt, um Strukturen zu schaffen, die ökologisch und wirtschaftlich sinnvoll sind – und habe meine Karriere neu gestartet.\"",
+
+
         "button": "mehr Info >"
       },
       {
@@ -82,9 +85,19 @@
         "name": "Yevhen Reitarov, 42 Jahre",
         "before": "Vorher: selbständig",
         "after": "Heute: Fullstack Developer of Tomorrow",
-        "quote": "Vor der Ausbildung hätte ich nie gedacht, dass ich eigene Apps programmieren könnte. Jetzt arbeite ich in einem internationalen Team",
+        "quote": "\"Vor der Ausbildung hätte ich nie gedacht, dass ich eigene Apps programmieren könnte. Heute entwickle ich APIs, Oberflächen in React und schreibe Tests, die Sicherheit geben – im internationalen Team, auf Englisch und Deutsch. Das Gefühl von 'Impostor' habe ich durch Projekte, Code-Reviews und tägliche Praxis ersetzt.\"",
+
+        "button": "mehr Info >"
+      },
+      {
+        "img": "student5.webp",
+        "name": "David Johnson, 25 Jahre",
+        "before": "Vorher: Barista",
+        "after": "Heute: Cloud Engineer",
+        "quote": "\"Ich habe immer davon geträumt, in der Tech-Branche zu arbeiten, wusste aber nicht, wo ich anfangen sollte. Durch die Ausbildung habe ich Schritt für Schritt die Grundlagen von Programmierung, Cloud-Infrastruktur und IT-Sicherheit gelernt. Besonders spannend war es für mich, zu verstehen, wie Daten und Anwendungen sicher in der Cloud laufen können. Heute entwerfe ich Cloud-Lösungen für internationale Teams, automatisiere Deployments und unterstütze Unternehmen dabei, ihre digitalen Produkte flexibel und sicher zu skalieren. Diese Reise hat mir gezeigt, dass Entschlossenheit und kontinuierliches Lernen Türen in die Zukunft öffnen.\"",
         "button": "mehr Info >"
       }
+
     ]
   },
 

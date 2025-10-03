@@ -140,6 +140,10 @@ details[open] .open-icon {
     @apply flex items-center px-8 py-2 text-xl justify-between cursor-pointer
   }
 
+  .brands > span {
+    @apply hover:scale-110 transition duration-300 ease-in-out hover:text-orange
+  }
+
 }
 
 @layer base {

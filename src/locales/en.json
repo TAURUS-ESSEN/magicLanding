@@ -50,42 +50,53 @@
   },
 
   "successStories": {
-    "title": "Participant Success Stories",
-    "students": [
-      {
-        "img": "student1.webp",
-        "name": "Lena Hoffmann, 22 years old",
-        "before": "Before: Student (Literature)",
-        "after": "Now: Fullstack Developer of Tomorrow",
-        "quote": "Before the training, I never thought I could build my own apps. Now I work in an international team.",
-        "button": "more info >"
-      },
-      {
-        "img": "student2.webp",
-        "name": "Aylin Demir, 34 years old",
-        "before": "Before: Housekeeper",
-        "after": "Now: AI Collaboration Specialist",
-        "quote": "I had no IT background. Through the training, I learned how to work with AI – and now I support companies in innovative projects.",
-        "button": "more info >"
-      },
-      {
-        "img": "student3.webp",
-        "name": "Thomas Keller, 41 years old",
-        "before": "Before: Accountant",
-        "after": "Now: Sustainability Tech Innovator",
-        "quote": "For a long time, I thought that after 40 it was too late to learn something new. But now I work with data and future technologies – and have completely restarted my career.",
-        "button": "more info >"
-      },
-      {
-        "img": "student4.webp",
-        "name": "Yevhen Reitarov, 42 years old",
-        "before": "Before: Self-employed",
-        "after": "Now: Fullstack Developer of Tomorrow",
-        "quote": "Before the training, I never thought I could build my own apps. Now I work in an international team.",
-        "button": "more info >"
-      }
-    ]
-  },
+  "title": "Participant Success Stories",
+  "students": [
+    {
+      "img": "student1.webp",
+      "name": "Lena Hoffmann, 22 years old",
+      "before": "Before: Student (Literature)",
+      "after": "Today: Fullstack Developer of Tomorrow",
+      "quote": "\"I had no prior knowledge of IT. Through the training I learned to write clear prompts, automate workflows with AI, and translate team communication into precise tasks. Today I help companies map processes and introduce AI-supported collaboration in a safe and measurable way – and along the way I found my own voice in meetings.\"",
+      "button": "more info >"
+    },
+    {
+      "img": "student2.webp",
+      "name": "Aylin Demir, 34 years old",
+      "before": "Before: Housekeeper",
+      "after": "Today: AI Collaboration Specialist",
+      "quote": "\"I had no prior knowledge of IT. Through the training I learned how to work with AI – from simple text generation to process automation. What fascinated me most was seeing how the right prompts can steer results. Today I support companies in innovative projects, bring teams together, and show how AI can simplify everyday work, save time, and make new ideas possible.\"",
+      "button": "more info >"
+    },
+    {
+      "img": "student3.webp",
+      "name": "Thomas Keller, 45 years old",
+      "before": "Before: Accountant",
+      "after": "Today: Sustainability Tech Innovator",
+      "quote": "\"For a long time I thought that after 40 it was too late to learn something new. But through the training I discovered how exciting data analysis and future technologies can be. Today I develop solutions that help companies become more sustainable, build dashboards and analyze connections. I now use my accounting experience to create structures that make both ecological and economic sense – and I have restarted my career.\"",
+      "button": "more info >"
+    },
+    {
+      "img": "student4.webp",
+      "name": "Yevhen Reitarov, 42 years old",
+      "before": "Before: Self-employed",
+      "after": "Today: Fullstack Developer of Tomorrow",
+      "quote": "\"Before the training I never thought I would be able to program my own apps. Today I develop APIs, build user interfaces in React, and write tests that provide security – in an international team, in both English and German. I replaced the feeling of being an 'impostor' with projects, code reviews, and daily practice.\"",
+      "button": "more info >"
+    },
+    {
+      "img": "student5.webp",
+      "name": "David Johnson, 25 years old",
+      "before": "Before: Barista",
+      "after": "Today: Cloud Engineer",
+      "quote": "\"I always dreamed of working in the tech industry but didn’t know where to start. Through the training I learned step by step the fundamentals of programming, cloud infrastructure, and IT security. What excited me most was understanding how data and applications can run securely in the cloud. Today I design cloud solutions for international teams, automate deployments, and help companies scale their digital products in a flexible and secure way. This journey showed me that determination and continuous learning open doors to the future.\"",
+
+      "button": "more info >"
+    }
+  
+  ]
+},
+
 
   "certificates": {
     "title": "FutureSkills Hub: Certifications That Set Tomorrow’s Standard",
@@ -266,21 +277,36 @@
     "submit": "SCHEDULE AN APPOINTMENT"
   },
 
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "q1": "I have no prior knowledge – can I still start?",
-    "a1": "Answer goes here",
-    "q2": "Am I too old to start training in future professions?",
-    "a2": "Answer goes here",
-    "q3": "What are my job prospects after the training?",
-    "a3": "Answer goes here",
-    "q4": "How practical is the training? Will I work on real projects?",
-    "a4": "Answer goes here",
-    "q5": "How much time do I need to invest per week?",
-    "a5": "Answer goes here",
-    "q6": "Can I do the training alongside my job?",
-    "a6": "Answer goes here"
-  },
+"faq": {
+  "title": "Frequently Asked Questions",
+  "questions": [
+    {
+      "q": "I have no prior knowledge – can I still get started?",
+      "a": "Yes, absolutely! Our programs are designed so that you learn everything step by step from the ground up. No prior experience is required – motivation and willingness to learn are more than enough."
+    },
+    {
+      "q": "Am I too old to start training in future-oriented professions?",
+      "a": "No! In the tech industry, age doesn’t matter – what counts is the ability to learn new things. Many of our graduates successfully started their careers at 30, 40, or even 50."
+    },
+    {
+      "q": "What are my job prospects after completing the training?",
+      "a": "Very good! Specialists in IT and digitalization are in high demand. With our hands-on projects and certificates, you’ll significantly increase your chances of finding a job quickly."
+    },
+    {
+      "q": "How practical is the training? Will I work on real projects?",
+      "a": "Yes! From the very beginning, you’ll work on practical tasks and projects that prepare you optimally for everyday work. This way, you can immediately apply your knowledge."
+    },
+    {
+      "q": "How much time do I need to invest per week?",
+      "a": "Plan on around 8–10 hours per week. The program is designed flexibly so you can adapt your learning time to your daily routine."
+    },
+    {
+      "q": "Can I do the training alongside my job?",
+      "a": "Yes, our training is designed so that you can complete it part-time. Many participants study in the evenings or on weekends – completely flexible."
+    }
+  ]
+},
+
 
   "questionsCta": {
     "title": "Still Unsure? Just Ask Us!",
