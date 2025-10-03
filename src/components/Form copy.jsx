@@ -107,7 +107,7 @@ export default function Form({t}) {
                         </div>
                         )} */}
                         <div className="flex justify-center items-center">
-                        <button type="submit" className="btn2 bg-orange " disabled={!canClick}>{t("ctaForm.submit")}</button>
+                        <button type="submit" className="btn bg-orange " disabled={!canClick}>{t("ctaForm.submit")}</button>
                         {status === "success" && (
                         <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                         )}

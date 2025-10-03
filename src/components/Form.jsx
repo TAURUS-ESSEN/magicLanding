@@ -58,8 +58,7 @@ export default function Form({t}) {
     }
     
     return (
-        <div className="blackcard bg-dots px-14 py-8 gap-[20px]">
-                {/* <div dangerouslySetInnerHTML={{ __html: t("ctaForm.titleRich") }} className="text-3xl" /> */}
+        <div className="blackcard bg-dots px-14 py-8 gap-[20px] shadow-soft">
                 <span className="text-3xl"> 
                     {t("ctaForm.titleRich.before")}{" "}<span className="text-orange">{t("ctaForm.titleRich.kostenlose")} </span>{" "} {t("ctaForm.titleRich.after")}
                 </span>
@@ -67,7 +66,7 @@ export default function Form({t}) {
                         <input type="text"
                             onChange={(e)=>setVorname(e.target.value)} 
                             name="vorname" 
-                            placeholder="Vorname, min 2 symbols" 
+                            placeholder={t("ctaForm.fields.firstName")} 
                             value={vorname} 
                             onBlur={(e) => checkVorname(e.target.value)}
                             className={touched.vInput && !valid.vOk ? error : ""}
@@ -76,7 +75,7 @@ export default function Form({t}) {
                         <input type="text"  
                             onChange={(e)=>setNachname(e.target.value)} 
                             name="nachname" 
-                            placeholder="Nachname, min 2 symbols" 
+                            placeholder={t("ctaForm.fields.lastName")}
                             value={nachname} 
                             onBlur={(e) => checkNachname(e.target.value)}
                             className={touched.nInput && !valid.nOk ? error : ""}
@@ -92,7 +91,7 @@ export default function Form({t}) {
                             className={touched.eInput && !valid.eOk ? error : ""}
                             required/>
 
-                        <input type="text" name="tel" placeholder="Telefonnummer"/>
+                        <input type="text" name="tel" placeholder={t("ctaForm.fields.phone")}/>
                         <span>
                             <input type="checkbox" 
                                 onChange={(e)=>setCheckbox(e.target.checked)} 
@@ -116,7 +115,7 @@ export default function Form({t}) {
                         </div>
                         )} */}
                         <div className="flex justify-center items-center">
-                        <button type="submit" className="btn2 bg-orange " >{t("ctaForm.submit")}</button>
+                        <button type="submit" className="btn bg-orange " >{t("ctaForm.submit")}</button>
                         {status === "success" && (
                         <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                         )}

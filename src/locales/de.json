@@ -11,6 +11,12 @@
     "pitch": "Lerne die Technologien, die erst in den nächsten Jahren den Markt erobern"
   },
 
+  "timer": {
+    "headline": "Melde dich noch heute an und sichere dir einen",
+    "discount": "Rabatt 30%",
+    "pitch": "Nur für kurze Zeit verfügbar. Sichere dir jetzt deinen Platz!"
+  },
+
   "about": {
     "title": "Über uns",
     "text": "Wir unterstützen dich auf deinem Weg in die IT-Karriere..."
@@ -160,7 +166,7 @@
         "title": "Fullstack Developer of Tomorrow",
         "subtitle": "Vormittagskurs \\ Abendkurs",
         "text": "Lerne moderne Programmiersprachen, baue komplexe Anwendungen und werde zum Architekten digitaler Lösungen",
-        "buttonStyle": "btn2 text-white bg-dots",
+        "buttonStyle": "btn text-white bg-black",
         "button": "MEHR ERFAHREN"
       },
       {
@@ -169,7 +175,7 @@
         "title": "AI Collaboration Specialist",
         "subtitle": "Vormittagskurs",
         "text": "Entwickle Strategien für die Zusammenarbeit mit künstlicher Intelligenz und optimiere Prozesse im Team von morgen.",
-        "buttonStyle": "btn2 bg-white text-base ",
+        "buttonStyle": "btn bg-white text-base ",
         "button": "MEHR ERFAHREN"
       },
       {
@@ -178,7 +184,7 @@
         "title": "Sustainability Tech Innovator",
         "subtitle": "Vormittagskurs \\ Abendkurs",
         "text": "Gestalte nachhaltige Technologien, die Unternehmen helfen, Ressourcen zu schonen und klimafreundlich zu wachsen.",
-        "buttonStyle": "btn2 bg-orange text-black",
+        "buttonStyle": "btn bg-orange text-black",
         "button": "MEHR ERFAHREN"
       }
     ]
@@ -294,8 +300,10 @@
       "about": "Über uns",
       "imprint": "Impressum",
       "privacy": "Datenschutz",
-      "mission": "Unsere Mission"
+      "agb": "AGB"
     },
-    "copyright": "© 2025 FutureSkills Hub – Deine Karriere von morgen beginnt heute"
+    "copyrightBefore": "© 2025 ",
+    "brandName": " FutureSkills Hub",
+    "copyrightAfter": " – Deine Karriere von morgen beginnt heute"
   }
 }

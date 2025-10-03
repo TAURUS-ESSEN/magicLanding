@@ -16,26 +16,28 @@ button {
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  /* color: #8a8a8a; */
 }
 
 @theme {
   --color-orange: #F89000;
   /* --orange-600: #DA7F01; */
   --shadow-soft: 0 0 5px #000;
+  --shadow-leicht: 0 0 5px #8a8a8a;
   --shadow-orange: 0 0 5px #F89000;
 }
 
 @layer utilities {
   .bg-dots { 
     background-image: url("/carbon_fibre.webp");  
-    background-size: 15px 15px; 
+    background-size: 12px 12px; 
     /* box-shadow: 0 0 5px rgb(78, 78, 78);  */
   } 
-  
-  .bg-whitedots { background-image: url("/bgnoise_lg.png"); }
 
-  .btn2:hover {
+   .bg-whitedots { background-image: url("/bgnoise_lg.png"); }
+
+  .btn:hover {
     @apply bg-orange-600;
   }
 
@@ -58,7 +60,7 @@ html {
   }
 
   .h2 {
-    @apply text-3xl font-medium;
+    @apply text-3xl font-medium mb-2;
   }
 
   .h3 {
@@ -66,7 +68,7 @@ html {
   }
 
   .headerLogo {
-    @apply relative top-2 col-span-1;
+    @apply relative top-2 col-span-1 w-[120px];
   }
 
   .headerIconsBlock {
@@ -83,19 +85,11 @@ html {
   }
 
   .btn {
-    @apply uppercase rounded-lg p-2  text-nowrap 
-  }
-
-  .btn2 {
     @apply flex justify-center items-center uppercase rounded-lg px-3 py-3 text-nowrap shadow-soft cursor-pointer;
   }
 
   .orangeBlock {
     @apply flex items-center justify-start gap-5 text-black rounded-3xl p-4 bg-orange text-xl font-medium shadow-soft text-center
-  }
-
-  .orangeBlock, .blackBlock{
-    /* @apply hover:scale-105 transition-transform duration-300 */
   }
   
   .blackBlock {
@@ -135,6 +129,10 @@ html {
 
   nav {
     @apply col-span-4 flex justify-evenly items-center font-medium whitespace-nowrap text-2xl gap-4 
+  }
+
+  footer {
+    @apply text-white px-10 py-5 text-lg flex flex-col gap-4;
   }
 
 }

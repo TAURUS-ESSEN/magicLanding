@@ -25,7 +25,7 @@ export default function Certificates({t, openModal}) {
                             </ul>
                         </div> 
                         <div>
-                            <button className="btn2 bg-orange font-medium" onClick={() => openModal('registration')} >
+                            <button className="btn bg-orange font-medium" onClick={() => openModal('registration')} >
                                 {t("certificates.button")}
                             </button>
                         </div>

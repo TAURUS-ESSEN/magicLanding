@@ -11,6 +11,12 @@
     "pitch": "Learn the technologies that will conquer the market in the coming years"
   },
 
+  "timer": {
+  "headline": "Sign up today and secure your",
+  "discount": "30% discount",
+  "pitch": "Available for a limited time only. Secure your spot now!"
+},
+
   "about": {
     "title": "About Us",
     "text": "We support you on your way into an IT career..."
@@ -159,7 +165,7 @@
         "title": "Fullstack Developer of Tomorrow",
         "subtitle": "Morning Course \\ Evening Course",
         "text": "Learn modern programming languages, build complex applications, and become an architect of digital solutions.",
-        "buttonStyle": "btn2 text-white bg-dots",
+        "buttonStyle": "btn text-white bg-dots",
         "button": "LEARN MORE"
       },
       {
@@ -168,7 +174,7 @@
         "title": "AI Collaboration Specialist",
         "subtitle": "Morning Course",
         "text": "Develop strategies for working with artificial intelligence and optimize processes in the team of tomorrow.",
-        "buttonStyle": "btn2 bg-white text-base",
+        "buttonStyle": "btn bg-white text-base",
         "button": "LEARN MORE"
       },
       {
@@ -177,7 +183,7 @@
         "title": "Sustainability Tech Innovator",
         "subtitle": "Morning Course \\ Evening Course",
         "text": "Shape sustainable technologies that help companies save resources and grow in a climate-friendly way.",
-        "buttonStyle": "btn2 bg-orange text-black",
+        "buttonStyle": "btn bg-orange text-black",
         "button": "LEARN MORE"
       }
     ]
@@ -188,11 +194,11 @@
     "steps": [
       {
         "label": "You are here",
-        "icon": "marker",
+        "icon": "location",
         "text": "You dream of changing your life. You want to learn a future-oriented profession, work flexibly, and have more time for yourself and your family."
       },
       {
-        "label": "In ...",
+        "label": "In 1 month",
         "icon": "location",
         "text": "Your training at FutureSkills Hub begins. You face exciting challenges and acquire your first future skills."
       },
@@ -292,8 +298,10 @@
       "about": "About Us",
       "imprint": "Imprint",
       "privacy": "Privacy Policy",
-      "mission": "Our Mission"
+      "agb": "AGB"
     },
-    "copyright": "© 2025 FutureSkills Hub – Your Career of Tomorrow Starts Today"
+    "copyrightBefore": "© 2025 ",
+    "brandName": "FutureSkills Hub",
+    "copyrightAfter": " – Your career of tomorrow starts today"
   }
 }

@@ -7,6 +7,7 @@ import LandingPage from './LandingPage';
 import PrivacyPolicy from './PrivacyPolicy.jsx';
 import About from './About';
 import Impressum from './Impressum';
+import Agb from './Agb';
 
 
 const router = createBrowserRouter([
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
       {index: true, element: <LandingPage />},
       {path: "/about", element: <About />},
       {path: 'privacy_policy', element: <PrivacyPolicy />},
-      {path: 'impressum', element: <Impressum />}
+      {path: 'impressum', element: <Impressum />},
+      {path: 'agb', element: <Agb />}
     ]
   },
 ])

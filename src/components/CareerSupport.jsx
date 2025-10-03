@@ -34,7 +34,7 @@ export default function CareerSupport({t, openModal}) {
                 </div>
             </div>
             <div>
-                <button className="btn2 bg-orange font-semibold w-60" onClick={()=>openModal('registration')}>
+                <button className="btn bg-orange font-semibold w-60" onClick={()=>openModal('registration')}>
                     {t("careerSupport.button")} <span className='mr-2'> </span><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{color: "#080808",}} />
                 </button>
             </div>

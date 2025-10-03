@@ -49,7 +49,7 @@ export default function Slider({t}) {
                                         <li>{student.after}</li>
                                     </ul>
                                     <blockquote className="bg-white text-black p-4 h-25 rounded-xl text-sm">{student.quote}</blockquote>
-                                    <button className="btn2 bg-orange hover:bg-orange-500 w-30 text-base">{student.button}</button>
+                                    <button className="btn bg-orange hover:bg-orange-500 w-30 text-base">{student.button}</button>
                                 </div>
                             </div>
                     )

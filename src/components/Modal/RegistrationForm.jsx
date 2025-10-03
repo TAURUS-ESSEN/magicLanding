@@ -104,7 +104,7 @@ export default function RegistrationForm({closeModal}) {
                             <span>{errorDatenSchutz}</span>
                         </div>
                         )}
-                        <button type="submit" className="btn2 bg-orange w-50 font-medium" disabled={!canClick}>TERMIN VEREINBAREN</button>
+                        <button type="submit" className="btn bg-orange w-50 font-medium" disabled={!canClick}>TERMIN VEREINBAREN</button>
                         {status === "success" && (
                         <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                         )}
