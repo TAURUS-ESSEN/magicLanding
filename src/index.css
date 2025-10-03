@@ -20,6 +20,13 @@ html {
   /* color: #8a8a8a; */
 }
 
+details[open] .closed-icon, .hidden {
+  display: none;
+}
+details[open] .open-icon {
+  display: inline;
+}
+
 @theme {
   --color-orange: #F89000;
   /* --orange-600: #DA7F01; */

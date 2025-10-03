@@ -270,18 +270,20 @@
 
   "faq": {
     "title": "Häufig gestellte Fragen",
-    "q1": "Ich habe keine Vorkenntnisse – kann ich trotzdem starten?",
-    "a1": "Antwort kommt hier",
-    "q2": "Bin ich zu alt, um noch eine Ausbildung in Zukunftsberufen zu beginnen?",
-    "a2": "Antwort kommt hier",
-    "q3": "Welche Chancen habe ich nach der Ausbildung auf dem Arbeitsmarkt?",
-    "a3": "Antwort kommt hier",
-    "q4": "Wie praxisnah ist die Ausbildung? Arbeite ich an echten Projekten?",
-    "a4": "Antwort kommt hier",
-    "q5": "Wie viel Zeit muss ich pro Woche investieren?",
-    "a5": "Antwort kommt hier",
-    "q6": "Kann ich die Ausbildung auch neben dem Job machen?",
-    "a6": "Antwort kommt hier"
+    "questions": [
+    {"q": "Ich habe keine Vorkenntnisse – kann ich trotzdem starten?",
+    "a": "Ja, absolut! Unsere Programme sind so aufgebaut, dass du Schritt für Schritt alles von Grund auf lernst. Vorkenntnisse sind nicht erforderlich – Motivation und Lernbereitschaft reichen völlig aus."},
+    {"q": "Bin ich zu alt, um noch eine Ausbildung in Zukunftsberufen zu beginnen?",
+    "a": "Nein! In der Tech-Branche zählt nicht das Alter, sondern die Fähigkeit, Neues zu lernen. Viele unserer Absolventen haben mit 30, 40 oder sogar 50 Jahren erfolgreich ihre Karriere gestartet."},
+    {"q": "Welche Chancen habe ich nach der Ausbildung auf dem Arbeitsmarkt?",
+    "a": "Sehr gute! Fachkräfte in den Bereichen IT und Digitalisierung sind stark gefragt. Mit unseren praxisnahen Projekten und Zertifikaten erhöhst du deine Chancen, schnell einen Job zu finden."},
+    {"q": "Wie praxisnah ist die Ausbildung? Arbeite ich an echten Projekten?",
+    "a": "Ja! Du arbeitest von Anfang an an praxisnahen Aufgaben und Projekten, die dich optimal auf den Arbeitsalltag vorbereiten. So kannst du dein Wissen direkt anwenden."},
+    {"q": "Wie viel Zeit muss ich pro Woche investieren?",
+    "a": "Rechne mit etwa 8–10 Stunden pro Woche. Das Programm ist flexibel aufgebaut, sodass du die Lernzeit deinem Alltag anpassen kannst."},
+    {"q": "Kann ich die Ausbildung auch neben dem Job machen?",
+    "a": "Ja, unsere Ausbildung ist so konzipiert, dass du sie berufsbegleitend absolvieren kannst. Viele Teilnehmer lernen abends oder am Wochenende – ganz flexibel."}
+    ]
   },
 
   "questionsCta": {
