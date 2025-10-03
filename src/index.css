@@ -2,7 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Combo&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Rancho&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face{
+  font-family: "Oxanium";
+  src: url("/fonts/Oxanium-VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
 
 #root {
   font-family: Oxanium;
@@ -10,6 +17,8 @@
   box-sizing: border-box;
   line-height: 1.4;
 }
+
+
 
 button {
   font-family: Oxanium;
