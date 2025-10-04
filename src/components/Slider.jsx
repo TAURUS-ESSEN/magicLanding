@@ -23,8 +23,9 @@ export default function Slider({t}) {
     const STEP = CARD_WIDTH + GAP;
     const VISIBLE = isDesktop ? 3 : 1;
 
-    const disableLeft  = index >= (peoples.length - VISIBLE);
-    const disableRight = index === 0;
+    const maxIndex = Math.max(0, (peoples.length - VISIBLE));
+    const disablePrev = index === 0 || peoples.length <= VISIBLE;
+    const disableNext = index >= maxIndex || peoples.length <= VISIBLE;
 
     return (
         <section className="section">
@@ -32,18 +33,18 @@ export default function Slider({t}) {
             <h2 className="h2">{t("successStories.title")}</h2>
             <div className="flex gap-2">
             <button
-                onClick={() => setIndex(prev => Math.min(prev + 1, peoples.length - VISIBLE))}
-                disabled={disableLeft}
-                className='sliderToggler'
-                aria-label="Next"
+                onClick={() => setIndex(prev => Math.max(prev - 1, 0))}
+                disabled={disablePrev}
+                className="sliderToggler"
+                aria-label={t("aria.previous")}
             >
                 <FontAwesomeIcon icon={faLeftLong} size="sm"/>
             </button>
             <button
-                onClick={() => setIndex(prev => Math.max(prev - 1, 0))}
-                disabled={disableRight}
-                className='sliderToggler'
-                aria-label="Previous"
+                onClick={() => setIndex(prev => Math.min(prev + 1, maxIndex))}
+                disabled={disableNext}
+                className="sliderToggler"
+                aria-label={t("aria.next")}
             >
                 <FontAwesomeIcon icon={faRightLong} size="sm"/>
             </button>
@@ -52,39 +53,44 @@ export default function Slider({t}) {
 
         <div className="mt-[10px] w-[1140px] overflow-hidden p-2">
             <div
-            className="flex gap-5 transition-transform duration-300 ease-out"
-            style={{ transform: `translateX(-${index * STEP}px)` }}
+                className="flex gap-5 transition-transform duration-300 ease-out"
+                style={{ transform: `translateX(-${index * STEP}px)` }}
             >
-            {peoples.map((student, i) => {
+            { peoples.map((student, i) => {
                 const isFlipped = flippedIndex === i;
 
                 return (
                 <div
                     key={i}
-                    className="relative shrink-0 [perspective:1000px] cursor-pointer"
+                    className="relative shrink-0 [perspective:1000px]  "
                     style={{ width: CARD_WIDTH, height: 500 }}
                 >
-                    {/* inner */}
                     <div
-                    className={`absolute inset-0 rounded-xl shadow-soft transition-transform duration-700 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
+                    className={`flip-inner ${isFlipped ? '[transform:rotateY(180deg)]' : ''}`}
                     >
                     {/* FRONT */}
-                    <div className="absolute inset-0 bg-dots text-white rounded-xl overflow-hidden [backface-visibility:hidden]">
-                        <img src={student.img} alt={student.name} className="w-full h-[307px] object-cover object-[50%_20%]"/>
+                    <div className="bg-dots flip-front">
+                        <img 
+                            src={student.img} 
+                            alt={student.name} 
+                            className="w-full h-[307px] object-cover object-[50%_20%]"
+                        />
                         <div className="p-4 flex flex-col gap-5">
                             <h3 className="h3">{student.name}</h3>
                             <ul className="flex flex-col text-sm leading-relaxed">
                                 <li>{student.before}</li>
                                 <li>{student.after}</li>
                             </ul>
-                            <button onClick={() => setFlippedIndex(isFlipped ? null : i)} className="btn bg-orange hover:bg-orange-500 w-30 text-base">
+                            <button 
+                                onClick={() => setFlippedIndex(isFlipped ? null : i)} 
+                                className="btn bg-orange hover:bg-orange-500 w-30 text-base">
                                 {student.button} 
                             </button>
                         </div>
                     </div>
 
                     {/* BACK */}
-                    <div className="absolute inset-0 rounded-xl bg-black text-white p-4 flex flex-col gap-4 justify-between [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                    <div className="flip-back">
                         <div className="flex flex-col gap-3">
                         <h3 className="h3">{student.name}</h3>
                         <blockquote className="bg-white text-black p-4 rounded-xl text-base leading-relaxed ">

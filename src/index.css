@@ -18,11 +18,11 @@
   line-height: 1.4;
 }
 
-
-
 button {
   font-family: Oxanium;
+  /* color: #00deea; */
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -38,6 +38,7 @@ details[open] .open-icon {
 
 @theme {
   --color-orange: #F89000;
+  /* --color-orange: #00809D; */
   /* --orange-600: #DA7F01; */
   --shadow-soft: 0 0 5px #000;
   --shadow-leicht: 0 0 5px #8a8a8a;
@@ -48,22 +49,35 @@ details[open] .open-icon {
   .bg-dots { 
     background-image: url("/carbon_fibre.webp");  
     background-size: 12px 12px; 
-    /* box-shadow: 0 0 5px rgb(78, 78, 78);  */
   } 
 
-   .bg-whitedots { background-image: url("/bgnoise_lg.png"); }
+  .bg-whitedots { background-image: url("/bgnoise_lg.png"); }
 
   .btn:hover {
     @apply bg-orange-600;
   }
+ 
+    
+ 
 
-  .bleed-x {
-    margin-left:  calc(var(--pad-x, 0px) * -1);
-    margin-right: calc(var(--pad-x, 0px) * -1);
-    box-sizing: border-box; /* чтобы бордер/паддинг не раздували ширину */
+  .flip-inner {
+    @apply absolute inset-0 rounded-xl shadow-soft transition-transform duration-700;
+    transform-style: preserve-3d;
+    will-change: transform;
   }
-}
 
+  .flip-front {
+    @apply absolute inset-0 text-white rounded-xl overflow-hidden; 
+    backface-visibility:hidden;
+  }
+
+  .flip-back {
+    @apply absolute inset-0 rounded-xl bg-black text-white p-4 flex flex-col gap-4 justify-between;
+    transform:rotateY(180deg); 
+    backface-visibility:hidden;
+  }
+
+}
 
 @layer components {
 
@@ -92,8 +106,8 @@ details[open] .open-icon {
   }
 
   .headerIcon {
-    @apply flex justify-center items-center text-white rounded-sm bg-orange cursor-pointer h-[44px] w-[44px] p-1
-      hover:bg-black hover:scale-105 transition duration-400 ease-in-out shadow-leicht;
+    @apply h-[44px] w-[44px] flex justify-center items-center text-white rounded-sm bg-orange cursor-pointer p-1
+      hover:bg-black hover:scale-110 transition duration-400 ease-in-out shadow-leicht;
   }
 
   .sliderToggler {
@@ -105,11 +119,11 @@ details[open] .open-icon {
   }
 
   .blackcard {
-    @apply flex flex-col m-auto bg-repeat text-white rounded-3xl;
+    @apply flex flex-col text-white rounded-3xl p-8;
   }
 
   .btn {
-    @apply flex justify-center items-center uppercase rounded-lg px-3 py-3 text-nowrap shadow-soft cursor-pointer;
+    @apply flex justify-center items-center font-medium uppercase rounded-lg px-3 py-3 text-nowrap shadow-soft cursor-pointer;
   }
 
   .orangeBlock {

@@ -10,7 +10,7 @@ export default function Header({lang, switchLang}) {
             <header id="header">
                 <span className="headerLogo">
                     <Link to="/">
-                        <img src='./images/logo.webp' />
+                        <img src='./images/logo.webp' alt="Logo"/>
                     </Link>
                 </span>
                 <nav>
@@ -25,13 +25,13 @@ export default function Header({lang, switchLang}) {
                         {lang === "de" ? "EN" : "DE"}
                     </button>
                     <span className="headerIcon">
-                        <a href="https://wa.me" target="_blank">
-                            <FontAwesomeIcon icon={faWhatsapp} size="2xl" style={{color: "#fff",}}/>
+                        <a href="https://wa.me/491701234567" target="_blank" aria-label={t("aria.whatsapp")}>
+                            <FontAwesomeIcon icon={faWhatsapp} size="2xl"  />
                         </a>
                     </span>
                     <span className="headerIcon">
-                        <a href="https://share.google/kq74QHE7IJvYv9xQq" target="_blank">
-                            <FontAwesomeIcon icon={faLocationDot} size="2xl" style={{color: "#fff",}}/>
+                        <a href="https://share.google/kq74QHE7IJvYv9xQq" target="_blank" aria-label={t("aria.location")}>
+                            <FontAwesomeIcon icon={faLocationDot} size="2xl"/>
                         </a>
                     </span>
                 </span>

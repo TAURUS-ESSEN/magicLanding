@@ -89,14 +89,14 @@
       "name": "David Johnson, 25 years old",
       "before": "Before: Barista",
       "after": "Today: Cloud Engineer",
-      "quote": "\"I always dreamed of working in the tech industry but didn’t know where to start. Through the training I learned step by step the fundamentals of programming, cloud infrastructure, and IT security. What excited me most was understanding how data and applications can run securely in the cloud. Today I design cloud solutions for international teams, automate deployments, and help companies scale their digital products in a flexible and secure way. This journey showed me that determination and continuous learning open doors to the future.\"",
+      "quote": "\"I always dreamed of working in tech but didn’t know where to begin. Through the training I learned programming, cloud infrastructure, and IT security. Today I design cloud solutions, automate deployments, and help companies scale securely. This journey taught me: determination and learning open doors.\"",
+
 
       "button": "more info >"
     }
   
   ]
 },
-
 
   "certificates": {
     "title": "FutureSkills Hub: Certifications That Set Tomorrow’s Standard",
@@ -329,5 +329,12 @@
     "copyrightBefore": "© 2025 ",
     "brandName": "FutureSkills Hub",
     "copyrightAfter": " – Your career of tomorrow starts today"
-  }
+  },
+ 
+  "aria": {
+  "whatsapp": "Contact via WhatsApp",
+  "location": "Show location",
+  "next": "next",
+  "previous": "previous"
+}
 }
