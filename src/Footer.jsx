@@ -65,10 +65,10 @@ export default function Footer({t}) {
                     </span>
                 </div>
                 <div className="col-span-1 flex justify-center gap-8 ">
-                        <div className="hover:text-orange"><Link to="impressum">{t("footer.menu.imprint")}</Link></div>
-                        <div className="hover:text-orange"><Link to="privacy_policy">{t("footer.menu.privacy")}</Link></div>
+                        <div className="hover:text-orange"><Link to="impressum#start">{t("footer.menu.imprint")}</Link></div>
+                        <div className="hover:text-orange"><Link to="privacy_policy#start">{t("footer.menu.privacy")}</Link></div>
                         <div className="hover:text-orange">
-                            <Link to="agb">{t("footer.menu.agb")}</Link></div>
+                            <Link to="agb#start">{t("footer.menu.agb")}</Link></div>
                     </div>
                 </div>
              <div className="flex justify-center">

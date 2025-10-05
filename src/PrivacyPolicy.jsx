@@ -1,12 +1,22 @@
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useLocation} from "react-router-dom";
+import { useEffect } from "react";
 
 export default function PrivacyPolicy() {
     const { t } = useOutletContext() ?? { t: (k) => k };
     const items = t("privacy.items") ?? [];
 
+    useEffect(() => {
+        if (location.hash) {
+            const el = document.querySelector(location.hash);
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+        } else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    }, [location]);
+
     return (
         <section className="bg-white text-black px-8 py-12">
-        <h2 className="h2 mb-2">{t("privacy.title")}</h2>
+        <h2 className="h2 mb-2" id="start">{t("privacy.title")}</h2>
         <p className="text-sm mb-8">{t("privacy.stand")}</p>
 
         <div className="space-y-8 text-lg leading-relaxed">
