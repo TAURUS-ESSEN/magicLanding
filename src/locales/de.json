@@ -185,7 +185,7 @@
         "button": "MEHR ERFAHREN"
       },
       {
-        "style": "flex-col grayBlock items-start bg-whitedots",
+        "style": " grayBlock items-start bg-whitedots",
         "badge": "Gruppe Aktuell Voll",
         "title": "AI Collaboration Specialist",
         "subtitle": "Vormittagskurs",
@@ -194,7 +194,7 @@
         "button": "MEHR ERFAHREN"
       },
       {
-         "style": "jobsBlock text-white bg-dots",
+        "style": "jobsBlock text-white bg-dots",
         "badge": "Nächster Kursbeginn in Kürze",
         "title": "Sustainability Tech Innovator",
         "subtitle": "Vormittagskurs \\ Abendkurs",
@@ -206,7 +206,7 @@
   },
 
   "careerPath": {
-    "title": "DEIN KARRIEREWEG",
+    "title": "Dein Karrierweg",
     "steps": [
       {
         "label": "Du bist hier",
