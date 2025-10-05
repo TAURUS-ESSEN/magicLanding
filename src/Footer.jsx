@@ -67,8 +67,8 @@ export default function Footer({t}) {
                 <div className="col-span-1 flex justify-center gap-8 ">
                         <div className="hover:text-orange"><Link to="impressum">{t("footer.menu.imprint")}</Link></div>
                         <div className="hover:text-orange"><Link to="privacy_policy">{t("footer.menu.privacy")}</Link></div>
-                        <div className="hover:text-orange"
-                        ><Link to="agb">{t("footer.menu.agb")}</Link></div>
+                        <div className="hover:text-orange">
+                            <Link to="agb">{t("footer.menu.agb")}</Link></div>
                     </div>
                 </div>
              <div className="flex justify-center">

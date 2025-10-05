@@ -14,7 +14,7 @@ export default function Form({t}) {
 
     const nameRegex = /[a-z]{2,}/i;
     const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let error = "border-3 border-orange"
+    let error = "border-3 border-red-500"
 
     function checkVorname(value) {
         setValid(prev => ({...prev, vOk: nameRegex.test(value.trim())}))
@@ -37,7 +37,7 @@ export default function Form({t}) {
 
 
         const formData = new FormData(e.target);
-        formData.append("access_key", "beb38d09-ba72-4201-be49-6dc03fc83a58"); // твой ключ с Web3Forms
+        formData.append("access_key", "beb38d09-ba72-4201-be49-6dc03fc83a58"); 
 
         try {
             const res = await fetch("https://api.web3forms.com/submit", {

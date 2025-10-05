@@ -79,7 +79,6 @@ details[open] .open-icon {
     transform:rotateY(180deg); 
     backface-visibility:hidden;
   }
-
 }
 
 @layer components {

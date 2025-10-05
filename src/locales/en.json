@@ -331,6 +331,119 @@
     "copyrightAfter": " – Your career of tomorrow starts today"
   },
  
+  "agb": {
+    "title": "Terms and Conditions (AGB)",
+    "stand": "Version: 05 Oct 2025",
+    "items": [
+      {
+        "h": "Scope of Application",
+        "p": "These Terms and Conditions apply to all offers, services and contracts of FutureSkillsHub, Essen 45307, mail@future-skills-hub.org, +49-160-1234567 (hereinafter referred to as 'Provider') with consumers and business clients."
+      },
+      {
+        "h": "Services",
+        "p": "The Provider offers educational and consulting services (e.g., courses, training, career coaching) according to the service descriptions published on the website [Domain]."
+      },
+      {
+        "h": "Conclusion of Contract",
+        "p": [
+          "(1) The presentation of services does not constitute a binding offer.",
+          "(2) By registering or booking, the client submits an offer to conclude a contract.",
+          "(3) The contract is concluded upon written confirmation (email) by the Provider."
+        ]
+      },
+      {
+        "h": "Prices and Payment",
+        "p": "All prices are in EUR including VAT unless otherwise stated. Payment must be made by [bank transfer/PayPal/credit card] before the start of the service unless otherwise agreed."
+      },
+      {
+        "h": "Right of Withdrawal (Consumers only)",
+        "p": [
+          "Consumers have a 14-day right of withdrawal from the date of contract conclusion.",
+          "To exercise the right, a clear statement by email to [Email] is sufficient.",
+          "If the service begins before the withdrawal period ends at the client’s express request, the right of withdrawal expires for completed services; partial performance requires proportional compensation."
+        ]
+      },
+      {
+        "h": "Participation Requirements",
+        "p": "Clients are responsible for providing the necessary technical equipment (e.g., computer, internet). The Provider may reject applications if requirements are not met."
+      },
+      {
+        "h": "Cancellation by the Client",
+        "p": "Free cancellation up to [e.g., 7 days] before the start date. After that, a [50%] fee applies; once the course has started, [100%] of the fee is due. Replacement participants can be nominated free of charge."
+      },
+      {
+        "h": "Cancellation by the Provider",
+        "p": "The Provider reserves the right to cancel due to low enrollment, illness, or force majeure. Any payments made will be refunded. Further claims are excluded."
+      },
+      {
+        "h": "Certificates",
+        "p": "Upon successful participation, a certificate of attendance will be issued. No guarantee of job placement or learning success is given."
+      },
+      {
+        "h": "Copyright",
+        "p": "All materials and content are protected by copyright. Distribution or publication without prior written consent is prohibited. Private, non-commercial use is permitted."
+      },
+      {
+        "h": "Liability",
+        "p": [
+          "(1) Unlimited liability applies in cases of intent or gross negligence.",
+          "(2) In cases of slight negligence, liability exists only for breaches of essential contractual obligations and is limited to foreseeable, typical damages.",
+          "(3) Liability for injury to life, body or health remains unaffected.",
+          "(4) No liability is assumed for events beyond the Provider’s control."
+        ]
+      },
+      {
+        "h": "Data Protection",
+        "p": "The privacy policy under /privacy_policy applies. Personal data is processed for contract performance."
+      },
+      {
+        "h": "Final Provisions",
+        "p": "German law applies. Place of jurisdiction, as far as legally permissible, is [Provider’s location]. Invalid provisions are replaced by the statutory regulation."
+      }
+    ]
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+    "stand": "Version: 05 Oct 2025",
+    "items": [
+      { "h": "Controller", "p": "Data controller: FutureSkillsHub, Essen 45307, mail@future-skills-hub.org, +49-160-1234567" },
+      { "h": "Types of Data", "p": "Account, contact, usage and communication data; optionally payment data when services are purchased." },
+      { "h": "Purposes & Legal Bases", "p": [
+        "Provide the website and services (Art. 6(1)(b), (f) GDPR).",
+        "Communication/support (Art. 6(1)(b), (f) GDPR).",
+        "Newsletter only with consent (Art. 6(1)(a) GDPR)."
+      ]},
+      { "h": "Cookies & Tracking", "p": "We use essential cookies; optional analytics/marketing cookies only with consent. You can adjust settings in the cookie banner." },
+      { "h": "Processors & Third Parties", "p": "Service providers (hosting, email, analytics) process data under data processing agreements. A list is available on request." },
+      { "h": "International Transfers", "p": "Transfers occur only with appropriate safeguards (e.g., EU Standard Contractual Clauses)." },
+      { "h": "Retention", "p": "We retain data only as long as necessary for the stated purposes or as required by law, then delete or anonymize it." },
+      { "h": "Newsletter", "p": "Double opt-in subscription; you can unsubscribe at any time via the link in each email." },
+      { "h": "Your Rights", "p": [
+        "Access, rectification, erasure, restriction, data portability.",
+        "Withdraw consent with future effect.",
+        "Right to complain to a supervisory authority."
+      ]},
+      { "h": "Security", "p": "We apply technical and organizational measures (e.g., TLS encryption) to protect data." },
+      { "h": "Children", "p": "Our services are not directed at minors; we do not knowingly process children's data." },
+      { "h": "Changes to this Policy", "p": "We may update this policy; the version published on this site applies." },
+      { "h": "Contact", "p": "Questions? Contact:  mail@future-skills-hub.org" }
+    ]
+  },
+
+  "impressum": {
+    "title": "Imprint",
+    "stand": "Version: 05 Oct 2025",
+    "items": [
+      { "h": "According to § 5 TMG (Germany)", "p": "FutureSkillsHub – Demo project as part of a private portfolio. No commercial activity." },
+      { "h": "Responsible for Content", "p": "Created by Reitarov Yevhen, Essen, Deutschland. Kontakt über reitarovea@gmail.com." },
+      { "h": "Liability for Content", "p": "All content on this website is for demonstration purposes only. No guarantee is given for accuracy, completeness or timeliness." },
+      { "h": "Copyright Notice", "p": "Layout, texts and code are protected by copyright. Use or reproduction is allowed for non-commercial purposes with proper attribution." },
+      { "h": "Image Credits", "p": "All images on this website were generated with the help of AI tools (e.g., DALL·E, Midjourney) and are used for illustrative purposes only." },
+      { "h": "Project Disclaimer", "p": "This website is a demo portfolio project showcasing design and technical implementation of a fictional educational platform with no real commercial intent." }
+    ]
+  },
+
   "aria": {
   "whatsapp": "Contact via WhatsApp",
   "location": "Show location",

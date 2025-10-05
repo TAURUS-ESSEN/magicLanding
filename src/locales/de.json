@@ -324,10 +324,104 @@
     "copyrightAfter": " – Deine Karriere von morgen beginnt heute"
   },
 
+   "agb": {
+    "title": "Allgemeine Geschäftsbedingungen (AGB)",
+    "stand": "Stand: 05.10.2025",
+    "items": [
+      {
+        "h": "Geltungsbereich",
+        "p": "Diese AGB gelten für alle Angebote, Leistungen und Verträge von FutureSkillsHub, Essen 45307, mail@future-skills-hub.org, +49-160-1234567 (nachfolgend „Anbieter“) gegenüber Verbraucher:innen und Unternehmer:innen."
+      },
+      {
+        "h": "Leistungen",
+        "p": "Der Anbieter erbringt Bildungs- und Beratungsleistungen (z. B. Kurse, Trainings, Karriereberatung) gemäß jeweiliger Leistungsbeschreibung auf der Website [Domain]."
+      },
+      {
+        "h": "Vertragsschluss",
+        "p": [
+          "(1) Die Darstellung der Leistungen stellt kein verbindliches Angebot dar.",
+          "(2) Durch Buchung/Anmeldung gibt die/der Kund:in ein Angebot ab.",
+          "(3) Der Vertrag kommt durch E-Mail-Bestätigung des Anbieters zustande."
+        ]
+      },
+      {
+        "h": "Preise und Zahlung",
+        "p": "Alle Preise in EUR inkl. gesetzlicher MwSt., sofern nicht anders angegeben. Zahlung per [Überweisung/PayPal/Kreditkarte] vor Leistungsbeginn, sofern nichts anderes vereinbart wurde."
+      },
+      {
+        "h": "Widerrufsrecht (nur Verbraucher:innen)",
+        "p": [
+          "Verbraucher:innen haben ein 14-tägiges Widerrufsrecht ab Vertragsschluss.",
+          "Zur Ausübung genügt eine eindeutige Erklärung per E-Mail an [E-Mail].",
+          "Beginnt die Leistung vor Fristablauf auf ausdrücklichen Wunsch, erlischt das Widerrufsrecht für bereits vollständig erbrachte Leistungen; für Teilleistungen ist Wertersatz zu leisten."
+        ]
+      },
+      { "h": "Teilnahmevoraussetzungen & Mitwirkung", "p": "Erforderliche Technik (PC/Internet) stellt die/der Kund:in bereit. Der Anbieter kann Anmeldungen ablehnen, wenn Voraussetzungen fehlen." },
+      { "h": "Termin- und Programmänderungen", "p": "Gleichwertige inhaltliche Anpassungen, Trainerwechsel und Terminverschiebungen in angemessenem Rahmen sind möglich. Wesentliche Änderungen berechtigen zum Rücktritt mit Erstattung." },
+      { "h": "Stornierung durch Kund:innen", "p": "Kostenfrei bis [z. B. 7 Tage] vor Kursbeginn. Danach [50 %] Stornogebühr; ab Kursbeginn [100 %]. Ersatzteilnehmer:in kann kostenfrei benannt werden." },
+      { "h": "Absage durch den Anbieter", "p": "Bei geringer Teilnehmerzahl, Ausfall von Dozent:innen oder höherer Gewalt kann abgesagt werden; bereits gezahlte Entgelte werden erstattet. Weitergehende Ansprüche sind ausgeschlossen." },
+      { "h": "Zertifikate/Nachweise", "p": "Nach erfolgreicher Teilnahme wird ein Teilnahmezertifikat ausgestellt. Ein konkreter Ausbildungserfolg oder Job ist nicht geschuldet." },
+      { "h": "Nutzungsrechte an Materialien", "p": "Unterlagen/Aufzeichnungen sind urheberrechtlich geschützt. Weitergabe, Vervielfältigung oder öffentliche Zugänglichmachung ohne vorherige schriftliche Zustimmung sind untersagt. Persönliche, nicht-kommerzielle Nutzung ist erlaubt." },
+      { "h": "Haftung", "p": [
+          "(1) Haftung unbeschränkt bei Vorsatz und grober Fahrlässigkeit.",
+          "(2) Bei einfacher Fahrlässigkeit nur bei Verletzung wesentlicher Pflichten und beschränkt auf den vertragstypischen, vorhersehbaren Schaden.",
+          "(3) Unberührt: Schäden aus Verletzung von Leben, Körper, Gesundheit.",
+          "(4) Keine Haftung für höhere Gewalt."
+        ]
+      },
+      { "h": "Datenschutz", "p": "Es gilt die Datenschutzerklärung unter /privacy_policy. Personenbezogene Daten werden zur Vertragsdurchführung verarbeitet." },
+      { "h": "Schlussbestimmungen", "p": "Es gilt deutsches Recht (ohne UN-Kaufrecht). Gerichtsstand – soweit zulässig – ist [Sitz des Anbieters]. Unwirksame Regelungen werden durch die gesetzliche ersetzt." }
+    ]
+  },
+
+   "privacy": {
+    "title": "Datenschutzerklärung",
+    "stand": "Stand: 05.10.2025",
+    "items": [
+      { "h": "Verantwortlicher", "p": "Verantwortlich für die Datenverarbeitung: FutureSkillsHub, Essen 45307, mail@future-skills-hub.org, +49-160-1234567." },
+      { "h": "Arten der verarbeiteten Daten", "p": "Bestands-, Kontakt-, Nutzungs- und Kommunikationsdaten; optional Zahlungsdaten, wenn Leistungen gebucht werden." },
+      { "h": "Zwecke & Rechtsgrundlagen", "p": [
+        "Bereitstellung der Website und Leistungen (Art. 6 Abs. 1 lit. b, f DSGVO).",
+        "Kommunikation/Support (Art. 6 Abs. 1 lit. b, f DSGVO).",
+        "Newsletter nur nach Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)."
+      ]},
+      { "h": "Cookies & Tracking", "p": "Wir verwenden technisch notwendige Cookies; optionale Analyse-/Marketing-Cookies nur mit Einwilligung. Einstellungen können im Cookie-Banner geändert werden." },
+      { "h": "Auftragsverarbeiter & Drittanbieter", "p": "Dienstleister (Hosting, E-Mail, Analyse) verarbeiten Daten auf Basis von Auftragsverarbeitung. Eine Liste stellen wir auf Anfrage bereit." },
+      { "h": "Datenübermittlung in Drittländer", "p": "Findet nur statt, wenn geeignete Garantien (z. B. EU-Standardvertragsklauseln) bestehen." },
+      { "h": "Speicherdauer", "p": "Wir speichern Daten nur so lange, wie es für die Zwecke erforderlich ist oder gesetzliche Pflichten bestehen. Danach erfolgt Löschung oder Anonymisierung." },
+      { "h": "Newsletter", "p": "Anmeldung mit Double-Opt-in, Abmeldung jederzeit möglich über den Link in jeder E-Mail." },
+      { "h": "Ihre Rechte", "p": [
+        "Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit.",
+        "Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft.",
+        "Beschwerderecht bei einer Aufsichtsbehörde."
+      ]},
+      { "h": "Sicherheit", "p": "Wir treffen technische und organisatorische Maßnahmen (z. B. TLS-Verschlüsselung), um Daten zu schützen." },
+      { "h": "Kinder/Jugendliche", "p": "Unser Angebot richtet sich nicht gezielt an Minderjährige; personenbezogene Daten von Kindern verarbeiten wir nicht wissentlich." },
+      { "h": "Änderungen dieser Erklärung", "p": "Wir können diese Datenschutzerklärung anpassen. Es gilt die jeweils veröffentlichte Version." },
+      { "h": "Kontakt", "p": "Fragen zum Datenschutz? Kontakt: mail@future-skills-hub.org." }
+    ]
+  },
+
+  "impressum": {
+    "title": "Impressum",
+    "stand": "Stand: 05.10.2025",
+    "items": [
+      { "h": "Angaben gemäß § 5 TMG", "p": "FutureSkillsHub – Demo-Projekt im Rahmen eines privaten Portfolios. Kein kommerzielles Angebot." },
+      { "h": "Verantwortlich für den Inhalt", "p": "Erstellt von Reitarov Yevhen, Essen, Deutschland. Kontakt über reitarovea@gmail.com." },
+      { "h": "Haftung für Inhalte", "p": "Alle Inhalte dieser Website dienen ausschließlich Demonstrationszwecken. Es wird keine Haftung für Richtigkeit, Vollständigkeit oder Aktualität übernommen." },
+      { "h": "Urheberrecht", "p": "Layout, Texte und Code sind urheberrechtlich geschützt. Die Nutzung oder Weitergabe ist nur zu nicht-kommerziellen Zwecken und mit Quellenangabe erlaubt." },
+      { "h": "Bildernachweis", "p": "Alle auf dieser Website verwendeten Bilder wurden mithilfe von KI generiert (z. B. DALL·E, Midjourney) und dienen ausschließlich illustrativen Zwecken." },
+      { "h": "Hinweis zum Projekt", "p": "Diese Website ist ein reines Demo-Portfolio-Projekt. Sie zeigt Design, Struktur und technische Umsetzung einer fiktiven Bildungsplattform, ohne reale Geschäftstätigkeit." }
+    ]
+},
+
+
   "aria": {
   "whatsapp": "WhatsApp Kontakt",
   "location": "Standort anzeigen",
   "next": "weiter",
   "previous": "zurück"
 }
+
+
 }
