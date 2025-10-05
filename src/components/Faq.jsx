@@ -2,10 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus, faSquareMinus } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
 
-
 export default function Faq({t}) {
 
-    
     useEffect(() => {
     const items = document.querySelectorAll('.details');
     function onToggle(e){
@@ -23,21 +21,21 @@ export default function Faq({t}) {
         <div>
             {t("faq.questions").map(question => (
             <details className="details">
-                <summary className="summary flex justify-between items-center text-xl font-medium cursor-pointer">
+                <summary className="summary">
                     <span>{question.q}</span>
                     <span>
-                    <FontAwesomeIcon
-                        icon={faSquarePlus} 
-                        size="xl"
-                        style={{color: "#f89000"}}
-                        className="closed-icon"
-                    />
-                    <FontAwesomeIcon
-                        icon={faSquareMinus}
-                        size="xl"
-                        style={{color: "#f89000"}}
-                        className="open-icon hidden"
-                    />
+                        <FontAwesomeIcon
+                            icon={faSquarePlus} 
+                            size="xl"
+                            className="closed-icon text-orange"
+                            aria-hidden="true"
+                        />
+                        <FontAwesomeIcon
+                            icon={faSquareMinus}
+                            size="xl"
+                            className="open-icon text-orange hidden"
+                            aria-hidden="true"
+                        />
                     </span>
                 </summary>
                 <div className='px-8 pt-4 text-base'>

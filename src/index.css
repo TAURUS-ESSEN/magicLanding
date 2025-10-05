@@ -38,7 +38,6 @@ details[open] .open-icon {
 }
 
 @theme {
-  /* --color-orange: #F89000; */
   --color-orange: #F89000;
   --color-orange2: #FF7D29;
   /* --color-orange: #00809D; */
@@ -135,11 +134,11 @@ details[open] .open-icon {
   }
   
   .blackBlock {
-    @apply flex  items-center gap-5 justify-start text-white rounded-3xl p-4 text-xl font-medium shadow-soft  
+    @apply flex items-center gap-5 justify-start text-white rounded-3xl p-4 text-xl font-medium shadow-soft  
   }
 
   .grayBlock {
-    @apply flex  items-center gap-5 justify-center text-black rounded-3xl p-8 text-[22px] font-medium shadow-soft  
+    @apply flex items-center gap-5 justify-center text-black rounded-3xl p-8 text-[22px] font-medium shadow-soft  
   }
 
   .jobsBlock {
@@ -155,11 +154,19 @@ details[open] .open-icon {
   }
 
   .summary {
-    @apply flex items-center px-8 py-2 text-xl justify-between cursor-pointer
+    @apply flex justify-between items-center px-8 py-2 text-xl font-medium  cursor-pointer
   }
 
   .brands > span {
     @apply hover:scale-110 transition duration-300 ease-in-out hover:text-orange
+  }
+  /* Timer.jsx */
+  .timer {
+    @apply rounded-xl p-4 text-center shadow-leicht;
+  }
+
+  .timer > div {
+    @apply text-center font-medium text-orange text-5xl py-4;
   }
 
   /* CareerSupport.jsx */
@@ -180,11 +187,16 @@ details[open] .open-icon {
     @apply min-w-[200px] px-2 py-2 border-2 border-orange-500 text-xl text-orange flex rounded-3xl z-10 shadow-orange
     group-hover:bg-orange group-hover:rounded-full group-hover:text-white transition-colors  group-hover:shadow-white group-hover:border-white
   }
+
+  /* QuestionsCta.jsx */ 
+  .questionsCtaContainer {
+    @apply  mb-[50px] p-6 mx-auto flex-col max-w-150
+  }
 }
 
 @layer base {
   input {
-    @apply rounded-lg border p-2 bg-white mb-2 text-black;  /* или rounded-[1rem], если нужен кастомный размер */
+    @apply rounded-lg border p-2 bg-white mb-2 text-black; 
   }
 
   header {
@@ -202,7 +214,6 @@ details[open] .open-icon {
 }
 
 body {
-  /* background-color: rgb(215, 215, 215); */
   background-image: url("/gray_jean.png");
   background-repeat: repeat;
 }
@@ -218,19 +229,12 @@ body {
   background-color: rgb(255, 0, 132);
 }
 
-header {
-  /* background-color: green; */
-  /* border: 1px solid lightgray; */
-}
-
 nav a:hover {
   /* background-color: aqua; */
   color: var(--color-orange);
   transition: 0.3s ease;
 }
 
-.terminButton:disabled {
+/* .terminButton:disabled {
   background-color: gray;
-}
-
- 
+} */

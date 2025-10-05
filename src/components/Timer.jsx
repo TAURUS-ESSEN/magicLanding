@@ -25,9 +25,13 @@ export default function Timer({t}) {
     const seconds = String(Math.floor(timeLeft / 1000) % 60).padStart(2, "0");
 
     return (
-            <div className="bg-whitedots rounded-xl p-4 text-center shadow-leicht ">
-                <h3 className="h3">{t("timer.headline")} <span className="text-orange font-medium"> {t("timer.discount")}</span></h3>
-                <div className="text-center font-medium text-orange text-5xl py-4">{hours}:{minutes}:{seconds}</div>
+            <div className="timer bg-whitedots ">
+                <h3 className="h3">{t("timer.headline")} 
+                    <span className="text-orange font-semibold ml-1"> 
+                        {t("timer.discount")}
+                    </span>
+                </h3>
+                <div>{hours}:{minutes}:{seconds}</div>
                 <span>{t("timer.pitch")}</span>
             </div>
     )
