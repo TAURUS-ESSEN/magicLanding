@@ -19,8 +19,54 @@
 
   "about": {
     "title": "About Us",
-    "text": "We support you on your way into an IT career..."
+    "text": "FutureSkills Hub is more than just an education center – we are your springboard into the IT future.",
+    "text2": "Here you’ll meet people who want to reinvent their careers and learn from each other.",
+    "text3": "Founded in 2025 by experts in technology and education, we prepare you for the jobs of the future."
   },
+
+  "benefits": {
+    "title": "Our Benefits",
+    "items": [
+      {
+        "icon": "certificate",
+        "text": "A recognized certificate of the future – state-approved and career-boosting."
+      },
+      {
+        "icon": "ai",
+        "text": "Practical training with AI and new technologies – learning with the tools of the future."
+      },
+      {
+        "icon": "teacher",
+        "text": "Instructors with experience and vision – learn from industry experts."
+      },
+      {
+        "icon": "community",
+        "text": "Strong employment opportunities – through partnerships with companies."
+      },
+      {
+        "icon": "mentoring",
+        "text": "Individual support on your journey – guidance, mentoring, and personal coaching."
+      }
+    ],
+    "button": "Don’t miss the benefits",
+    "note": "More than 500 graduates have already successfully started their careers."
+  },
+
+"vision": {
+  "title": "Our Vision",
+  "textBefore": "Our vision is",
+  "slogan": "digital education for everyone",
+  "textAfter": ", preparing people around the world for the jobs of the future.",
+  "text2": "We believe that technology is the greatest opportunity of our time – but only if everyone has access to knowledge and education.",
+  "text3": "Our vision is a world where every person has the opportunity to realize their digital potential, regardless of origin, age, or previous experience."
+},
+
+"mission": {
+  "title": "Our Mission",
+  "textBefore": "Our mission is to provide everyone with access to modern IT education – regardless of background or previous experience. We create",
+  "slogan": "real opportunities for a secure professional future",
+  "textAfter": "."
+},
 
   "reviews": {
     "label": "Google Reviews",
@@ -443,6 +489,8 @@
       { "h": "Project Disclaimer", "p": "This website is a demo portfolio project showcasing design and technical implementation of a fictional educational platform with no real commercial intent." }
     ]
   },
+
+  "other": "More than a learning center – a community. Sharing knowledge. Starting projects. Shaping the future.",
 
   "aria": {
   "whatsapp": "Contact via WhatsApp",

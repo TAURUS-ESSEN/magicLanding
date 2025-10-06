@@ -5,7 +5,7 @@ import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer({t}) {
     return (
-        <footer className="bg-dots " id="contact">
+        <footer className=" bg-black " id="contact">
             <div className="flex gap-10"> 
                 <div>
                     <span className="relative -top-1 col-span-2">   

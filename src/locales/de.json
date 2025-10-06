@@ -14,12 +14,59 @@
   "timer": {
     "headline": "Melde dich noch heute an und sichere dir einen",
     "discount": "Rabatt 30%",
-    "pitch": "Nur für kurze Zeit verfügbar. Sichere dir jetzt deinen Platz!"
+    "pitch": "Nur für kurze Zeit verfügbar. Sichere dir jetzt deinen Platz!",
+    "title": "Starte jetzt deine Zukunft mit uns!"
   },
 
   "about": {
     "title": "Über uns",
-    "text": "Wir unterstützen dich auf deinem Weg in die IT-Karriere..."
+    "text": "FutureSkills Hub ist mehr als nur ein Bildungszentrum – wir sind dein Sprungbrett in die IT-Zukunft.",
+    "text2": "Hier triffst du Menschen, die ihre Karriere neu erfinden wollen und dabei voneinander lernen. ",
+    "text3": "Gegründet 2025 von Expert:innen aus Technologie und Bildung, bereiten wir dich auf die Berufe der Zukunft vor."
+  },
+
+  "benefits": {
+    "title": "Unsere Vorteile",
+    "items": [
+      {
+        "icon": "certificate",
+        "text": "Ein anerkanntes Zertifikat der Zukunft – staatlich anerkannt und karrierefördernd."
+      },
+      {
+        "icon": "ai",
+        "text": "Praxis mit KI und neuen Technologien – Training mit den Tools der Zukunft."
+      },
+      {
+        "icon": "teacher",
+        "text": "Dozent:innen mit Erfahrung & Vision – Lernen von Expert:innen aus der Praxis."
+      },
+      {
+        "icon": "community",
+        "text": "Starke Chancen auf Anstellung – durch Kooperationen mit Unternehmen."
+      },
+      {
+        "icon": "mentoring",
+        "text": "Individuelle Unterstützung auf deinem Weg – Beratung, Mentoring und persönliche Begleitung."
+      }
+    ],
+    "button": "Vorteile nicht verpassen",
+    "note": "Über 500 Absolvent:innen haben bereits erfolgreich ihre Karriere gestartet."
+  },
+
+    "vision": {
+    "title": "Unsere Vision",
+    "textBefore": "Unsere Vision ist eine",
+    "slogan": "digitale Bildung für alle",
+    "textAfter": ", die Menschen weltweit auf die Jobs der Zukunft vorbereitet.",
+    "text": "Wir glauben, dass Technologie die größte Chance unserer Zeit ist – aber nur, wenn jeder Zugang zu Wissen und Weiterbildung hat.",
+    "text2": "Unsere Vision ist eine Welt, in der jeder Mensch die Möglichkeit hat, sein digitales Potenzial zu entfalten, unabhängig von Herkunft, Alter oder bisherigen Erfahrungen."
+  },
+
+    "mission": {
+    "title": "Unsere Mission",
+    "textBefore": "Unsere Mission ist es, allen Menschen Zugang zu moderner IT-Bildung zu ermöglichen – unabhängig von Herkunft oder Vorbildung. Wir schaffen",
+    "slogan": "echte Chancen für eine sichere berufliche Zukunft",
+    "textAfter": "."
   },
 
   "reviews": {
@@ -415,6 +462,8 @@
     ]
 },
 
+"other": "Mehr als ein Lernzentrum – eine Community. ",
+"other2": "Wissen teilen. Projekte starten. Zukunft gestalten.",
 
   "aria": {
   "whatsapp": "WhatsApp Kontakt",

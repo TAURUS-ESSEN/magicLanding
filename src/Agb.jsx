@@ -5,6 +5,7 @@ export default function Agb() {
     
     const { t } = useOutletContext() ?? { t: (k) => k };
     const items = t("agb.items") ?? [];
+    const location = useLocation();
 
     useEffect(() => {
         if (location.hash) {

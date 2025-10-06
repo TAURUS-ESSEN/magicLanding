@@ -4,6 +4,7 @@ import { useEffect } from "react";
 export default function PrivacyPolicy() {
     const { t } = useOutletContext() ?? { t: (k) => k };
     const items = t("privacy.items") ?? [];
+    const location = useLocation();
 
     useEffect(() => {
         if (location.hash) {
