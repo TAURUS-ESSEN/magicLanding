@@ -273,11 +273,11 @@ details[open] .open-icon {
   }
 
   .nav {
-    @apply items-center justify-between col-span-5;
+    @apply items-center col-span-5;
   }
 
   nav > ul {
-    @apply flex justify-evenly items-center font-medium whitespace-nowrap text-lg md:text-2xl gap-8 
+    @apply flex justify-between w-full pb-2 md:py-2 items-center font-medium whitespace-nowrap text-lg md:text-2xl gap-8 
   }
 
   footer {
@@ -319,7 +319,11 @@ nav a:hover {
     margin-left: 1rem;
   }
 
-  header nav ul  {
+  #menu-toggler:checked + label ~ nav .headerIconsBlock {
+    display: flex;
+  }
+
+  header nav ul {
     display: none;
     background-color: #fff;
     flex-direction: column;
