@@ -24,8 +24,8 @@ export default function LandingPage() {
             <Practical t={t} />
             <Learning t={t} />
             <CareerSupport t={t} openModal={openModal}/>
-            {/* <EntrySupport t={t} /> */}
-            {/* <FutureJobs t={t} /> */}
+            <EntrySupport t={t} />
+            <FutureJobs t={t} />
             {/* <Karriere t={t}/> */}
             {/* <Financing t={t} openModal={openModal}/> */}
             {/* <Final t={t} /> */}
