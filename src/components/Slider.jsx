@@ -18,7 +18,7 @@ export default function Slider({t}) {
         return () => mq.removeEventListener('change', handler);
     }, []);
 
-    const CARD_WIDTH = isDesktop ? 360 : 340;
+    const CARD_WIDTH = isDesktop ? 360 : 330;
     const GAP = 20;
     const STEP = CARD_WIDTH + GAP;
     const VISIBLE = isDesktop ? 3 : 1;
@@ -51,7 +51,7 @@ export default function Slider({t}) {
             </div>
         </div>
 
-        <div className="md:mt-[10px] w-[350px] md:w-[1140px] m-auto overflow-hidden p-2">
+        <div className="md:mt-[10px] w-[340px] md:w-[1140px] m-auto overflow-hidden p-2">
             <div
                 className="flex gap-5 transition-transform duration-300 ease-out"
                 style={{ transform: `translateX(-${index * STEP}px)` }}

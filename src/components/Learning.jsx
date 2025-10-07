@@ -9,7 +9,7 @@ export default function Learning({t}) {
                 <div className="absolute pointer-events-none inset-0 bg-[linear-gradient(to_top,_#000_0%,_rgba(0,0,0,0)_42%)]"></div>
 
             </div>
-            <div className="bg-black text-white -mx-8">
+            <div className="bg-black text-white -mx-4 md:-mx-8">
                 <ul className="list-disc grid grod-cols-1 md:grid-cols-2 px-12 py-10 text-xl gap-2">
                     {t("learning.points").map((point, i) => (
                         <li key={i} className="col-span-1">{point}</li>
