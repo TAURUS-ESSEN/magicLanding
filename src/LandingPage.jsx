@@ -30,7 +30,7 @@ export default function LandingPage() {
             <Financing t={t} openModal={openModal}/>
             <Final t={t} />
             <Faq t={t} />
-            {/* <QuestionsCta t={t} openModal={openModal}/>         */}
+            <QuestionsCta t={t} openModal={openModal}/>        
         </>
     )
 }

@@ -258,7 +258,7 @@ details[open] .open-icon {
 
   /* QuestionsCta.jsx */ 
   .questionsCtaContainer {
-    @apply  mb-[50px] p-6 mx-auto flex-col max-w-150
+    @apply  mb-8 md:mb-[50px] p-6 mx-auto flex-col max-w-150
   }
 }
 
