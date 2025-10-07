@@ -248,11 +248,11 @@ details[open] .open-icon {
 
    /* Karriere.jsx */
   .orangeLine {
-    @apply absolute left-[290px] top-0 bottom-0 w-px bg-orange-500/70 shadow-orange;
+    @apply absolute left-[50px] md:left-[290px] top-0 bottom-0 w-px bg-orange-500/70 shadow-orange;
   }
 
   .carriereStep {
-    @apply min-w-[200px] px-2 py-2 border-2 border-orange-500 text-xl text-orange flex rounded-3xl z-10 shadow-orange
+    @apply min-w-[100px] md:min-w-[200px]   px-1 md:px-2 py-2 border-2 border-orange-500 text-sm md:text-xl text-orange flex rounded-xl md:rounded-3xl z-10 shadow-orange
     group-hover:bg-orange group-hover:rounded-full group-hover:text-white transition-colors  group-hover:shadow-white group-hover:border-white
   }
 
