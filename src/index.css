@@ -218,11 +218,11 @@ details[open] .open-icon {
   }
 
   .details {
-    @apply border-y text-xl
+    @apply border-y text-base md:text-xl
   }
 
   .summary {
-    @apply flex justify-between items-center px-8 py-2 text-xl font-medium  cursor-pointer
+    @apply flex justify-between items-center px-4 md:px-8 py-2 text-base md:text-xl font-medium  cursor-pointer
   }
 
   .brands > span {

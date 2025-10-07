@@ -33,7 +33,7 @@ export default function Faq({t}) {
                         <FontAwesomeIcon
                             icon={faSquareMinus}
                             size="xl"
-                            className="open-icon text-orange hidden"
+                            className="open-icon text-orange is-hidden"
                             aria-hidden="true"
                         />
                     </span>
