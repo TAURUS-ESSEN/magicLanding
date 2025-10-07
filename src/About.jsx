@@ -9,8 +9,8 @@ export default function About() {
 
     return (
         <>
-        <section className="relative section bg-about -mx-8 p-8 flex justify-end gap-10">
-            <div className="flex flex-col justify-end w-100 py-18">
+        <section className="relative section bg-about -mx-4 md:-mx-8 p-4 md:p-8 flex justify-end gap-5 md:gap-10">
+            <div className="flex flex-col justify-end md:w-100 py-18">
                 <h2 className="h2 text-3xl text-orange">{t("about.title")}</h2> 
                 <div className="flex flex-col gap-8 text-2xl text-white font-medium leading-relaxed">
                     <span>{t("about.text")}</span>
@@ -22,22 +22,23 @@ export default function About() {
         <Benefits t={t}/>
         <Vision t={t}/>
         <section className="section">
-            <div className="grid grid-cols-2 gap-5">
-                <div className='col-span-1'>
-                    <Form t={t}/>
-                </div>
+            <div className="flex flex-col md:grid grid-cols-2 gap-5">
                 <div className='col-span-1 flex flex-col justify-center items-center text-center max-w-md m-auto'>
                     <h2 className='h2'>{t("timer.title")}</h2>
                     <Timer t={t}/>
                 </div>
+                                <div className='col-span-1'>
+                    <Form t={t}/>
+                </div>
             </div>
         </section>
-        <section className="-mx-8">
+        <section className="-mx-4 md:-mx-8">
             <div className="relative ">
                 <img src="community2.webp" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
 
-                <div className="absolute inset-0 flex flex-col justify-end mb-10 items-center text-orange text-3xl text-center">{t("other")}<p>{t("other2")}</p></div>
+                <div className="absolute inset-0 flex flex-col px-5 justify-end mb-10 items-center text-orange text-base md:text-3xl text-center">
+                    {t("other")}<p>{t("other2")}</p></div>
 
             </div>
 

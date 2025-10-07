@@ -190,7 +190,7 @@ details[open] .open-icon {
   }
 
   .btn {
-    @apply flex justify-center items-center font-medium uppercase rounded-lg px-5 py-2 md:py-3 text-nowrap shadow-soft cursor-pointer;
+    @apply flex justify-center items-center font-medium uppercase rounded-lg px-2 md:px-5 py-2 md:py-3 text-nowrap shadow-soft cursor-pointer;
   }
 
   .orangeBlock {
