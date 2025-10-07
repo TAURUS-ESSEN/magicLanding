@@ -10,7 +10,7 @@ export default function Learning({t}) {
 
             </div>
             <div className="bg-black text-white -mx-8">
-                <ul className="list-disc grid grid-cols-2 px-12 py-10 text-xl gap-2">
+                <ul className="list-disc grid grod-cols-1 md:grid-cols-2 px-12 py-10 text-xl gap-2">
                     {t("learning.points").map((point, i) => (
                         <li key={i} className="col-span-1">{point}</li>
                     ))}

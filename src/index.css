@@ -194,15 +194,15 @@ details[open] .open-icon {
   }
 
   .orangeBlock {
-    @apply flex items-center justify-start gap-5 text-black rounded-3xl p-4 bg-orange text-xl font-medium shadow-soft text-center
+    @apply flex items-center justify-start gap-3 text-black rounded-xl md:rounded-3xl  p-4 bg-orange text-base md:text-xl font-medium shadow-soft text-center
   }
   
   .blackBlock {
-    @apply flex items-center gap-5 justify-start text-white rounded-3xl p-4 text-xl font-medium shadow-soft  
+    @apply flex items-center gap-3 justify-start text-white rounded-xl md:rounded-3xl p-4 text-base md:text-xl font-medium shadow-soft  
   }
 
   .grayBlock {
-    @apply flex items-center gap-5 justify-center text-black rounded-3xl p-8 text-[22px] font-medium shadow-soft  
+    @apply flex items-center gap-5 justify-center text-black rounded-xl md:rounded-3xl p-8 text-base md:text-xl font-medium shadow-soft  
   }
 
   .block {
@@ -239,7 +239,7 @@ details[open] .open-icon {
 
   /* CareerSupport.jsx */
   .careerSupportBlock {
-    @apply grid grid-rows-3 grid-cols-12 gap-5 text-center auto-rows-fr;
+    @apply grid grid-rows-6 grid-cols-2 md:grid-rows-3 md:grid-cols-12 gap-4 md:gap-5 text-center auto-rows-fr;
   }
 
   .careerSupportBlock > div {
