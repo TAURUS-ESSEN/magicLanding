@@ -4,7 +4,7 @@ export default function Learning({t}) {
             <div>
                 <h2 className="h2">{t("learning.title")}</h2>
             </div>
-            <div className="-mx-8 relative">
+            <div className="-mx-4 md:-mx-8 relative">
                 <img src="learning.webp" />
                 <div className="absolute pointer-events-none inset-0 bg-[linear-gradient(to_top,_#000_0%,_rgba(0,0,0,0)_42%)]"></div>
 
