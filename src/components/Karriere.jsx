@@ -2,7 +2,7 @@ export default function Karriere({t}) {
     return (
         <section>
             <h2 className="h2">{t("careerPath.title")}</h2>
-            <div className="bg-dots -mx-8 ">
+            <div className="bg-dots -mx-4 md:-mx-8 ">
                 <div className="p-8">
                         <div className="relative ">
                             <div className='orangeLine'></div>

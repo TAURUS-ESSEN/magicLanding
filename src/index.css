@@ -214,7 +214,7 @@ details[open] .open-icon {
   }
 
   .financierungBlock {
-    @apply flex flex-col gap-5 rounded-3xl p-8 font-medium shadow-soft 
+    @apply flex flex-col gap-4 md:gap-5 rounded-xl md:rounded-3xl p-4 md:p-8 font-medium shadow-soft 
   }
 
   .details {
