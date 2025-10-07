@@ -26,7 +26,7 @@ function App() {
 
   return (
     <> 
-      <div className='wrapper px-8 '>
+      <div className='wrapper'>
         <Header lang={lang} switchLang={switchLang}/>
         <main>
           <Outlet context={{ t, openModal }} />

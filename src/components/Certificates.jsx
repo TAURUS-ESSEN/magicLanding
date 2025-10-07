@@ -14,7 +14,7 @@ export default function Certificates({t, openModal}) {
                         <div className="text-xl leading-relaxed md:pr-6">
                             {t("certificates.text")}
                         </div>
-                        <div className="blackcard bg-dots rounded-xl text-xl">
+                        <div className=" flex flex-col text-white rounded-xl md:rounded-3xl p-4 md:p-8 bg-dots rounded-xl text-xl">
                             {t("certificates.listTitle")}
                             <ul className="grid grid-cols-2">
                                 {t("certificates.jobs").map((job, i) => (

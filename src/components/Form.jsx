@@ -58,8 +58,8 @@ export default function Form({t}) {
     }
     
     return (
-        <div className="blackcard bg-dots px-14 py-8 gap-[20px] shadow-soft">
-                <span className="text-3xl"> 
+        <div className="formContainer bg-dots">
+                <span className="text-lg md:text-3xl"> 
                     {t("ctaForm.titleRich.before")}{" "}<span className="text-orange">{t("ctaForm.titleRich.kostenlose")} </span>{" "} {t("ctaForm.titleRich.after")}
                 </span>
                     <form className="flex flex-col gap-2 " onSubmit={(e)=>onSubmit(e)}>
@@ -115,7 +115,7 @@ export default function Form({t}) {
                         </div>
                         )} */}
                         <div className="flex justify-center items-center">
-                        <button type="submit" className="btn bg-orange " >{t("ctaForm.submit")}</button>
+                        <button type="submit" className="btn bg-orange ">{t("ctaForm.submit")}</button>
                         {status === "success" && (
                         <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                         )}

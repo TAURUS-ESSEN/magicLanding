@@ -9,10 +9,13 @@ export default function About() {
 
     return (
         <>
-        <section className="relative section bg-about -mx-8 p-8 flex justify-end gap-10">
-            <div className="flex flex-col justify-end w-100 py-18">
-                <h2 className="h2 text-3xl text-orange">{t("about.title")}</h2> 
-                <div className="flex flex-col gap-8 text-2xl text-white font-medium leading-relaxed">
+        <section className="relative bg-dots -mx-8 p-8 flex gap-10">
+            <div className="min-w-[250px] -m-8">
+                <img src="about.webp" className="opacity-30 w-full" />
+            </div>
+            <div className="px-40">
+                <h2 className="h2 text-orange">{t("about.title")}</h2> 
+                <div className="flex flex-col gap-8 text-xl text-white">
                     <span>{t("about.text")}</span>
                     <span>{t("about.text2")}</span>
                     <span>{t("about.text3")}</span>
