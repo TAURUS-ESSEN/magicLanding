@@ -333,8 +333,10 @@ nav a:hover {
     top: 100%;
     margin-top: 0.2rem;
     left: -1rem;
+    padding-right: 1rem;
     z-index: 2;
     gap: 0;
+    box-shadow: 0 2px 2px rgb(187, 187, 187);
   }
 
     header nav div {

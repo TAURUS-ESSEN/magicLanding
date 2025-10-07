@@ -15,8 +15,8 @@ export default function Header({lang, switchLang}) {
                 </span>
                 <input type="checkbox" id="menu-toggler" />
                     <label htmlFor="menu-toggler" role="button" tabIndex="0"  className="md:hidden ml-auto">
-                        <span className="open">☰ </span>
-                        <span className="close">☰</span>
+                        <span className="open text-orange">☰ </span>
+                        <span className="close text-orange">☰</span>
                     </label>
 
                     <nav className="nav  md:flex">

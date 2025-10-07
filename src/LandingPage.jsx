@@ -19,8 +19,8 @@ export default function LandingPage() {
     return (
         <>
             <Hero t={t}  openModal={openModal} />
-            {/* <Slider t={t}/> */}
-            {/* <Certificates t={t} openModal={openModal}/> */}
+            <Slider t={t}/>
+            <Certificates t={t} openModal={openModal}/>
             {/* <Practical t={t} /> */}
             {/* <Learning t={t} /> */}
             {/* <CareerSupport t={t} openModal={openModal}/> */}
