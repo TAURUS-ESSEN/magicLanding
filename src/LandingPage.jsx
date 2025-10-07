@@ -28,7 +28,7 @@ export default function LandingPage() {
             <FutureJobs t={t} />
             {/* <Karriere t={t}/> */}
             <Financing t={t} openModal={openModal}/>
-            {/* <Final t={t} /> */}
+            <Final t={t} />
             {/* <Faq t={t} /> */}
             {/* <QuestionsCta t={t} openModal={openModal}/>         */}
         </>
