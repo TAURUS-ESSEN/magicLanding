@@ -168,7 +168,7 @@ details[open] .open-icon {
   }
 
   .formContainer {
-    @apply  flex flex-col px-8 md:px-14 py-4 md:py-8 gap-5 
+    @apply  flex flex-col px-8 md:px-8 lg:px-14 py-4 md:py-8 gap-5 sm:max-w-[500px] sm:m-auto
             text-white rounded-xl md:rounded-3xl shadow-soft;
   }
 
@@ -236,7 +236,7 @@ details[open] .open-icon {
 
    /* Karriere.jsx */
   .orangeLine {
-    @apply absolute left-[50px] md:left-[290px] top-0 bottom-0 w-px bg-orange-500/70 shadow-orange;
+    @apply absolute left-[50px]  md:left-[190px] lg:left-[290px] top-0 bottom-0 w-px bg-orange-500/70 shadow-orange;
   }
 
   .carriereStep {
@@ -264,7 +264,7 @@ details[open] .open-icon {
   }
 
   header {
-    @apply relative flex items-center md:grid md:grid-cols-6 h-[60px] md:h-[100px];
+    @apply relative flex items-center lg:grid lg:grid-cols-6 h-[60px] md:h-[100px];
 
   }
 
@@ -299,7 +299,7 @@ nav a:hover {
   transition: 0.3s ease;
 }
 
-@media (width <= 767px) {
+@media (width <= 1024px) {
     label[for="menu-toggler"] {
         display: block;
         margin-right: 1rem;

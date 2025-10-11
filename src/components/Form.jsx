@@ -69,7 +69,7 @@ export default function Form({t, modal, closeModal}) {
     
     return (
         <div className={`${modal === 'modal' ? " formContainer-modal" : "formContainer"} bg-dots`}>
-                <span className="text-lg md:text-3xl"> 
+                <span className="text-lg md:text-xl lg:text-3xl"> 
                     {t("ctaForm.titleRich.before")}{" "}<span className="text-orange">{t("ctaForm.titleRich.kostenlose")} </span>{" "} {t("ctaForm.titleRich.after")}
                 </span>
                     <form className="flex flex-col gap-2 " onSubmit={(e)=>onSubmit(e)}>

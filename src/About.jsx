@@ -36,7 +36,7 @@ export default function About() {
             <div className="relative ">
                 <img src="community2.webp" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                <div className="absolute  inset-0 flex flex-col justify-end px-5 mb-0 md:mb-10 text-orange text-base md:text-3xl text-center">
+                <div className="absolute inset-0 flex flex-col justify-end px-5 mb-0 md:mb-10 text-orange text-base md:2xl lg:text-3xl text-center">
                     {t("other")}<p>{t("other2")}</p></div>
 
             </div>
