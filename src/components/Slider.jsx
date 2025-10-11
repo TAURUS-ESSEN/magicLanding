@@ -29,7 +29,7 @@ export default function Slider({t}) {
 
     return (
         <section className="section">
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
             <h2 className="h2">{t("successStories.title")}</h2>
             <div className="flex gap-2">
             <button
