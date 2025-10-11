@@ -9,7 +9,7 @@ export default function FutureJobs({t}) {
                     {cards.map((card,i) => (
                         <li className={`${card.style} flex flex-col justify-between `} key={i}>
                             <div className="text-base">{card.badge}</div>
-                            <div className="text-xl md:text-2xl">{card.title}</div>
+                            <div className="text-xl md:text-2xl font-semibold">{card.title}</div>
                             <div className="text-sm">{card.subtitle}</div>
                             <div className="text-sm">{card.text}</div>
                             <div className={`${card.buttonStyle} w-40 shine-btn`}>{card.button}</div>

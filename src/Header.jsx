@@ -19,7 +19,7 @@ export default function Header({lang, switchLang}) {
                         <span className="open text-orange peer-checked:hidden shine-btn">☰</span>
                         <span className="close text-orange hidden peer-checked:inline shine-btn">✕</span>
                     </label>
-
+                    
                     <nav className="nav md:flex" id="primary-nav">
                         <ul> 
                             <li>
