@@ -6,8 +6,8 @@ export default function Final({t}) {
             <div className='hidden md:block md:col-span-1'>
                 <div><h2 className='h2'>{t("final.headline")}</h2></div>
                 <div>{t("final.subline")}</div>
-                <div className='relative max-w-[400px] -mb-8 self-end'>
-                    <img src="./man.webp" alt='man' className="w-full h-auto"/>
+                <div className='relative max-w-[400px] self-end top-8'>
+                    <img src="./man.webp" alt='man' className=" w-full h-auto"/>
                 </div>
             </div>
             <div className='md:col-span-1'>

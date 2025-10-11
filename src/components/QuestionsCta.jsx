@@ -1,7 +1,7 @@
 export default function QuestionsCta({t, openModal}) {
     return (
         <>
-        <section className="blackBlock questionsCtaContainer bg-dots">
+        <section className="section blackBlock questionsCtaContainer bg-dots">
             <h2 className="h2 font-semibold text-orange">{t("questionsCta.title")}</h2>
             <div className="text-center ">{t("questionsCta.text")}</div>
             <div>
