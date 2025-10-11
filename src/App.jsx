@@ -32,7 +32,7 @@ function App() {
           <Outlet context={{ t, openModal }} />
         </main>
       </div>
-      <ModalHost closeModal={closeModal} modal={modal} t={t}/>
+      <ModalHost t={t} closeModal={closeModal} modal={modal} t={t}/>
       <Footer t={t} />
     </>
   )

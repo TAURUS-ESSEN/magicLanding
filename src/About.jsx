@@ -9,20 +9,20 @@ export default function About() {
 
     return (
         <>
-        <section className="relative section bg-about -mx-4 md:-mx-8 p-4 md:p-8 flex justify-end gap-5 md:gap-10">
-            <div className="flex flex-col justify-end md:w-100 py-18">
-                <h2 className="h2 text-3xl text-orange">{t("about.title")}</h2> 
-                <div className="flex flex-col gap-8 text-2xl text-white font-medium leading-relaxed">
+        <section className="section flex justify-end gap-4 md:gap-10 -mx-4 md:-mx-8 p-4 md:p-8 bg-about ">
+            <div className="flex flex-col justify-end md:w-100 py-8 md:py-18">
+                <h2 className="h2 text-2xl md:text-3xl text-orange">{t("about.title")}</h2> 
+                <div className="flex flex-col gap-8 text-lg md:text-2xl text-white font-medium leading-relaxed">
                     <span>{t("about.text")}</span>
                     <span>{t("about.text2")}</span>
                     <span>{t("about.text3")}</span>
                 </div>
             </div>
         </section>
-        <Benefits t={t}/>
+        <Benefits t={t} openModal={openModal}/>
         <Vision t={t}/>
         <section className="section">
-            <div className="flex flex-col md:grid grid-cols-2 gap-5">
+            <div className="flex flex-col md:grid grid-cols-2 gap-6">
                 <div className='col-span-1 flex flex-col justify-center items-center text-center max-w-md m-auto'>
                     <h2 className='h2'>{t("timer.title")}</h2>
                     <Timer t={t}/>
@@ -36,8 +36,7 @@ export default function About() {
             <div className="relative ">
                 <img src="community2.webp" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-
-                <div className="absolute inset-0 flex flex-col px-5 justify-end mb-10 items-center text-orange text-base md:text-3xl text-center">
+                <div className="absolute  inset-0 flex flex-col justify-end px-5 mb-0 md:mb-10 text-orange text-base md:text-3xl text-center">
                     {t("other")}<p>{t("other2")}</p></div>
 
             </div>

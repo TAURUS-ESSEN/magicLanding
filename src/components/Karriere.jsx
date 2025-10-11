@@ -10,7 +10,7 @@ export default function Karriere({t}) {
                                 <div key={i} className='group flex px-0 md:px-10 gap-2'>
                                     <div className="min-w-[100px] md:min-w-[500px] flex justify-center items-center">
                                             <div className='carriereStep bg-dots'>
-                                                    <span className='flex-1 p-2 py-2  w-0 flex justify-center items-center'> 
+                                                    <span className='flex-1 p-2 py-2 w-0 flex justify-center items-center'> 
                                                     {step.label} 
                                                 </span>
                                                 <span className='p-0 md:p-2 flex items-center'> 

@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 import { Link } from "react-router-dom"
 
-export default function Form({t}) {
+export default function Form({t, modal, closeModal}) {
     const [vorname, setVorname] = useState('');
     const [nachname, setNachname] = useState('');
     const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ export default function Form({t}) {
 
     const nameRegex = /[a-z]{2,}/i;
     const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let error = "border-3 border-red-500"
+    let error = "border-2 border-red-500"
 
     function checkVorname(value) {
         setValid(prev => ({...prev, vOk: nameRegex.test(value.trim())}))
@@ -33,7 +34,16 @@ export default function Form({t}) {
 
     async function onSubmit(e) {
         e.preventDefault();
-        if (valid.some(value => value === false)) return
+        const vOk = nameRegex.test(vorname.trim());
+        const nOk = nameRegex.test(nachname.trim());
+        const eOk = emailRx.test(email.trim());
+        setTouched({ vInput: true, nInput: true, eInput: true });
+        setValid({ vOk, nOk, eOk });
+
+        if (!(vOk && nOk && eOk && checkbox)) {
+        setStatus("invalid");
+        return;
+        }
 
 
         const formData = new FormData(e.target);
@@ -58,7 +68,7 @@ export default function Form({t}) {
     }
     
     return (
-        <div className="formContainer bg-dots">
+        <div className={`${modal === 'modal' ? " formContainer-modal" : "formContainer"} bg-dots`}>
                 <span className="text-lg md:text-3xl"> 
                     {t("ctaForm.titleRich.before")}{" "}<span className="text-orange">{t("ctaForm.titleRich.kostenlose")} </span>{" "} {t("ctaForm.titleRich.after")}
                 </span>
@@ -101,27 +111,22 @@ export default function Form({t}) {
                                 required/> 
                             <span className="">
                                 {t("ctaForm.consent.before")}{" "}
-                                <Link to="privacy_policy" className="underline">
+                                <Link to="privacy_policy" onClick={()=>closeModal()}className="underline">
                                     {t("ctaForm.consent.link")}
                                 </Link>{" "}
                                 {t("ctaForm.consent.after")}
                             </span>
                         </span>
-                        {/* {(errorMessage || errorEmailMessage || errorDatenSchutz) && (
-                        <div className="flex flex-col text-red-500 p-2 border rounded-lg bg-orange-200">
-                            <span>{errorMessage} </span>
-                            <span>{errorEmailMessage}</span>
-                            <span>{errorDatenSchutz}</span>
+
+                        <div className="flex flex-col justify-center items-center mt-2 gap-1">
+                            <button type="submit" className="btn bg-orange ">{t("ctaForm.submit")}</button>
+                            {status === "success" && (
+                            <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
+                            )}
+                            {status === "error" && (
+                                <div className="text-red-600 mt-2">❌ Fehler beim Senden</div>
+                            )}
                         </div>
-                        )} */}
-                        <div className="flex justify-center items-center">
-                        <button type="submit" className="btn bg-orange ">{t("ctaForm.submit")}</button>
-                        {status === "success" && (
-                        <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
-                        )}
-                        {status === "error" && (
-                        <div className="text-red-600 mt-2">❌ Fehler beim Senden</div>
-)}</div>
                     </form>
                 </div>
     )

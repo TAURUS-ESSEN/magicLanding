@@ -55,7 +55,7 @@
 "vision": {
   "title": "Our Vision",
   "textBefore": "Our vision is",
-  "slogan": "digital education for everyone",
+  "slogan": " digital education for everyone",
   "textAfter": ", preparing people around the world for the jobs of the future.",
   "text2": "We believe that technology is the greatest opportunity of our time – but only if everyone has access to knowledge and education.",
   "text3": "Our vision is a world where every person has the opportunity to realize their digital potential, regardless of origin, age, or previous experience."
@@ -64,7 +64,7 @@
 "mission": {
   "title": "Our Mission",
   "textBefore": "Our mission is to provide everyone with access to modern IT education – regardless of background or previous experience. We create",
-  "slogan": "real opportunities for a secure professional future",
+  "slogan": " real opportunities for a secure professional future",
   "textAfter": "."
 },
 
@@ -497,5 +497,13 @@
   "location": "Show location",
   "next": "next",
   "previous": "previous"
+},
+
+"cookies": {
+  "title": "Cookies & Privacy",
+  "text": "We use cookies to improve our website. You can accept only necessary cookies or accept all. Learn more in the privacy policy.",
+  "button1": "Accept only necessary",
+  "button2": "Accept all"
 }
+
 }
