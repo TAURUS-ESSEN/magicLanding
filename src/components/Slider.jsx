@@ -35,7 +35,7 @@ export default function Slider({t}) {
             <button
                 onClick={() => setIndex(prev => Math.max(prev - 1, 0))}
                 disabled={disablePrev}
-                className="sliderToggler"
+                className="sliderToggler shine-btn"
                 aria-label={t("aria.previous")}
             >
                 <FontAwesomeIcon icon={faLeftLong} size="sm"/>
@@ -43,7 +43,7 @@ export default function Slider({t}) {
             <button
                 onClick={() => setIndex(prev => Math.min(prev + 1, maxIndex))}
                 disabled={disableNext}
-                className="sliderToggler"
+                className="sliderToggler shine-btn"
                 aria-label={t("aria.next")}
             >
                 <FontAwesomeIcon icon={faRightLong} size="sm"/>
@@ -83,7 +83,7 @@ export default function Slider({t}) {
                             </ul>
                             <button 
                                 onClick={() => setFlippedIndex(isFlipped ? null : i)} 
-                                className="btn bg-orange hover:bg-orange-500 w-30 text-base">
+                                className="btn bg-orange hover:bg-orange-500 w-30 text-base shine-btn">
                                 {student.button} 
                             </button>
                         </div>
@@ -99,7 +99,7 @@ export default function Slider({t}) {
                         </div>
 
                         <div className="flex items-center justify-between">
-                        <button onClick={() => setFlippedIndex(isFlipped ? null : i)} className="btn bg-white text-black text-base">
+                        <button onClick={() => setFlippedIndex(isFlipped ? null : i)} className="btn bg-white text-black text-base shine-btn">
                             {student.cta ?? "Zurück"}
                         </button>
                         </div>

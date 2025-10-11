@@ -13,6 +13,7 @@ import Final from './components/Final';
 import Faq from './components/Faq';
 import QuestionsCta from './components/QuestionsCta';
 
+
 export default function LandingPage() {
     const {t, openModal } = useOutletContext();
     return (

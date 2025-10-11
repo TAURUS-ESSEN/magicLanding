@@ -23,7 +23,7 @@ export default function Karriere({t}) {
                                                 </span>
                                             </div>
                                     </div>
-                                    <div className=" p-2 md:p-4 text-base md:text-lg font-medium text-white">
+                                    <div className="p-2 md:p-4 text-base md:text-lg font-medium text-white">
                                         {step.text}
                                     </div>
                                 </div>

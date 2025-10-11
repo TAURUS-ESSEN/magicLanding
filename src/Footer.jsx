@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faWhatsapp, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -28,8 +29,8 @@ export default function Footer({t}) {
                         </div>
                     </div>
                     <div className=" flex flex-wrap justify-center sm:flex-col gap-2">
-                        <div className="hover:text-orange"><a href="#programs">{t("footer.menu.programs")}</a></div>
-                        <div className="hover:text-orange"><a href="#payments">{t("footer.menu.payments")}</a></div>
+                        <div className="hover:text-orange"><HashLink smooth to="/#programs">{t("footer.menu.programs")}</HashLink></div>
+                        <div className="hover:text-orange"><HashLink smooth to="/#payments">{t("footer.menu.payments")}</HashLink></div>
                         <div className="hover:text-orange"><Link to="/about">{t("footer.menu.about")}</Link></div>
                     </div>
 
@@ -65,9 +66,9 @@ export default function Footer({t}) {
                 </div>
                 <div className="flex text-sm md:text-base justify-center gap-8">
                         <div className="hover:text-orange">
-                            <Link to={{ pathname: "/impressum", hash: "#start" }}>
+                            <HashLink to={{ pathname: "/impressum", hash: "#start" }}>
                                 {t("footer.menu.imprint")}
-                            </Link>
+                            </HashLink>
                         </div>
                         <div className="hover:text-orange">
                             <Link to={{ pathname: "/privacy_policy", hash: "start" }}>
@@ -81,7 +82,7 @@ export default function Footer({t}) {
                         </div>
                     </div>
                 </div>
-             <div className="flex flex-col md:flex-row text-base md:text-lg justify-center items-center">
+            <div className="flex flex-col md:flex-row text-base md:text-lg justify-center items-center">
                     <span>{t("footer.copyrightBefore")}
                         <span className="text-orange ml-1"> {t("footer.brandName")}</span>.
                     </span>

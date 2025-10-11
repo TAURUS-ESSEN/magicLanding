@@ -119,7 +119,7 @@ export default function Form({t, modal, closeModal}) {
                         </span>
 
                         <div className="flex flex-col justify-center items-center mt-2 gap-1">
-                            <button type="submit" className="btn bg-orange ">{t("ctaForm.submit")}</button>
+                            <button type="submit" className="btn bg-orange shine-btn">{t("ctaForm.submit")}</button>
                             {status === "success" && (
                             <div className="text-green-600 mt-2">✅ Nachricht erfolgreich gesendet!</div>
                             )}

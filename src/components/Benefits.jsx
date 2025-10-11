@@ -15,7 +15,7 @@ export default function Benefits({t, openModal}) {
                     </li>
                 ))}
                 <li className="flex flex-col ga-4 md:max-w-[300px]">
-                    <button onClick={()=>openModal('registration')} className="btn bg-orange text-lg  my-2 text-black">{t("benefits.button")}</button>
+                    <button onClick={()=>openModal('registration')} className="btn bg-orange text-lg my-2 text-black shine-btn">{t("benefits.button")}</button>
                     <div className='flex items-center gap-2 mt-2'>
                         <span className='text-orange'><FontAwesomeIcon icon={faStar} /> </span>
                         <span className='text-sm'>{t("benefits.note")}</span>

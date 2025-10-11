@@ -12,7 +12,7 @@ export default function EntrySupport({t}) {
                         {t("entrySupport.interestText")}
                     </div>
                     <div>
-                        <button className="btn bg-white text-black">{t("entrySupport.button")}</button>
+                        <button className="btn bg-white text-black shine-btn">{t("entrySupport.button")}</button>
                     </div>
                 </div>
                 

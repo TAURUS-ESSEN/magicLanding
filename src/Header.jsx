@@ -1,5 +1,6 @@
 import {t} from "./languageToggler"
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
@@ -15,33 +16,33 @@ export default function Header({lang, switchLang}) {
                 </span>
                 <input type="checkbox" id="menu-toggler" className="peer hidden" />
                     <label htmlFor="menu-toggler" role="button" tabIndex="0"  className="md:hidden ml-auto">
-                        <span className="open text-orange peer-checked:hidden">☰</span>
-                        <span className="close text-orange hidden peer-checked:inline">✕</span>
+                        <span className="open text-orange peer-checked:hidden shine-btn">☰</span>
+                        <span className="close text-orange hidden peer-checked:inline shine-btn">✕</span>
                     </label>
 
                     <nav className="nav md:flex" id="primary-nav">
                         <ul> 
                             <li>
-                                <Link to={{ pathname: "/", hash: "#programs" }}>
+                                <HashLink smooth to="/#programs">
                                 {t("menu.option1")}
-                                </Link>
+                                </HashLink>
                             </li>
                             <li>
-                                <Link to={{ pathname: "/", hash: "#payments" }}>
+                                <HashLink smooth to="/#payments">
                                 {t("menu.option2")}
-                                </Link>
+                                </HashLink>
                             </li>
                             <li>
                                 <Link to="/about">{t("menu.option3")}</Link>
                             </li>
                             <li>
-                                <Link to={{ pathname: "/", hash: "#contact" }}>
+                                <HashLink smooth to="/#contact">
                                 {t("menu.option4")}
-                                </Link>
+                                </HashLink>
                             </li>
                         
                             <li className="headerIconsBlock"> 
-                                <button className="headerIcon" onClick={switchLang}>
+                                <button className="headerIcon shine-btn" onClick={switchLang}>
                                     {lang === "de" ? "EN" : "DE"}
                                 </button>
                                 <a 
@@ -49,7 +50,7 @@ export default function Header({lang, switchLang}) {
                                     target="_blank"
                                     rel="noopener noreferrer" 
                                     aria-label={t("aria.whatsapp")} 
-                                    className="headerIcon"
+                                    className="headerIcon shine-btn"
                                 >
                                     <FontAwesomeIcon icon={faWhatsapp} size="xl" />
                                 </a>
@@ -58,7 +59,7 @@ export default function Header({lang, switchLang}) {
                                     target="_blank"
                                     rel="noopener noreferrer" 
                                     aria-label={t("aria.location")} 
-                                    className="headerIcon"
+                                    className="headerIcon shine-btn"
                                 >
                                     <FontAwesomeIcon icon={faLocationDot} size="xl"/>
                                 </a>
