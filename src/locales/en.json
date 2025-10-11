@@ -504,6 +504,11 @@
   "text": "We use cookies to improve our website. You can accept only necessary cookies or accept all. Learn more in the privacy policy.",
   "button1": "Accept only necessary",
   "button2": "Accept all"
+},
+
+"404": {
+  "textBefore": "This page unfortunately does not exist. You will be automatically redirected in ",
+  "textAfter": " seconds."
 }
 
 }

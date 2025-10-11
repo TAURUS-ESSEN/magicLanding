@@ -477,5 +477,10 @@
     "text": "Wir verwenden Cookies, um unsere Website zu verbessern. Sie können nur notwendige Cookies akzeptieren oder alle akzeptieren. Mehr in der Datenschutzerklärung",
     "button1":"Nur notwendige akzeptieren",
     "button2":"Alle akzeptieren"
-  }
+  },
+
+"404": {
+  "textBefore": "Diese Seite existiert leider nicht. Sie werden in ",
+  "textAfter": " Sekunden automatisch weitergeleitet."
+}
 }

@@ -11,7 +11,6 @@ import Karriere from './components/Karriere';
 import Financing from './components/Financing';
 import Final from './components/Final';
 import Faq from './components/Faq';
-import Timer from './components/Timer';
 import QuestionsCta from './components/QuestionsCta';
 
 export default function LandingPage() {
