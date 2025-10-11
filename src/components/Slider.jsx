@@ -83,7 +83,7 @@ export default function Slider({t}) {
                             </ul>
                             <button 
                                 onClick={() => setFlippedIndex(isFlipped ? null : i)} 
-                                className="btn bg-orange hover:bg-orange-500 w-30 text-base shine-btn">
+                                className="btn bg-orange orange-gradient hover:bg-orange-500 w-30 text-base shine-btn">
                                 {student.button} 
                             </button>
                         </div>

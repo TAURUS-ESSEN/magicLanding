@@ -3,7 +3,7 @@ export default function Practical({t}) {
         <section className="section">
             <h2 className="h2">{t("practical.title")}</h2>
             <div className="flex flex-col md:flex-row gap-4 md:gap-5">
-                <div className="orangeBlock md:flex-col">
+                <div className="orangeBlock md:flex-col orange-gradient">
                     <img src="go.webp" className="w-[60px] md:w-[90px]" />
                     {t("practical.cardsTop.card1")}
                 </div>
@@ -11,7 +11,7 @@ export default function Practical({t}) {
                     <img src="sled.webp" className="w-[60px] md:w-[90px]"/>
                     {t("practical.cardsTop.card2")}
                 </div>
-                <div className="orangeBlock md:flex-col">
+                <div className="orangeBlock md:flex-col orange-gradient">
                     <img src="team.webp" className="w-[60px] md:w-[90px]"/>
                     {t("practical.cardsTop.card3")}
                 </div>

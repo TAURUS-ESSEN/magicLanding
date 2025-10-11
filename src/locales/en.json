@@ -218,7 +218,7 @@
     "title": "Future Jobs with the Best Opportunities",
     "cards": [
       {
-        "style": "jobsBlock  bg-orange",
+        "style": "jobsBlock  bg-orange orange-gradient",
         "badge": "New group every month",
         "title": "Fullstack Developer of Tomorrow",
         "subtitle": "Morning Course \\ Evening Course",
@@ -241,7 +241,7 @@
         "title": "Sustainability Tech Innovator",
         "subtitle": "Morning Course \\ Evening Course",
         "text": "Shape sustainable technologies that help companies save resources and grow in a climate-friendly way.",
-        "buttonStyle": "btn bg-orange text-black",
+        "buttonStyle": "btn bg-orange orange-gradient text-black",
         "button": "LEARN MORE"
       }
     ]

@@ -9,8 +9,8 @@
 }
 
 :root {
-  --orange1: #f97316;
-  --orange2: #fb923c;
+  --orange1: #ff7d20;
+  --orange2: #fa9f0ce7;
 
   --text-on-dark-bg: #ffffff;
   --secondary-color: var(--color-orange);
@@ -130,6 +130,9 @@ button { font-family: Oxanium, system-ui, -apple-system, Segoe UI, Roboto, Arial
 }
 
 @layer utilities {
+  .orange-gradient {
+    background: linear-gradient(135deg, var(--orange1), var(--orange2));
+  }
   .shine-btn { position: relative; overflow: hidden; }
   .shine-btn::after {
     content:""; position:absolute; inset:0; transform:translateX(-120%);

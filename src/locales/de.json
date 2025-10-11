@@ -223,7 +223,7 @@
     "title": "Die Zukunftsberufe mit den besten Chancen",
     "cards": [
       {
-        "style": "jobsBlock  bg-orange",
+        "style": "jobsBlock  bg-orange orange-gradient",
         "badge": "Monatlich neue Gruppe",
         "title": "Fullstack Developer of Tomorrow",
         "subtitle": "Vormittagskurs \\ Abendkurs",
@@ -246,7 +246,7 @@
         "title": "Sustainability Tech Innovator",
         "subtitle": "Vormittagskurs \\ Abendkurs",
         "text": "Gestalte nachhaltige Technologien, die Unternehmen helfen, Ressourcen zu schonen und klimafreundlich zu wachsen.",
-        "buttonStyle": "btn bg-orange text-black",
+        "buttonStyle": "btn bg-orange orange-gradient  text-black",
         "button": "MEHR ERFAHREN"
       }
     ]
