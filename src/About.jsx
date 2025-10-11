@@ -9,7 +9,7 @@ export default function About() {
 
     return (
         <>
-        <section className="section flex justify-end gap-4 md:gap-10 -mx-4 md:-mx-8 p-4 md:p-8 bg-about ">
+        <section className="  flex justify-end gap-4 md:gap-10 -mx-4 md:-mx-8 p-4 md:p-8 bg-about ">
             <div className="flex flex-col justify-end md:w-100 py-8 md:py-18">
                 <h2 className="h2 text-2xl md:text-3xl text-orange">{t("about.title")}</h2> 
                 <div className="flex flex-col gap-8 text-lg md:text-2xl text-white font-medium leading-relaxed">
@@ -32,7 +32,7 @@ export default function About() {
                 </div>
             </div>
         </section>
-        <section className="-mx-4 md:-mx-8">
+        <section className="section -mx-4 md:-mx-8">
             <div className="relative ">
                 <img src="community2.webp" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
