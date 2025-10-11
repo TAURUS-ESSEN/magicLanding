@@ -290,16 +290,11 @@ body {
 .wrapper {
   display: grid;
   margin: 0;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 5px rgb(179, 179, 179);
-}
-
-.test {
-  background-color: rgb(255, 0, 132);
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #b3b3b3;
 }
 
 nav a:hover {
-  /* background-color: aqua; */
   color: var(--color-orange);
   transition: 0.3s ease;
 }

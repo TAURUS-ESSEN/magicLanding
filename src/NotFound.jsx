@@ -22,7 +22,7 @@ export default function NotFound() {
     return (
         <section className="flex flex-col items-center justify-center h-[50vh] text-center">
         <div>
-            <h2 className="text-2xl md:text-6xl font-bold text-orange">404</h2>
+            <h2 className="text-6xl font-bold text-orange">404</h2>
             <p className="text-xl mt-4">
             {t("404.textBefore")} <span className='text-orange'>{timer}</span> {t("404.textAfter")} 
             </p>

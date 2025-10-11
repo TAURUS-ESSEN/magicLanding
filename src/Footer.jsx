@@ -38,36 +38,47 @@ export default function Footer({t}) {
             <div className="flex flex-col md:flex-row md:justify-between items-center gap-10 border-b-1  pb-2">
                 <div className="flex justify-center gap-2 brands">
                     <span>
-                        <a href="https://www.facebook.com/" target="_blank" >
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faFacebook} size="2xl"  />
                         </a>
                     </span>
                     <span>
-                        <a href="https://www.instagram.com/" target="_blank">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faInstagram} size="2xl"  />
                         </a>
                     </span>
                     <span>
-                        <a href="https://wa.me/491701234567" target="_blank">
+                        <a href="https://wa.me/491701234567" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faWhatsapp} size="2xl"   />
                         </a>
                     </span>
                     <span>
-                        <a href="https://www.linkedin.com/" target="_blank">
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} size="2xl"  />
                         </a>
                     </span>
                     <span>
-                        <a href="https://youtube.com/" target="_blank">
+                        <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faYoutube} size="2xl"  />
                         </a>
                     </span>
                 </div>
-                <div className="flex text-sm md:text-base justify-center gap-8 ">
-                        <div className="hover:text-orange"><Link to="impressum#start">{t("footer.menu.imprint")}</Link></div>
-                        <div className="hover:text-orange"><Link to="privacy_policy#start">{t("footer.menu.privacy")}</Link></div>
+                <div className="flex text-sm md:text-base justify-center gap-8">
                         <div className="hover:text-orange">
-                            <Link to="agb#start">{t("footer.menu.agb")}</Link></div>
+                            <Link to={{ pathname: "/impressum", hash: "#start" }}>
+                                {t("footer.menu.imprint")}
+                            </Link>
+                        </div>
+                        <div className="hover:text-orange">
+                            <Link to={{ pathname: "/privacy_policy", hash: "start" }}>
+                                {t("footer.menu.privacy")}
+                            </Link>
+                        </div>
+                        <div className="hover:text-orange">
+                            <Link to={{ pathname: "/agb", hash: "start"}}>
+                                {t("footer.menu.agb")}
+                            </Link>
+                        </div>
                     </div>
                 </div>
              <div className="flex flex-col md:flex-row text-base md:text-lg justify-center items-center">

@@ -6,7 +6,6 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer'
 
-
 function App() {
   const [modal, setModal] = useState({isOpen: false, type: ''});
   const [lang, setLangState] = useState("de");
@@ -32,7 +31,7 @@ function App() {
           <Outlet context={{ t, openModal }} />
         </main>
       </div>
-      <ModalHost t={t} closeModal={closeModal} modal={modal} t={t}/>
+      <ModalHost t={t} closeModal={closeModal} modal={modal}/>
       <Footer t={t} />
     </>
   )
