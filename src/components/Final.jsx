@@ -7,7 +7,7 @@ export default function Final({t}) {
                 <div><h2 className='h2'>{t("final.headline")}</h2></div>
                 <div>{t("final.subline")}</div>
                 <div className='relative max-w-[400px] self-end top-8'>
-                    <img src="./man.webp" alt='man' className=" w-full h-auto"/>
+                    <img src="./man.webp" alt="Mann mit Laptop" className=" w-full h-auto"/>
                 </div>
             </div>
             <div className='md:col-span-1'>

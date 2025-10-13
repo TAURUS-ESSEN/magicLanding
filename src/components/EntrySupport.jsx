@@ -1,7 +1,7 @@
 export default function EntrySupport({t}) {
     return (
         <section className="section flex flex-col gap-2 ">
-            <div className="h2">{t("entrySupport.title")}</div>
+            <h2 className="h2">{t("entrySupport.title")}</h2>
             <div className="text-base md:text-xl">{t("entrySupport.text")}</div>
             <div className="flex flex-col md:flex-row bg-dots blackBlock p-4 md:p-8 justify-between">
                 <div className="flex flex-col gap-4 md:gap-8">
@@ -12,12 +12,17 @@ export default function EntrySupport({t}) {
                         {t("entrySupport.interestText")}
                     </div>
                     <div>
-                        <button className="btn bg-white text-black shine-btn">{t("entrySupport.button")}</button>
+                        <button
+                            type="button"
+                            aria-haspopup="dialog" 
+                            className="btn bg-white text-black shine-btn">
+                                {t("entrySupport.button")}
+                        </button>
                     </div>
                 </div>
                 
                 <div>
-                    <ul className="list-disc text-sm pl-4 md:text-lg font-regular">
+                    <ul role="list" className="list-disc text-sm pl-4 md:text-lg font-regular">
                         {t("entrySupport.points").map((point, i) => (
                             <li key={i}>{point}</li>
                         ))}

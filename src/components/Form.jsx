@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 import { Link } from "react-router-dom"
 
@@ -16,6 +16,8 @@ export default function Form({t, modal, closeModal}) {
     const nameRegex = /[a-z]{2,}/i;
     const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let error = "border-2 border-red-500"
+
+    const formInput = useRef(null);
 
     function checkVorname(value) {
         setValid(prev => ({...prev, vOk: nameRegex.test(value.trim())}))
@@ -58,6 +60,12 @@ export default function Form({t, modal, closeModal}) {
             const data = await res.json();
             if (data.success) {
             setStatus("success");
+            setVorname("");
+            setNachname("");
+            setEmail("");
+            setCheckbox(false);
+            setTouched({ vInput: false, nInput: false, eInput: false });
+            setValid({ vOk: false, nOk: false, eOk: false });
             e.target.reset();
             } else {
             setStatus("error");
@@ -67,6 +75,12 @@ export default function Form({t, modal, closeModal}) {
         }
     }
     
+    useEffect(() => {
+        if (modal === 'modal') {
+            formInput.current.focus();
+        }
+    }, []);
+
     return (
         <div className={`${modal === 'modal' ? " formContainer-modal" : "formContainer"} bg-dots`}>
                 <span className="text-lg md:text-xl lg:text-3xl"> 
@@ -74,6 +88,7 @@ export default function Form({t, modal, closeModal}) {
                 </span>
                     <form className="flex flex-col gap-2 " onSubmit={(e)=>onSubmit(e)}>
                         <input type="text"
+                            ref={formInput}
                             onChange={(e)=>setVorname(e.target.value)} 
                             name="vorname" 
                             placeholder={t("ctaForm.fields.firstName")} 

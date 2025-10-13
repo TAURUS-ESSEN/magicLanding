@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-export default function Timer({t}) {
+export default function Timer({ t }) {
     const [timeLeft, setTimeLeft] = useState(getTimeToMidnight());
 
     function getTimeToMidnight() {
         const now = new Date();
         const tomorrow = new Date();
-        tomorrow.setHours(24, 0, 0, 0);  
+        tomorrow.setHours(24, 0, 0, 0);
         const diff = tomorrow - now;
         return diff;
     }
@@ -15,24 +15,25 @@ export default function Timer({t}) {
         const timer = setInterval(() => {
         const diff = getTimeToMidnight();
         setTimeLeft(diff);
-    }, 1000);
+        }, 1000);
 
-    return () => clearInterval(timer);
+        return () => clearInterval(timer);
     }, []);
 
-    const hours = String(Math.floor(timeLeft / 1000 / 60 / 60)).padStart(2, "0");
-    const minutes = String(Math.floor(timeLeft / 1000 / 60) % 60).padStart(2, "0");
-    const seconds = String(Math.floor(timeLeft / 1000) % 60).padStart(2, "0");
+    const hours = String(Math.floor(timeLeft / 1000 / 60 / 60)).padStart(2, '0');
+    const minutes = String(Math.floor(timeLeft / 1000 / 60) % 60).padStart(2, '0');
+    const seconds = String(Math.floor(timeLeft / 1000) % 60).padStart(2, '0');
 
     return (
-            <div className="timer bg-whitedots ">
-                <h3 className="h3">{t("timer.headline")} 
-                    <span className="text-orange font-semibold ml-1"> 
-                        {t("timer.discount")}
-                    </span>
-                </h3>
-                <div>{hours}:{minutes}:{seconds}</div>
-                <span>{t("timer.pitch")}</span>
-            </div>
-    )
+        <div className="timer bg-whitedots">
+        <h3 className="h3">
+            {t('timer.headline')}
+            <span className="text-orange ml-1 font-semibold">{t('timer.discount')}</span>
+        </h3>
+        <div>
+            {hours}:{minutes}:{seconds}
+        </div>
+        <span>{t('timer.pitch')}</span>
+        </div>
+    );
 }

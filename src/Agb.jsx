@@ -18,7 +18,7 @@ export default function Agb() {
 
     return (
         <section className="bg-white text-black px-8 py-12">
-        <h2 className="h2 mb-2" id="start">{t("agb.title")}</h2>
+        <h1 className="h1 mb-2" id="start">{t("agb.title")}</h1>
         <p className="text-sm mb-8">{t("agb.stand")}</p>
 
         <div className="space-y-8 text-lg leading-relaxed">

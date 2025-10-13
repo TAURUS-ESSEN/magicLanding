@@ -155,7 +155,8 @@
       "Neurointerface Designer",
       "Sustainability Tech Innovator"
     ],
-    "button": "Get Free Consultation"
+    "button": "Get Free Consultation",
+    "imageAlt": "Certificate-example"
   },
 
   "practical": {
@@ -181,7 +182,8 @@
       "Individual coaching for your job search",
       "Community events & exclusive challenges",
       "Support from instructors, mentors, and your peers"
-    ]
+    ],
+     "imageAlt":"Our students while studying"
   },
 
   "careerSupport": {

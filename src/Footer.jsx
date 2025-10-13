@@ -71,12 +71,12 @@ export default function Footer({t}) {
                             </HashLink>
                         </div>
                         <div className="hover:text-orange">
-                            <Link to={{ pathname: "/privacy_policy", hash: "start" }}>
+                            <Link to={{ pathname: "/privacy_policy", hash: "#start" }}>
                                 {t("footer.menu.privacy")}
                             </Link>
                         </div>
                         <div className="hover:text-orange">
-                            <Link to={{ pathname: "/agb", hash: "start"}}>
+                            <Link to={{ pathname: "/agb", hash: "#start"}}>
                                 {t("footer.menu.agb")}
                             </Link>
                         </div>

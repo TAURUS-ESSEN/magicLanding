@@ -5,14 +5,14 @@ export default function FutureJobs({t}) {
             <div>
                 <h2 className="h2">{t("futureJobs.title")}</h2>
             </div>
-            <ul className="flex flex-col md:flex-row gap-4 md:gap-5">
+            <ul className="flex flex-col md:flex-row gap-4 md:gap-5" role="list">
                     {cards.map((card,i) => (
                         <li className={`${card.style} flex flex-col justify-between `} key={i}>
-                            <div className="text-base">{card.badge}</div>
-                            <div className="text-xl md:text-2xl font-semibold">{card.title}</div>
-                            <div className="text-sm">{card.subtitle}</div>
-                            <div className="text-sm">{card.text}</div>
-                            <div className={`${card.buttonStyle} w-40 shine-btn`}>{card.button}</div>
+                            <p className="text-base">{card.badge}</p>
+                            <h3 className="text-xl md:text-2xl font-semibold">{card.title}</h3>
+                            <p className="text-sm">{card.subtitle}</p>
+                            <p className="text-sm">{card.text}</p>
+                            <button type="button" className={`${card.buttonStyle} w-40 shine-btn`}>{card.button}</button>
                         </li>
                     ))}
             </ul>

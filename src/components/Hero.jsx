@@ -9,14 +9,14 @@ export default function Hero({t}) {
                 <div className='flex items-center'>
                     <p className='h3'>{t("hero.pitch")}</p>
                     <span>
-                        <img src="/google.webp" className='w-60' alt="Google Rating" loading="lazy"/>
+                        <img src="/google.webp" className='w-60' alt="Google Rating 4.9" loading="lazy"/>
                     </span>
                 </div>
                 <div className='heroTimer'>
                     <Timer t={t}/>
                 </div>
             </div>
-            <div className="md:grid-span-1">
+            <div className="md:col-span-1">
                 <div>
                     <Form t={t}/>
                 </div>

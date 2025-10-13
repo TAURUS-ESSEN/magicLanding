@@ -160,7 +160,8 @@
       "Neurointerface Designer",
       "Sustainability Tech Innovator"
     ],
-    "button": "Kostenlos beraten lassen"
+    "button": "Kostenlos beraten lassen",
+    "imageAlt": "Zertifikat-Beispiel"
   },
 
   "practical": {
@@ -186,7 +187,8 @@
       "Individuelles Coaching für deine Jobsuche",
       "Community-Events & exklusive Challenges",
       "Support durch Dozenten, Mentor:innen und deine Peers"
-    ]
+    ],
+    "imageAlt":"Unsere Studenten beim Lernen"
   },
 
   "careerSupport": {

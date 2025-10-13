@@ -12,7 +12,12 @@ export default function Financing({t, openModal}) {
                 ))}
             </div>
             <div className="mb-8">
-                <button type="button" className="btn text-white bg-black mt-4 shine-btn" onClick={()=>openModal('registration')}>
+                <button 
+                    type="button" 
+                    aria-haspopup="dialog" 
+                    className="btn text-white bg-black mt-4 shine-btn" 
+                    onClick={()=>openModal('registration')}
+                >
                     {t("financing.button")}
                 </button>
             </div>
