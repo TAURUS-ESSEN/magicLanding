@@ -29,7 +29,8 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
 | Desktop Demo | Mobile Demo |
 |---------------|--------------|
-| <img src="src/assets/demo-desktop.gif" width="400"/> | <img src="src/assets/demo-mobile.gif" width="230"/> |
+| <img src="src/assets/toggler.gif" width="400"/> | <img src="src/assets/toggler.gif" width="230"/> |
+[![Watch Demo](src/assets/promo.png)](https://raw.githubusercontent.com/TAURUS-ESSEN/magicLanding/main/src/assets/toggler.mp4)
 
 *(Zeigt Scroll, Sprachwechsel, Modal und Formularversand.)*
 
