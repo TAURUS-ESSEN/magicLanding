@@ -6,15 +6,15 @@ Das Projekt demonstriert praxisorientierte Kenntnisse in **Komponentenarchitektu
 ---
 
 ## 🌍 Live-Demo  
-🔗 [https://magic-landing-seven.vercel.app](https://magic-landing-seven.vercel.app)
+🔗 <a href="https://magic-landing-seven.vercel.app" target="_blank">https://magic-landing-seven.vercel.app</a>
 
 ---
 
 ## 🎨 Design → Code  
 Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
-- 🎨 [Figma-Design ansehen](https://www.figma.com/proto/gEYP2Ff7j1c2Hia4MkVdkO/Untitled?node-id=0-1&t=yjzE33JsR1OeIi2R-1)
-- ![Figma Design](src/assets/figma.webp)
+- 🎨 <a href="https://www.figma.com/proto/gEYP2Ff7j1c2Hia4MkVdkO/Untitled?node-id=0-1&t=yjzE33JsR1OeIi2R-1" target="_blank">Figma-Design ansehen</a>  
+- <img src="src/assets/figma.webp" alt="Figma Design" width="700"/>
 
 🖼️ Vergleich zwischen Figma-Layout und der finalen Umsetzung:
 
@@ -29,7 +29,7 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
 | Desktop Demo | Mobile Demo |
 |---------------|--------------|
-| ![Desktop Demo](src/assets/demo-desktop.gif) | ![Mobile Demo](src/assets/demo-mobile.gif) |
+| <img src="src/assets/demo-desktop.gif" width="400"/> | <img src="src/assets/demo-mobile.gif" width="230"/> |
 
 *(Zeigt Scroll, Sprachwechsel, Modal und Formularversand.)*
 
