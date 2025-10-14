@@ -30,7 +30,8 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 |---------------|--------------|
 | <img src="src/assets/promo1.webp" width="700"/>  | <img src="src/assets/promoMob-1.webp"/>  |
 | <img src="src/assets/promo2.webp" width="700"/>  |  <img src="src/assets/promoMob-2.webp"/>  |
-| <img src="src/assets/toggler.gif" width="400"/> | <img src="src/assets/toggler.gif" width="400"/> |
+<img src="src/assets/toggler.gif" width="400"/>
+
 
 
 
