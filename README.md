@@ -14,7 +14,7 @@ Das Projekt demonstriert praxisorientierte Kenntnisse in **Komponentenarchitektu
 Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
 - 🎨 <a href="https://www.figma.com/proto/gEYP2Ff7j1c2Hia4MkVdkO/Untitled?node-id=0-1&t=yjzE33JsR1OeIi2R-1" target="_blank">Figma-Design ansehen</a>  
-- <img src="src/assets/figma.webp" alt="Figma Design" width="700"/>
+- <img src="src/assets/figma.webp" alt="Figma Design" />
 
 🖼️ Vergleich zwischen Figma-Layout und der finalen Umsetzung:
 
