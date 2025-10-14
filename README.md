@@ -66,3 +66,26 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 ---
 
 ## 📂 Projektstruktur  
+src/
+ ├─ components/
+ │   ├─ Hero.jsx
+ │   ├─ Form.jsx
+ │   ├─ Slider.jsx
+ │   ├─ Certificates.jsx
+ │   ├─ CareerSupport.jsx
+ │   ├─ Financing.jsx
+ │   ├─ Faq.jsx
+ │   └─ ...
+ ├─ App.jsx
+ ├─ LandingPage.jsx
+ ├─ About.jsx
+ ├─ index.css
+ ├─ main.jsx
+ └─ ...
+
+## ⚙️ Installation
+```bash
+git clone https://github.com/TAURUS-ESSEN/magicLanding.git
+cd magicLanding
+npm install
+npm run dev
