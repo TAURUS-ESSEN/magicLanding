@@ -20,7 +20,7 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
 | Figma-Layout | Umsetzung |
 |--------------|------------|
-| <img src="src/assets/figma-desktop.png" width="400"/> | <img src="src/assets/preview-desktop.png" width="400"/> |
+| <img src="src/assets/figma-desktop.png" width="400"/> | <img src="src/assets/preview-desktop.png" width="800"/> |
 | <img src="src/assets/figma-mobile.png" width="230"/> | <img src="src/assets/preview-mobile.png" width="230"/> |
 
 ---
@@ -29,8 +29,10 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
 | Desktop Demo | Mobile Demo |
 |---------------|--------------|
-| <img src="src/assets/toggler.gif" width="400"/> | <img src="src/assets/toggler.gif" width="230"/> |
-[![Watch Demo](src/assets/promo1.png)](https://raw.githubusercontent.com/TAURUS-ESSEN/magicLanding/main/src/assets/toggler.mp4)
+| <img src="src/assets/toggler.gif" width="400"/> | <img src="src/assets/toggler.gif" width="800"/> |
+| <img src="src/assets/slider.gif" width="400"/> | <img src="src/assets/slider.gif" width="800"/> |
+| <img src="src/assets/form.gif" width="400"/> | <img src="src/assets/form.gif" width="800"/> |
+
 
 *(Zeigt Scroll, Sprachwechsel, Modal und Formularversand.)*
 
