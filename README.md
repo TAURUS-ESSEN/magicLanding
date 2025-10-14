@@ -28,7 +28,6 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 | Desktop Demo | Mobile Demo |
 |---------------|--------------|
 | <img src="src/assets/promo1.webp" width="800"/> |
-| <img src="src/assets/promo2.webp" width="800"/> |
 | <img src="src/assets/toggler.gif" width="400"/> |
 
 
