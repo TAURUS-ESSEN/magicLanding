@@ -16,18 +16,8 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 - 🎨 <a href="https://www.figma.com/proto/gEYP2Ff7j1c2Hia4MkVdkO/Untitled?node-id=0-1&t=yjzE33JsR1OeIi2R-1" target="_blank">Figma-Design ansehen</a>  
 - <img src="src/assets/figma.webp" alt="Figma Design" />
 
-🖼️ Vergleich zwischen Figma-Layout und der finalen Umsetzung:
-
-| Figma-Layout | Umsetzung |
-|--------------|------------|
-| <img src="src/assets/figma-desktop.png" width="400"/> | <img src="src/assets/preview-desktop.png" width="230"/> |
----
-
-## 🎥 Projekt-Preview  
- 
-
  ## 🎥 Projekt-Preview  
-
+<h3 align="center">📱 Desktop Preview</h3>
 <p align="center">
   <img src="src/assets/desktop.webp" alt="Desktop Hero & Form" width="700"><br/>
 </p>
@@ -35,11 +25,11 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 <h3 align="center">📱 Mobile Preview</h3>
 
 <p align="center">
-  <img src="src/assets/mobile.webp" alt="Mobile Version Preview" width="360" style="border:1px solid #ddd;border-radius:6px;">
+  <img src="src/assets/mobile.webp" alt="Mobile Version Preview" width="700" style="border:1px solid #ddd;border-radius:6px;">
 </p>
-
+<h3 align="center">📱 Language Toggle Animation</h3>
 <p align="center">
-  <img src="src/assets/toggler.gif" alt="Language Toggle Animation" width="400">
+  <img src="src/assets/toggler.gif" alt="Language Toggle Animation" width="500">
 </p>
 
 <p align="center">
@@ -78,24 +68,6 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 - 🧠 **Saubere Komponentenstruktur**
 
 ---
-
-## 📂 Projektstruktur  
-src/
- ├─ components/
- │   ├─ Hero.jsx
- │   ├─ Form.jsx
- │   ├─ Slider.jsx
- │   ├─ Certificates.jsx
- │   ├─ CareerSupport.jsx
- │   ├─ Financing.jsx
- │   ├─ Faq.jsx
- │   └─ ...
- ├─ App.jsx
- ├─ LandingPage.jsx
- ├─ About.jsx
- ├─ index.css
- ├─ main.jsx
- └─ ...
 
 ## ⚙️ Installation
 ```bash
