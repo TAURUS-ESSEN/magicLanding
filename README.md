@@ -26,11 +26,25 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 ## 🎥 Projekt-Preview  
  
 
-| Desktop Demo | Mobile Demo |
-|---------------|--------------|
-| <img src="src/assets/promo1.webp" width="700"/>  | <img src="src/assets/promoMob-1.webp"/>  |
-| <img src="src/assets/promo2.webp" width="700"/>  |  <img src="src/assets/promoMob-2.webp"/>  |
-<img src="src/assets/toggler.gif" width="400"/>
+ ## 🎥 Projekt-Preview  
+
+<p align="center">
+  <img src="src/assets/desktop.webp" alt="Desktop Hero & Form" width="700"><br/>
+</p>
+
+<h3 align="center">📱 Mobile Preview</h3>
+
+<p align="center">
+  <img src="src/assets/mobile.webp" alt="Mobile Version Preview" width="360" style="border:1px solid #ddd;border-radius:6px;">
+</p>
+
+<p align="center">
+  <img src="src/assets/toggler.gif" alt="Language Toggle Animation" width="400">
+</p>
+
+<p align="center">
+  <em>(Zeigt Scroll, Sprachwechsel, Modal und Formularversand.)</em>
+</p>
 
 
 
