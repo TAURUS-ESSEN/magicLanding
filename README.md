@@ -14,7 +14,7 @@ Das Projekt demonstriert praxisorientierte Kenntnisse in **Komponentenarchitektu
 Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
 - 🎨 <a href="https://www.figma.com/proto/gEYP2Ff7j1c2Hia4MkVdkO/Untitled?node-id=0-1&t=yjzE33JsR1OeIi2R-1" target="_blank">Figma-Design ansehen</a>  
-- <img src="src/assets/figma.webp" alt="Figma Design" />
+<img src="src/assets/figma.webp" alt="Figma Design" />
 
  ## 🎥 Projekt-Preview  
 <h3 align="center">📱 Desktop Preview</h3>
@@ -27,21 +27,14 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 <p align="center">
   <img src="src/assets/mobile.webp" alt="Mobile Version Preview" width="700" style="border:1px solid #ddd;border-radius:6px;">
 </p>
-<h3 align="center">📱 Language Toggle Animation</h3>
+<h3 align="center">📱 Slider Animation</h3>
 <p align="center">
-  <img src="src/assets/toggler.gif" alt="Language Toggle Animation" width="500">
+  <img src="src/assets/slider-2.gif" alt="Slider Animation" width="800">
 </p>
 
 <p align="center">
   <em>(Zeigt Scroll, Sprachwechsel, Modal und Formularversand.)</em>
 </p>
-
-
-
-
-*(Zeigt Scroll, Sprachwechsel, Modal und Formularversand.)*
-
----
 
 ## 🧩 Tech Stack  
 ![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)  
@@ -75,3 +68,19 @@ git clone https://github.com/TAURUS-ESSEN/magicLanding.git
 cd magicLanding
 npm install
 npm run dev
+```
+---
+
+## 👤 Autor
+
+Yevhen Reitarov 
+
+📧 <a href="mailto:reitarovea@gmail.com" target="_blank">reitarovea@gmail.com
+</a>
+
+---
+
+## 📜 Lizenz
+
+Dieses Projekt wurde zu Lern- und Demonstrationszwecken erstellt.
+Alle verwendeten Bilder und Texte dienen ausschließlich der Präsentation.
