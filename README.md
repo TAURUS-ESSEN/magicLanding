@@ -42,10 +42,20 @@ Die Website wurde exakt nach einem eigenen Figma-Layout umgesetzt.
 
 <h3 align="center">💻 Desktop & 📱 Mobile Preview</h3>
 
-<p align="center">
-  <img src="src/assets/desktop.webp" alt="Desktop Preview" width="600" style="margin-right:20px; vertical-align: top;">
-  <img src="src/assets/mobile.webp" alt="Mobile Preview" width="360" style="border:1px solid #ddd;border-radius:6px; vertical-align: top;">
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td valign="top" style="padding-right:20px;">
+        <img src="src/assets/desktop.webp" alt="Desktop Preview" width="600">
+      </td>
+      <td valign="top">
+        <img src="src/assets/mobile.webp" alt="Mobile Preview" width="360"
+             style="border:1px solid #ddd;border-radius:6px;">
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 
 
