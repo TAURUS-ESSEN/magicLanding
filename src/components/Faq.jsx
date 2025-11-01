@@ -16,7 +16,7 @@ export default function Faq({t}) {
     }, []);
 
     return (
-        <section className='section'>
+        <section className='section reveal'>
         <h2 className="h2">{t("faq.title")}</h2>
         <div>
             {t("faq.questions").map(question => (

@@ -1,6 +1,6 @@
 export default function EntrySupport({t}) {
     return (
-        <section className="section flex flex-col gap-2 ">
+        <section className="section reveal flex flex-col gap-2 ">
             <h2 className="h2">{t("entrySupport.title")}</h2>
             <div className="text-base md:text-xl">{t("entrySupport.text")}</div>
             <div className="flex flex-col md:flex-row bg-dots blackBlock p-4 md:p-8 justify-between">

@@ -1,6 +1,6 @@
 export default function Financing({t, openModal}) {
     return (
-        <section className="bg-orange orange-gradient -mx-4 md:-mx-8 px-4 md:px-8 flex flex-col" id="payments">
+        <section className="bg-orange orange-gradient -mx-4 md:-mx-8 px-4 md:px-8 flex flex-col reveal" id="payments">
             <h2 className="h2 mt-4 md:mt-8">{t("financing.title")}</h2>
             <div className="flex flex-col md:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
                 {t("financing.cards").map((card, i) => (

@@ -24,6 +24,12 @@
   font-display: swap;
 }
 
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -133,7 +139,29 @@ button { font-family: Oxanium, system-ui, -apple-system, Segoe UI, Roboto, Arial
   .orange-gradient {
     background: linear-gradient(135deg, var(--orange1), var(--orange2));
   }
- 
+  
+  .animate-fade-up         { animation: fadeUp .8s ease-out both; }
+  .animate-fade-up-200     { animation: fadeUp .8s ease-out .2s both; }
+  .animate-fade-up-400     { animation: fadeUp .8s ease-out .4s both; }
+  .animate-fade-up-600     { animation: fadeUp .8s ease-out .6s both; }
+  .animate-fade-up-800     { animation: fadeUp .8s ease-out .8s both; }
+
+
+/* .reveal { }
+.reveal.is-visible { }
+.aos { animation-play-state: paused; }
+.reveal.is-visible .aos { animation-play-state: running; } */
+
+  .reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+ .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
 
   .shine-btn { position: relative; overflow: hidden; }
   .shine-btn::after {

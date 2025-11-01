@@ -1,6 +1,6 @@
 export default function Learning({t}) {
     return (
-        <section className="section">
+        <section className="section reveal">
             <div>
                 <h2 className="h2">{t("learning.title")}</h2>
             </div>

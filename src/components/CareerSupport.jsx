@@ -3,7 +3,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 export default function CareerSupport({t, openModal}) {
     return (
-        <section className="flex flex-col section">
+        <section className="flex flex-col section reveal">
             <div>
                 <h2 className="h2">{t("careerSupport.title")}</h2>
             </div>

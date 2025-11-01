@@ -1,6 +1,6 @@
 export default function Karriere({t}) {
     return (
-        <section className="section">
+        <section className="section reveal">
             <h2 className="h2">{t("careerPath.title")}</h2>
             <div className="bg-dots -mx-4 md:-mx-8 ">
                 <div className="p-4 md:p-8">

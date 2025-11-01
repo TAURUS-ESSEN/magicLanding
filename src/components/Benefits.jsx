@@ -3,7 +3,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 export default function Benefits({t, openModal}) {
     return (
-        <section className="block flex-col md:max-w-[900px] m-auto my-6 md:my-9 bg-whitedots ">
+        <section className="block flex-col md:max-w-[900px] m-auto my-6 md:my-9 bg-whitedots reveal">
             <h2 className="h2">{t("benefits.title")}</h2>
             <ul className="flex flex-col md:grid grid-cols-2 gap-3 md:gap-6 ">
                 {t("benefits.items").map(b => (

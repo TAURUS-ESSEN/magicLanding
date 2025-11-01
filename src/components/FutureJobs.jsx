@@ -1,7 +1,7 @@
 export default function FutureJobs({t}) {
     const cards = t("futureJobs.cards");
     return (
-        <section className="section" id="programs">
+        <section className="section reveal" id="programs">
             <div>
                 <h2 className="h2">{t("futureJobs.title")}</h2>
             </div>

@@ -1,8 +1,8 @@
 export default function Vision({ t }) {
     return (
-        <section className="section bg-vision -mx-4 md:-mx-8">
-        <div className="flex flex-col items-end justify-evenly gap-4 p-6 md:h-[900px] md:p-10">
-            <article className="bg-whitedots visionCard">
+        <section className="section bg-vision -mx-4 md:-mx-8 reveal">
+        <div className="flex flex-col items-end justify-evenly gap-4 p-6 md:h-[900px] md:p-10 ">
+            <article className="bg-whitedots visionCard aos animate-fade-up-400">
             <h3 className="h3 text-2xl font-semibold">{t('mission.title')}</h3>
             <p>
                 {t('mission.textBefore')}
@@ -10,7 +10,7 @@ export default function Vision({ t }) {
                 {t('mission.textAfter')}
             </p>
             </article>
-            <article className="bg-dots visionCard text-white">
+            <article className="bg-dots visionCard text-white animate-fade-up-400 aos ">
             <h3 className="h3 text-orange text-2xl font-semibold">{t('vision.title')}</h3>
             <div>
                 <p>

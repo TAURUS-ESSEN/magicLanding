@@ -1,6 +1,6 @@
 export default function Practical({ t }) {
     return (
-        <section className="section">
+        <section className="section reveal">
         <h2 className="h2">{t('practical.title')}</h2>
         <div className="flex flex-col gap-4 md:flex-row md:gap-5">
             <div className="orangeBlock orange-gradient md:flex-col">

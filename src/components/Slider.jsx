@@ -28,7 +28,7 @@ export default function Slider({t}) {
     const disableNext = index >= maxIndex || peoples.length <= VISIBLE;
 
     return (
-        <section className="section">
+        <section className="section reveal">
         <div className="flex justify-between items-center">
             <h2 className="h2">{t("successStories.title")}</h2>
             <div className="flex gap-2">
