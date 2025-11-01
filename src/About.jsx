@@ -9,8 +9,8 @@ export default function About() {
 
     return (
         <>
-        <section className="  flex justify-end gap-4 md:gap-10 -mx-4 md:-mx-8 p-4 md:p-8 bg-about  reveal">
-            <div className="flex flex-col justify-end md:w-100 py-8 md:py-18">
+        <section className="flex justify-end gap-4 md:gap-10 -mx-4 md:-mx-8 p-4 md:p-8 bg-about  ">
+            <div className="flex flex-col justify-end md:w-100 py-8 md:py-18 reveal">
                 <h2 className="h2 text-2xl md:text-3xl text-orange">{t("about.title")}</h2> 
                 <div className="flex flex-col gap-8 text-lg md:text-2xl text-white font-medium leading-relaxed">
                     <span>{t("about.text")}</span>

@@ -51,7 +51,7 @@ export default function Slider({t}) {
             </div>
         </div>
 
-        <div className="md:mt-[10px] w-[340px] md:w-[750px] lg:w-[1140px] m-auto overflow-hidden p-2">
+        <div className="md:mt-[10px] w-[340px] md:w-[650px] lg:w-[1140px] m-auto overflow-hidden p-2">
             <div
                 className="flex gap-5 transition-transform duration-300 ease-out"
                 style={{ transform: `translateX(-${index * STEP}px)` }}

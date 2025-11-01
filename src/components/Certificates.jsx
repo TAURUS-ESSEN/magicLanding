@@ -7,7 +7,7 @@ export default function Certificates({ t, openModal }) {
             <h2 className="h2">{t('certificates.title')}</h2>
             <div className="bg-whitedots -mx-4 flex p-4 md:-mx-8">
                 <div className="flex flex-col items-center justify-center gap-8 p-4 lg:flex-row">
-                <div className="flex w-full justify-center">
+                <div className="flex w-full md:w-100 lg:w-full justify-center">
                     <img
                     src="certificate-sm.webp"
                     loading="lazy"

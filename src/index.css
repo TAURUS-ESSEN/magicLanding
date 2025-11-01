@@ -105,7 +105,7 @@ button { font-family: Oxanium, system-ui, -apple-system, Segoe UI, Roboto, Arial
   .grayBlock   { @apply flex items-center gap-5 justify-center text-black rounded-xl md:rounded-3xl p-8 text-base md:text-xl font-medium shadow-soft; }
   .block       { @apply flex text-xl p-4 md:p-8 rounded-xl md:rounded-3xl text-black font-medium shadow-soft; }
 
-  .jobsBlock         { @apply flex flex-col gap-5 rounded-3xl p-8 font-medium shadow-soft; }
+  .jobsBlock { @apply flex flex-col gap-5 rounded-3xl p-8 font-medium shadow-soft; }
   .financierungBlock { @apply flex flex-col gap-4 md:gap-5 rounded-xl md:rounded-3xl p-4 md:p-8 font-medium shadow-soft; }
 
   .details { @apply border-y text-base md:text-xl; }

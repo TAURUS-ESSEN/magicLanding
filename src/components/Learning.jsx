@@ -1,6 +1,6 @@
 export default function Learning({t}) {
     return (
-        <section className="section reveal">
+        <section className="section">
             <div>
                 <h2 className="h2">{t("learning.title")}</h2>
             </div>
@@ -15,8 +15,8 @@ export default function Learning({t}) {
                 <div className="absolute pointer-events-none inset-0 bg-[linear-gradient(to_top,_#000_0%,_rgba(0,0,0,0)_42%)]"></div>
 
             </div>
-            <div className="bg-black text-white -mx-4 md:-mx-8">
-                <ul className="list-disc grid grid-cols-1 md:grid-cols-2 px-12 py-10 text-xl gap-2">
+            <div className="bg-black text-white -mx-4 md:-mx-8 ">
+                <ul className="list-disc grid grid-cols-1 md:grid-cols-2 px-12 py-10 text-xl gap-2  reveal">
                     {t("learning.points").map((point, i) => (
                         <li key={i} className="col-span-1">{point}</li>
                     ))}

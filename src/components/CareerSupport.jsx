@@ -3,11 +3,11 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 export default function CareerSupport({t, openModal}) {
     return (
-        <section className="flex flex-col section reveal">
+        <section className="flex flex-col section ">
             <div>
-                <h2 className="h2">{t("careerSupport.title")}</h2>
+                <h2 className="h2 reveal">{t("careerSupport.title")}</h2>
             </div>
-            <div className="careerSupportBlock">
+            <div className="careerSupportBlock reveal">
                 <div className="row-start-1 col-span-2 md:row-start-1 md:row-span-2 md:col-span-5 blackBlock bg-dots">
                     {t("careerSupport.q1")}
                 </div>
@@ -34,7 +34,7 @@ export default function CareerSupport({t, openModal}) {
                 </div>
             </div>
             <div>
-                <button className="btn bg-orange mt-4 shine-btn orange-gradient" onClick={()=>openModal('registration')}>
+                <button className="btn bg-orange mt-4 shine-btn orange-gradient reveal" onClick={()=>openModal('registration')}>
                     <span className='mr-2'>{t("careerSupport.button")}</span>
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                 </button>
